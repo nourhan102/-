@@ -1,0 +1,113 @@
+.btaqa{
+    width: 30%;
+    margin: 30px;
+    border-color: green;
+
+}
+.files{
+    background-color: rgb(1, 99, 1);
+}
+.files:hover , .files:checked{
+    background-color: rgb(168, 168, 168);
+}
+.mlaf{
+    display: flex;
+    justify-items: center;
+    justify-content: baseline;
+}
+
+/* nav */
+/* ============================= */
+/* 📱 تنسيق شاشات الموبايل */
+/* ============================= */
+@media (max-width: 1024px) {
+    nav .container {
+      flex-wrap: nowrap;
+    }
+  
+    /* اللوجو */
+    nav img {
+      width: 90px;
+    }
+  
+    /* إخفاء القوائم الكبيرة وإظهار الزرار */
+    nav .lg\:block {
+      display: none;
+    }
+  
+    nav button {
+      display: block;
+    }
+  
+    /* القائمة المنسدلة على الموبايل */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border-radius: 0 0 12px 12px;
+    }
+  
+    .mobile-menu.open {
+      display: flex;
+    }
+  
+    .mobile-menu li,
+    .mobile-menu div {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  
+    .mobile-menu a {
+      display: block;
+      width: 100%;
+      color: #065f46; /* نفس لون الأخضر */
+    }
+  
+    .mobile-menu a:hover {
+      background-color: #4d7c0f;
+      color: white;
+    }
+  }
+
+  /* 📱 تنسيق خاص بشاشات الموبايل */
+@media (max-width: 768px) {
+    /* خلي القوائم المنسدلة تظهر بشكل مرتب تحت كل عنصر */
+    .mobile-menu li {
+      position: relative;
+    }
+  
+    .mobile-menu .absolute {
+      position: static !important; /* تلغي الـ absolute في الموبايل */
+      width: 100%;
+      margin-top: 5px;
+    }
+  
+    /* شكل القوائم المنسدلة */
+    .mobile-menu .absolute a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    /* تخلي كل قائمة تبعد شوية عن التانية */
+    .mobile-menu > li {
+      margin-bottom: 10px;
+    }
+  
+    /* تحسين شكل الأزرار */
+    .mobile-menu a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  /* nav */

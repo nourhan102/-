@@ -51,6 +51,10 @@
 
 
 /* end slider 2 */
+.cover{
+  width: 100%;
+  object-fit: cover;
+}
 
 
 
@@ -175,6 +179,63 @@
 .cont:hover .middle {
   opacity: 1;
 }
+
+/* nav */
+
+
+/* 📱 ميديا كويري لتنسيق النافبار على شاشات الموبايل */
+@media (max-width: 1024px) {
+
+  /* إخفاء قائمة اللابتوب وإظهار زر القائمة */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-top: 2px solid #d1d5db;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  /* زرار الهامبرجر */
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-btn svg {
+    width: 28px;
+    height: 28px;
+    color: #065f46;
+  }
+
+  /* إخفاء القائمة الكبيرة */
+  nav .lg\\:block {
+    display: none;
+  }
+}
+
+/* 💻 إظهار القوائم العادية على الشاشات الكبيرة */
+@media (min-width: 1025px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+
+/* nav */
+
 
 @keyframes scroll-left {
   0% {
@@ -472,8 +533,45 @@ p.card__description {
     padding: 10px 0;
 }
 
-
-
-
-
 /* end الشكل التنظيمي للامانه العامة */
+
+
+/* ميثاق start */
+
+
+
+/* 📱 media query لشاشات الموبايل */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col, .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-5, .card-5.big {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+
+/* ميثاق end */
