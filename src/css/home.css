@@ -111,3 +111,44 @@
   }
   
   /* nav */
+
+
+  /* بطاقة start */
+  @media (max-width: 768px) {
+    .btaqa {
+      width: 100%; /* ياخد عرض الشاشة */
+      flex-direction: column; /* يبقى كل كارت في سطر */
+      margin: 10px 0;
+    }
+  
+    .btaqa .header {
+      flex-direction: row; /* أيقونة + العنوان في نفس السطر */
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  
+    .btaqa .icon {
+      margin-right: 10px;
+    }
+  
+  
+    .btaqa a {
+      display: flex;
+      align-items: start;
+      justify-content: flex-start;
+    }
+  }
+  
+  /* لو عندك كروت متعددة، ضعيها في container */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* كل كارت في سطر كامل */
+    }
+  }
+  /* بطاقة end */
