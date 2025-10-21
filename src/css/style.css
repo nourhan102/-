@@ -42,6 +42,20 @@
 
 
 
+/* font  */
+
+
+*{
+  /* font-family: "Changa", sans-serif; */
+  font-family: "Tajawal", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
+
+
+
 
 /* end slider 1 */
 
@@ -183,6 +197,8 @@
 /* nav */
 
 
+
+
 /* 📱 ميديا كويري لتنسيق النافبار على شاشات الموبايل */
 @media (max-width: 1024px) {
 
@@ -200,6 +216,8 @@
     padding: 1rem 0;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     border-top: 2px solid #d1d5db;
+    max-height: 80vh; 
+    overflow-y: auto; 
   }
 
   .mobile-menu.active {
@@ -563,15 +581,74 @@ p.card__description {
 
   h4 {
     font-size: 18px;
-    text-align: center;
+    text-align: start;
   }
 
   p {
     font-size: 14px;
-    text-align: center;
+    text-align: start;
+  }
+}
+
+/* ميثاق end */
+
+/* شكل بطاقة المحارب start */
+.mohareb {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.mohareb1,
+.mohareb2 {
+  width: 30%;
+  margin: 20px;
+}
+
+.mohareb1 img,
+.mohareb2 img ,
+.mohareb3 img
+ {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.mohareb3 img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.mohareb img:hover {
+  transform: scale(1.03);
+}
+
+/* 📱 للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .mohareb {
+    flex-direction: row; /* خليهم جنب بعض */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .mohareb1,
+  .mohareb2 {
+    width: 30%; /* كل واحدة تاخد تقريبًا نص العرض */
+    margin: 0;
+  }
+
+  .mohareb1 img,
+  .mohareb2 img {
+    width: 100%;
+    height: auto;
   }
 }
 
 
 
-/* ميثاق end */
+
+/* شكل بطاقة المحارب end */
+

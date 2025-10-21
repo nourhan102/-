@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>الاتحاد العربي للمحاربين القدماء</title>
-    <link rel="stylesheet" href="../css/output.css" />
-    <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href="../../imeges/logo/arab-vetrans-white.png" rel="icon" />
+    <link rel="stylesheet" href="../../css/output.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/mgalat-albtaqa.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="../../../imeges/logo/arab-vetrans-white.png" rel="icon" />
       <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
    
   </head>
   <body dir="rtl">
@@ -25,8 +29,8 @@ class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-
 <div
   class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
 >
-<a href="../../index.html" class="mr-4 block cursor-pointer py-1.5 w-1/5">
-  <img src="../../imeges/logo/arab-vetrans.png" alt="" />
+<a href="../../../index.html" class="mr-4 block cursor-pointer py-1.5 w-1/5">
+  <img src="../../../imeges/logo/arab-vetrans.png" alt="" />
 </a>
 
 <!-- زر القائمة للموبايل -->
@@ -69,11 +73,11 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 <div  
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
-<a href="Union objectives.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">تعريف و أهداف الأتحاد</a>
+<a href="../ahdaf-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">تعريف و أهداف الأتحاد</a>
           <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">النظام الأساسي</a>
-          <a href="ميثاق الاتحاد.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">ميثاق الشرف</a>
-          <a href="الشكل التنظيمي للامانه.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الشكل التنظيمي للأمانة العامة</a>
-          <a href="رؤساء الاتحاد.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">رؤساء الإتحاد</a>
+          <a href="../methk-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">ميثاق الشرف</a>
+          <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الشكل التنظيمي للأمانة العامة</a>
+          <a href="../rqasaq-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">رؤساء الإتحاد</a>
           <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">نواب الرئيس</a>
           <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الأمين العام</a>
           <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">أمين الصندوق</a>
@@ -166,7 +170,7 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 <div  
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
-<a href="صور انشاء الاتحاد.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem"> إنشاء الإتحاد  </a>
+<a href="../imege-for-ensha-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem"> إنشاء الإتحاد  </a>
 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  صور تاريخية </a>
 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  مشاركة في المجتمع المدني  </a>
 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  يوم الشهيد </a>
@@ -186,105 +190,72 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 </nav>
 
 <!-- end navbar -->
+
     <!--  start section -->
-   
+
+   <section id="clients" class="clients section">
+    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold"> المستشفيات العسكرية : </h1><br>
+    <h2 class=" font-bold mx-6 text-2xl "  >   (  ( خصم 10 % )  على العلاج الطبى )  . </h2><br>
 
 
-    <h1 class="text-green-800 mx-6  w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">رؤساء الإتحاد :- </h1><br>
+    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold"> 1- المجمع الطبى بالمعادى :- </h1><br>
+    <div class="flex items-center" >
+       <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >العنوان :- </h2>
+       <p class="font-bold space "> كورنيش النيل بجوار المحكمة الدستورية العليا –  بالمعادى . </p>
 
-    <article class="card">
-        <img
-          class="card__background"
-          src="../../imeges/people/Khaled-Moustafa.png"
-          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-          width="1920"
-          height="2193"
-        />
-        <div class="card__content | flow">
-          <div class="card__content--container | flow">
-            <h2 class="card__title">لواء أ . ح . م / خالد مصطفى توفيق </h2>
-            <p class="card__description">
-               رئيس الإتحاد العربي للمحاربين القدماء<br>
-                تاريخ شغل الوظيفة :  19 / 09 / 2024 م 
-            </p>
-          </div>
-        </div>
-      </article>
-    
+    </div><br>
+    <h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  التواصل :- </h2>
+    <p class="font-bold mx-6 space ">
+       <span class="text-green-800">1-</span>  أرضي :- 25256345 – 25256347  <br>
+       <span class="text-green-800">2-</span>  موبيل  :- 01200203111  <br>
+   </p><br>
 
+
+
+    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold"> 2-  المجمع الطبى بكوبري القبة :- </h1><br>
+    <div class="flex items-center" >
+       <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >العنوان :- </h2>
+       <p class="font-bold space "> ش الخليفة المأمون تقاطع ش اسماعيل الفنجري كوبري القبة. </p>
+
+    </div><br>
+    <h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  التواصل :- </h2>
+    <p class="font-bold mx-6 space ">
+       <span class="text-green-800">1-</span>   أرضي :- 22638885 – 22634555  <br>
+       <span class="text-green-800">2-</span>   موبيل  :-  01207191111 – 01207187777  <br>
+   </p><br>
+
+
+
+    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold"> 3-  مستشفى مصطفى كامل  :- </h1><br>
+    <div class="flex items-center" >
+       <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >العنوان :- </h2>
+       <p class="font-bold space ">  ش بورسعيد سيدي جابر الشيخ الاسكندرية امام مسجد سيدي جابر .  </p>
+
+    </div><br>
+    <h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  التواصل :- </h2>
+    <p class="font-bold mx-6 space ">
+       <span class="text-green-800">1-</span>   أرضي :-   5452013/ 03   – 5437445/ 03  –   5448858/ 03   <br>
+       <span class="text-green-800">2-</span>   موبيل  :- 01207191111 – 01207187777  <br>
+   </p><br>
+
+
+
+    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold"> 4-  مستشفى الجلاء الطبي العسكري  :- </h1><br>
+    <div class="flex items-center" >
+       <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >العنوان :- </h2>
+       <p class="font-bold space ">   3 ش العروبة متفرع من طريق صلاح سالم بجوار الكلية الحربية – مصر الجديدة .  </p>
+
+    </div><br>
+    <div class="flex items-center" >
+        <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >  التواصل :- </h2>
+        <p class="font-bold   space ">    أرضي :-  26353162/ 02  –   22412033/ 02    </p>
+ 
+     </div><br>
 
 
 
 
     <!--  end section -->
-
-    <h1 class="text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">السيرة الذاتية لرئيس الإتحاد الحالي:- </h1>
-    <div class="flex justify-center">
-        <div class="col">
-            <div class="row">
-            <div class="card-5">
-                <h4 class="font-bold">التأهيل العلمى :</h4>
-                <p>حاصل على جميع الفرق الحتمية لسلاح المدرعات.<br>
-                    حاصل على ماجستير علوم عسكرية.<br>
-                    حاصل على درجة الزمالة بأكاديمية ناصر العسكرية العليا.<br>
-                    حاصل على الدورة العليا لكبار القادة بأكاديمية ناصر العسكرية العليا.<br>
-                    حاصل على بكالوريوس تجارة شعبة محاسبة/ جامعة عين شمس.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card-5">
-                <h4 class="font-bold text-center">الحروب السابقة :</h4>
-                <p class="text-center">
-حرب تحرير الكويت سنة 1990 م.<br>
-شارك فى القضاء على الأرهاب بشمال سيناء.
-                </p>
-            </div>
-        </div>
-    </div>
-        <div class="row">
-            <div class="card-5 big">
-                <h4 class="font-bold">الوظائف القيادية :</h4>
-                <p>
-عضو هيئة التدريس بالكليــة الحربية.<br>
-قائد كتيبة دبابات.<br>
-قائد لواء مدرع وقائد فرقة مدرعة.<br>
-رئيس شعبه عمليات الجيش الثانى الميدانى.<br>
-قائد تأمين قطاع شمال سيناء للقضاء على الأرهاب.<br>
-عضو جمعية المحاربين القدماء وضحايا الحرب المصرية.<br>
-مساعد رئيس أركان المنطقة الشمالية العسكرية.<br>
-رئيس أركان قوات الدفاع الشعبى والعسكرى.<br>
-قائد قوات الدفاع الدفاع الشعبى والعسكرى.<br>
-المشرف على جمعية المحاربين القدماء وضحايا الحرب.<br>
-مساعد رئيس أركان حرب القوات المسلحة لرعاية المصابين وأسر الشهداء.<br>
-الأمين العام للإتحاد العربى للمحاربين القدماء وضحايا الحرب.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card-5 big">
-                <h4 class="font-bold">الأوسمة والنياشين:</h4>
-                <p>
-                    نوط تحــرير الكـويت.<br>
-                    نوط المملكة العربية السعودية نوط الواجب العسكـرى (الطبقة الأولى ).<br>
-                    نوط الواجـب العسكـرى ( الطبقة الثانية ).<br>
-                    ميدالية الخدمة الطويلة والقدوه الحسنة.<br>
-                    ميدالية 25 يناير م 2011.<br>
-                    ميدالية 30 يونيو 2013.<br>
-                    نوط القدوة الحسنة والخدمة الممتازة.<br>
-                    وسام الجمهورية من الطبقة الثانية.<br>
-                    ميدالية اليوبيل الفضى لنصر أكتوبر 1973.<br>
-                    ميدالية اليوبيل الذهبى لثورة يوليو 1952.<br>
-                    ميدالية اليوبيل الفضى لتحرير سيناء.
-                </p>
-            </div>
-        </div>
-
-    </div>
-   
-    
-    
-
-
 
 
      
@@ -294,7 +265,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
           
           <div class="max-w-96">
               <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <img src="../../imeges/logo/arab-vetrans.png" alt="">
+                  <img src="../../../imeges/logo/arab-vetrans.png" alt="">
               </svg>
               <p class="mt-6 text-sm text-gray-500">
                 كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
@@ -306,7 +277,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
               <div>
                   <h2 class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
                   <ul class="text-sm text-gray-500 space-y-2 list-none">
-                      <li><a href="رؤساء الاتحاد.html">رؤساء الإتحاد</a></li>
+                      <li><a href="../rqasaq-ethad.html">رؤساء الإتحاد</a></li>
                       <li><a href="#">نواب الرئيس</a></li>
                       <li><a href="#">الأمين العام</a></li>
                       <li><a href="#">الأمين العام المساعد</a></li>
