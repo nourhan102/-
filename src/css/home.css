@@ -16,6 +16,20 @@
     justify-content: baseline;
 }
 
+.khabar{
+ object-fit: contain;
+ width: 100%;
+ display: block;
+}
+/* ضبط للموبايل */
+@media (max-width: 768px) {
+  .khabar {
+    object-fit: contain; /* خليه contain على الشاشات الصغيرة */
+    height: auto;
+
+  }
+}
+
 /* nav */
 /* ============================= */
 /* 📱 تنسيق شاشات الموبايل */

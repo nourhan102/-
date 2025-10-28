@@ -107,6 +107,7 @@
   animation-play-state: paused;
 }
 
+
 /* box */
 .clients .clients-slide {
   flex: 0 0 auto;
@@ -519,6 +520,16 @@ p.card__description {
 }
 .big{
   height: 409px;
+}
+.motwset{
+  height: 330px;
+
+
+}
+.small{
+  height: 230px;
+
+
 }
 
 .card-5::before {

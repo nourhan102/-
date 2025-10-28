@@ -78,8 +78,8 @@
                 <a href="src/pages/shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الشكل التنظيمي للأمانة العامة</a>
                 <a href="src/pages/rqasaq-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">رؤساء الإتحاد</a>
                 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">نواب الرئيس</a>
-                <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الأمين العام</a>
-                <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">أمين الصندوق</a>
+                <a href="src/pages/ameen-aam.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">الأمين العام</a>
+                <a href="src/pages/ameen-alsondok.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">أمين الصندوق</a>
                 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a>
                 <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">خدمات و تسهيلات الدول</a>
   </div>
@@ -170,6 +170,7 @@
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
   <a href="src/pages/imege-for-ensha-ethad.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem"> إنشاء الإتحاد  </a>
+  <a href="src/pages/panorama-octobr.html" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
   <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  صور تاريخية </a>
   <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  مشاركة في المجتمع المدني  </a>
   <a href="#" class=" px-4 py-2 text-sm text-white hover:bg-lime-950  focus-visible:bg-lime-800 focus-visible:outline-hidden dark:bg-lime-800 dark:hover:text-on-surface-dark-strong dark:focus-visible:text-on-surface-dark-strong" role="menuitem">  يوم الشهيد </a>
@@ -195,30 +196,26 @@
 <div x-data="{  
   slides: [                
       {
-          imgSrc: 'imeges/panorama/panorama1.jpg',
+          imgSrc: 'imeges/oubera/obera1.jpg' ,
           title: ' إحياء الذاكرة التاريخية ',
           description: ' يوم 04/ 10/ 2025 م الموافق السبت قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بزيارة إلى بانوراما حرب أكتوبر تزامناً مع أحتفالات أكتوبر المجيدة بحضور عدد من السادة الضيوف وفد من أعضاء  الإتحاد العربى  لتنمية الصادرات الصناعية ,وفد من أعضاء المؤسسة السودانية , وفد  من أعضاء جمعية المحاربين القدماء الفلسطينية , عدد من أسر الشهداء والمصابين المقاتلين الأبطال . ',              
       },                
       {                    
-          imgSrc: 'imeges/panorama/panorama2.jpg',                    
+          imgSrc: 'imeges/oubera/obera2.jpg', 
           title: ' إحياء الذاكرة التاريخية  ',
           description: ' يوم 04/ 10/ 2025 م الموافق السبت قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بزيارة إلى بانوراما حرب أكتوبر تزامناً مع أحتفالات أكتوبر المجيدة بحضور عدد من السادة الضيوف وفد من أعضاء  الإتحاد العربى  لتنمية الصادرات الصناعية ,وفد من أعضاء المؤسسة السودانية , وفد  من أعضاء جمعية المحاربين القدماء الفلسطينية , عدد من أسر الشهداء والمصابين المقاتلين الأبطال . ',              
       },                
       {                    
-          imgSrc: 'imeges/panorama/panorama3.jpg',                    
+          imgSrc: 'imeges/oubera/obera3.jpg',
           title: ' إحياء الذاكرة التاريخية  ',
           description: ' يوم 04/ 10/ 2025 م الموافق السبت قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بزيارة إلى بانوراما حرب أكتوبر تزامناً مع أحتفالات أكتوبر المجيدة بحضور عدد من السادة الضيوف وفد من أعضاء  الإتحاد العربى  لتنمية الصادرات الصناعية ,وفد من أعضاء المؤسسة السودانية , وفد  من أعضاء جمعية المحاربين القدماء الفلسطينية , عدد من أسر الشهداء والمصابين المقاتلين الأبطال . ',              
       },                
       {                    
-          imgSrc: 'imeges/panorama/panorama4.jpg',                    
+          imgSrc: 'imeges/oubera/obera4.jpg',
           title: ' إحياء الذاكرة التاريخية  ',
           description: ' يوم 04/ 10/ 2025 م الموافق السبت قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بزيارة إلى بانوراما حرب أكتوبر تزامناً مع أحتفالات أكتوبر المجيدة بحضور عدد من السادة الضيوف وفد من أعضاء  الإتحاد العربى  لتنمية الصادرات الصناعية ,وفد من أعضاء المؤسسة السودانية , وفد  من أعضاء جمعية المحاربين القدماء الفلسطينية , عدد من أسر الشهداء والمصابين المقاتلين الأبطال . ',              
       },                
-      {                    
-          imgSrc: 'imeges/panorama/panorama5.jpg',                    
-          title: ' إحياء الذاكرة التاريخية  ',
-          description: ' يوم 04/ 10/ 2025 م الموافق السبت قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بزيارة إلى بانوراما حرب أكتوبر تزامناً مع أحتفالات أكتوبر المجيدة بحضور عدد من السادة الضيوف وفد من أعضاء  الإتحاد العربى  لتنمية الصادرات الصناعية ,وفد من أعضاء المؤسسة السودانية , وفد  من أعضاء جمعية المحاربين القدماء الفلسطينية , عدد من أسر الشهداء والمصابين المقاتلين الأبطال . ',              
-      },                
+                  
           
   ],            
   currentSlideIndex: 1,
@@ -238,7 +235,7 @@
           this.currentSlideIndex = 1                
       }            
   },        
-}" class="relative w-full overflow-hidden">
+}" class="relative w-full overflow-hidden ">
 
   <!-- previous button -->
   <button type="button" class="absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark" aria-label="previous slide" x-on:click="previous()">
@@ -265,7 +262,7 @@
                   <p class="lg:w-1/2 w-full text-pretty text-sm text-on-surface-dark" x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'"></p>
               </div>
 
-              <img class="absolute w-full h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark" x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
+              <img class="absolute w-full khabar h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark" x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
           </div>
       </template>
   </div>
@@ -555,12 +552,37 @@
     <!-- end contry -->
 
 
-    <!-- start slider 2 -->
+    <!-- start section 2 -->
+    <div class="mlaf">
+      <h2 class=" text-green-800 font-bold mx-6 text-2xl   " > تحميل ملف المسابة الثقافية   :-</h2>
+      <a href="files-pdf/Cultural-competition2025.pdf" target="_blank"
+       download
+ class=" files inline-flex items-center gap-1  text-white text-sm px-3 py-1.5 rounded-md shadow ">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+     stroke-width="1.5" stroke="currentColor" class="h-4 w-4 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 16.5V3m0 13.5l3.75-3.75M12 16.5L8.25 12.75M4.5 19.5h15" />
+</svg>
+تحميل
+</a>
+
+  </div><br>
+  <div class=" mohareb container ">
+    <div class="mohareb1">
+      <img  src="imeges/home-slider/competition1.jpg"  class="w-full " >
+    </div>
+    <div class="mohareb2">
+      <img src="imeges/home-slider/competition2.jpg"  class="w-full" >
+    </div>
+  </div>
 
 
 
 
-    <!-- end slider 2 -->
+
+
+
+    <!-- end section 2 -->
 
     <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full bg-gray-200 ">
       <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
@@ -581,9 +603,8 @@
                   <ul class="text-sm text-gray-500 space-y-2 list-none">
                       <li><a href="src/pages/rqasaq-ethad.html">رؤساء الإتحاد</a></li>
                       <li><a href="#">نواب الرئيس</a></li>
-                      <li><a href="#">الأمين العام</a></li>
-                      <li><a href="#">الأمين العام المساعد</a></li>
-                      <li><a href="#">أمين الصندوق</a></li>
+                      <li><a href="src/pages/ameen-aam.html">الأمين العام</a></li>
+                      <li><a href="src/pages/ameen-alsondok.html">أمين الصندوق</a></li>
                   </ul>
               </div>
               <div>
