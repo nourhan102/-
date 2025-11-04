@@ -74,9 +74,9 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
 <a href="../ahdaf-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
-          <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a>
+          <!-- <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a> -->
           <a href="../methk-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
-          <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a>
+          <!-- <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
           <a href="../rqasaq-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
           <a href="../nouab-alraqes.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
           <a href="../ameen-aam.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
@@ -89,30 +89,8 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 
 </li>
-<li>
-<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
 
-
-<a href="#"
-type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
->الجمعيه العمومية
-<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
-<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-</svg> 
-</a>
-<div  
-x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
-
-<a href="../tkwen-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
-          <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة نشأة الإتحاد </a>
-          <a href="../dwrat-egtmaat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
-          
-</div>
-</div>
-
-
-</li>
-<li>
+<!-- <li>
 <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
 
 
@@ -132,7 +110,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 </div>
 
 
-</li>
+</li> -->
 <li>
 <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
 
@@ -148,7 +126,6 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
 <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
-<a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أجتماعات </a>
 <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
           
 </div>
@@ -156,6 +133,35 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 
 </li>
+
+
+<li>
+  <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+  
+  
+  <a href="#"
+  type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+  >الجمعيه العمومية
+  <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+  </svg> 
+  </a>
+  <div  
+  x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+  
+  <a href="../tkwen-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
+            <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة نشأة الإتحاد </a>
+            <a href="../dwrat-egtmaat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
+           <!-- <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+  
+  </div>
+  </div>
+  
+  
+  </li>
+
+
+
 <li>
 <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
 
@@ -255,10 +261,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
                   <h2 class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
                   <div class="text-sm text-gray-500 space-y-2 list-none ">
                       <li><a href="#">زيارات</a></li>
-                      <li><a href="#">إجتماعات</a></li>
-                      <li><a href="#">شهرية</a></li>
                       <li><a href="#">نصف سنوية</a></li>
-                      <li><a href="#">سنوية</a></li>
                   </div>
               </div>
           </div>
