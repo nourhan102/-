@@ -1,0 +1,58 @@
+  /*    start   contact us     */
+
+
+  .section1 {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap; /* يخليهم تحت بعض في الشاشات الصغيرة */
+  }
+  
+  .contact-info {
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .contact-info-item {
+    background: #415b3c;
+    padding: 30px 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .contact-info-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-info-icon {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info-icon i {
+    font-size: 48px;
+    color: #fc3c27;
+  }
+  
+  .contact-info-text h2 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info-text span {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 40px;
+  }
+  
+
+      /*    end   contact us     */
+
+  
