@@ -33,8 +33,8 @@
   --color-on-success: var(--color-white);
   --color-warning: var(--color-amber-500);
   --color-on-warning: var(--color-white);
-  --color-danger: var(--color-red-500);
   --color-on-danger: var(--color-white);
+
 
   /* border radius */
   --radius-radius: var(--radius-sm);
@@ -70,6 +70,9 @@
   object-fit: cover;
 }
 
+.Bahreen{
+  color:  rgb(172, 1, 1);
+}
 
 
 .clients {
@@ -505,7 +508,7 @@ p.card__description {
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
 
 
-.card-5 {
+.card-5  , .card-6{
   border-radius: 10px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: 400px;
@@ -519,7 +522,10 @@ p.card__description {
   margin: 20px;
 }
 .big{
-  height: 409px;
+  height: 420px;
+}
+.extra-big{
+  height: fit-content;
 }
 .motwset{
   height: 330px;
@@ -532,14 +538,15 @@ p.card__description {
 
 }
 
-.card-5::before {
+
+.card-6::before {
   content: "";
   position: absolute;
   z-index: -1;
   top: -15px;
   right: -15px;
-  background: var(--brand-color);
-  height:220px;
+  background: rgb(172, 1, 1);
+  height:10000px;
   width: 25px;
   border-radius: 32px;
   transform: scale(1);
@@ -547,20 +554,48 @@ p.card__description {
   transition: transform 0.25s ease-out;
 }
 
-.card-5:hover::before{
+
+
+
+
+.card-5::before   {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: var(--brand-color);
+  height:10000px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+
+.card-5:hover::before  , .card-6:hover::before{
     transition-delay:0.2s ;
 
   transform: scale(40);
 }
 
-.card-5:hover{
+.card-5:hover , .card-6:hover{
     color: #ffffff;
 
 }
+ .card-6:hover span , .card-5:hover span{
+  color: #000000;
 
-.card-5 p{
+}
+
+
+
+.card-5 p , 
+ .card-6 p{
     padding: 10px 0;
 }
+
 
 /* end الشكل التنظيمي للامانه العامة */
 

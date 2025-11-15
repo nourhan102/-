@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>     الجمهورية الجزائرية الديمقراطية الشعبية     </title>
+    <link rel="stylesheet" href="../../css/output.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/mgalat-albtaqa.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="../../../imeges/conrty/gazaer.jpg" rel="icon"   />
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@615&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+   
+  </head>
+  <body dir="rtl">
+   
+
+
+
+   <!-- start navbar -->
+
+<nav
+class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]"
+>
+<div
+  class="container flex flex-wrap items-center justify-around mx-auto text-slate-800"
+>
+<a href="../../../index.html" class="mr-4 block cursor-pointer py-1.5 w-1/5">
+  <img src="../../../imeges/logo/arab-vetrans.png" alt="" />
+</a>
+
+<!-- زر القائمة للموبايل -->
+<button
+class="menu-btn block lg:hidden text-lime-800 p-2 rounded hover:bg-lime-100"
+onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')"
+>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+stroke-width="2"
+stroke="currentColor"
+class="w-6 h-6"
+>
+<path
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  d="M4 6h16M4 12h16M4 18h16"
+/>
+</svg>
+</button>
+  
+
+    <!-- قائمة الموبايل -->
+<ul class="mobile-menu  flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+
+>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>عن الاتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="../ahdaf-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
+          <!-- <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a> -->
+          <a href="../methk-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
+          <!-- <a href="../shakl-eltanzemy.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+          <a href="../rqasaq-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
+          <a href="../nouab-alraqes.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
+          <a href="../ameen-aam.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
+          <a href="../ameen-aam-mouseed.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام المساعد </a>
+          <a href="../ameen-alsondok.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أمين الصندوق</a>
+          <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a>
+          <a href="../tshelat-dewal.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">خدمات و تسهيلات الدول</a>
+</div>
+</div>
+
+
+</li>
+
+<!-- <li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>المنظمات الدولية
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
+          
+</div>
+</div>
+
+
+</li> -->
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>أنشطة و اصدارات الإتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="../zyarat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
+<a href="../nesf-sanwya.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+          
+</div>
+</div>
+
+
+</li>
+
+
+<li>
+  <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+  
+  
+  <a href="#"
+  type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+  >الجمعيه العمومية
+  <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+  </svg> 
+  </a>
+  <div  
+  x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+  
+  <a href="../tkwen-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
+            <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة نشأة الإتحاد </a>
+            <a href="../dwrat-egtmaat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
+             <!-- <a href="../shakl-eltanzemy.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+  
+  </div>
+  </div>
+  
+  
+  </li>
+
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>صور 
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="../imege-for-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الإتحاد  </a>
+<a href="../panorama-octobr.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
+<a href="../imege-for-ensha-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> إنشاء الإتحاد  </a>
+<a href="../imege-for-history.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور تاريخية </a>
+<a href="../imege-for-mgtama-madany.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مشاركة في المجتمع المدني  </a>
+<a href="../imege-for-yom-shahed.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم الشهيد </a>
+          
+</div>
+</div>
+
+
+</li>
+<li><a href="../contact-us.html">تواصل معنا</a></li>
+
+</ul>  
+
+
+
+
+</nav>
+
+<!-- end navbar -->
+
+    <!--  start section -->
+
+
+    <div class=" mohareb container ">
+        <div class="mohareb1">
+          <img  src="../../../imeges/conrty/gazaer.jpg"  class="w-full " >
+        </div>
+      </div>
+      <h1 class=" text-green-800 mx-6 text-center w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">      الجمهورية الجزائرية الديمقراطية الشعبية      </h1><br>
+      <p class="font-bold mx-6">     المنظمة الوطنية للمجاهدين   .</p> <br>
+
+      <div class="flex items-center" >
+        <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >  الجهة التابعة لها :- </h2>
+        <p class="font-bold space text-xl">        حزب جبهة التحرير الوطني " مجلس الوزراء "    .   </p>
+ 
+     </div><br>
+
+      <div class="flex items-center" >
+        <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  >    تاريخ الإنضمـام   :- </h2>
+        <p class="font-bold space text-xl">      15 /7 /1989 م   </p>
+ 
+     </div><br>
+
+
+
+     <h1 class="text-green-800 mx-6 w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">   الرئيس الحالي  :- </h1><br>
+     <article class="card">
+        <img
+          class="card__background"
+          src="../../../imeges/conrty/people/hamza-afify-gazayer.png"
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width="1920"
+          height="2193"
+        />
+        <div class="card__content | flow">
+          <div class="card__content | flow">
+            <h2 class="card__title">         السيد العقيد/ حمزة عوفى   .   </h2><br>
+            <p class="card__description">
+                الأمين العام للمنظمة الوطنية للمجاهدين / الجزائر   .  <br>
+            </p>
+          </div>
+        </div>
+      </article><br><br>
+
+      <h1 class="text-green-800 mx-6 w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">    الأهداف   :- </h1><br>
+
+
+      <div class="flex justify-center">
+        <div class="col">
+            <div class="row">
+            <div class="card-5 extra-big">
+                <h4 class="font-bold">     الفصل الأول : التسمية الشخصية :-    </h4>
+                <h4 class="font-bold">      المادة ( 1 )  :    </h4>
+                <p>
+                    
+                    المجاهدون الذين شاركوا فى الكفاح من أجل التحرير الوطنى والذين هم يواصلون النضال من أجل إنتصار الاختيار الاشتراكى للبلاد ويعملون وفقاً للشروط المنصوص عليها فى هذا القانون الأساسى يشكلون تحت إشراف حزب جبهة التحرر الوطنى تنظيماً طلائعياً وحيداً " يدعى " المنظمة الوطنيه للمجاهدين  .
+                    
+                </p>
+                <h4 class="font-bold">      المادة ( 2 )  :    </h4>
+                <p>
+                    
+                    المنظمة الوطنية للمجاهدين شخص إعتبارى يتمتع بالشخصية المعنوية والاستقلال المالى  .
+                    
+                </p>
+                <h4 class="font-bold">      المادة ( 3 )  :    </h4>
+                <p>
+                    
+                    المقر المركزى للمنظمة الوطنيه للمجاهدين هو بالجزائر العاصمة ( فيلا بو معروف ) ويشكل مجموع التراب الوطنى مجالاً لنشاطه .
+                    
+                </p>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="card-5 extra-big ">
+                <h4 class="font-bold">   الفصل الثانى : الاهداف والمهام    :-   </h4>
+                <h4 class="font-bold">    المادة ( 4 )  :   </h4>
+                <p>
+                    المنظمة الوطنية للمجاهدين منظمة طلائعية سياسية وثقافية  .
+                </p>
+                <h4 class="font-bold">    المادة ( 5 )  :   </h4>
+                <p>
+                    المنظمة الوطنية للمجاهدين بوصفها منظمة طلائعية سياسية تهدف على وجه الخصوص إلى: <br>
+                    1 - أن تضم فى صفوفها كل المجاهدين الذين شاركوا فعلياً فى الكفاح من أجل التحرير الوطنى , ويواصلون النضال من أجل إنتصار الاختيار الاشتراكى للبلاد . <br>
+                    2 - تدعيم هياكل الحزب وأجهزة الدولة عن طريق تزويدها بأكثر العناصر وعياً والتزاماً . <br>
+                    3 - العمل ضمن الحزب لتعزيز التحالف الذى يكون العمال والفلاحون والجنود والشباب من أجل إنتصار الثورة الاشتراكية . <br>
+                    4 - ضمان تمثيل المجاهدين لدى هيئات الدولة .  <br>
+                    5 - المساهمة الفعلية بجانب الهيئات السياسية ومؤسسات الدولة فى رعاية الحقوق الخاصة بالمجاهدين وذوى الحقوق وصيانة كرامتهم حسب ما ورد فى الميثاق الوطنى والدستور .  <br>
+                    6 - التعبير بمختلف الوسائل عن تضامن المجاهدين مع حركات التحرير الوطنى عن مساندتهم لكل القضايا العادلة فى العالم والعمل مع المنظمات الدولية المماثلة لها على تنمية روابط الصداقة والتعاون بين الشعب الجزائرى وشعوبها فى إطار النضال المشترك ضد الامبريالية وحلفائها الصهيونية العالمية والرجعية والميز العنصرى وضد الاستعمار القديم والجديد .  
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="card-5 extra-big ">
+                <h4 class="font-bold">    المادة ( 6 )  :   </h4>
+                <p>
+                    1 -  العمل بالوسائل المناسبة فى التكوين الثقافى والمهنى للمجاهدين  . <br>
+                    2 -  السهر على حماية ونشر التقاليد الثورية والقيم الوطنيه بين الأجيال الصاعدة وعلى صيانة وتخليد المآثر الحيه للنضال البطولى للثورة التحريرية . <br>
+                    3 -  وضع التدابير الكفيلة لحماية التراث الثقافى والتاريخى لكفاح التحرير الوطنى والعمل على تسجيله وكتابته والسهر على إحترامه . <br>
+                    4 -  وضع الوسائل والبرامج التثقيفية التى من شأنها بث وتخليد روح نوفمبر بين الأجيال الصاعدة   .  <br>
+                    5 -  أحياء مآثر ثورة التحرير الوطنى والاحتفال بأيامها المشهودة الجديرة بالتخليد  .  
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+     <div class="flex justify-center">
+        <div class="col">
+            <div class="row">
+            <div class="card-5 small">
+                <h4 class="font-bold">   المراسلات   :</h4>
+                <p class="font-bold ">
+                    <span class="text-green-800">العنوان :-</span>     الجزائر العاصمة 23 شارع احمد غر مول   .   <br>
+                    <span class="text-green-800">تليفون :-</span>   <a href="tel:0021321668144"  >   0021321668144      </a>   -  <a href="tel:0021321668145"  >   0021321668145     </a>  -  <a href="tel:0021321660191"  >   0021321660191      </a> .   <br>
+                    <span class="text-green-800"> فاكس :-</span>    0021321656742   -  0021321650027      <br>
+                    <a></a>
+                    <span class="text-green-800">بريد إلكتروني :-</span>  <a href="https://mail.google.com/mail/?view=cm&to=revue1novembre@yahoo.fr" target="_blank" >  revue1novembre@yahoo.fr  </a>  
+                        </p> <br>
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--  end section -->
+
+
+     
+
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full bg-gray-200 ">
+      <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
+          
+          <div class="max-w-96">
+              <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <img src="../../../imeges/logo/arab-vetrans.png" alt="">
+              </svg>
+              <p class="mt-6 text-sm text-gray-500">
+                كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
+              </p>
+              
+          </div>
+  
+          <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
+                  <ul class="text-sm text-gray-500 space-y-2 list-none">
+                      <li><a href="../rqasaq-ethad.html">رؤساء الإتحاد</a></li>
+                      <li><a href="../nouab-alraqes.html">نواب الرئيس</a></li>
+                      <li><a href="../ameen-aam.html">الأمين العام</a></li>
+                      <li><a href="../ameen-aam-mouseed.html">الأمين العام المساعد </a></li>
+                      <li><a href="../ameen-alsondok.html">أمين الصندوق</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
+                  <div class="text-sm text-gray-500 space-y-2 list-none ">
+                      <li><a href="../zyarat.html">زيارات</a></li>
+                      <li><a href="../nesf-sanwya.html">نصف سنوية</a></li>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      <p class="py-4 text-center text-xs md:text-sm text-gray-500">
+        جميع الحقوق محفوظة ©  الاتحاد العربي للمحاربين القدماء  
+      </p>
+  </footer>
+
+
+  <script>
+    const menuBtn = document.querySelector("nav button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  </script>
+
+    
+  </body>
+</html>
