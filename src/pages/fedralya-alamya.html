@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>الاتحاد العربي للمحاربين القدماء</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../../imeges/logo/arab-vetrans-white.png" rel="icon" />
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@615&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+   
+  </head>
+  <body dir="rtl">
+   
+
+
+
+    <!-- start navbar -->
+
+<nav
+class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]"
+>
+<div
+  class="container flex flex-wrap items-center justify-around mx-auto text-slate-800"
+>
+<a href="../../index.html" class="mr-4 block cursor-pointer py-1.5 w-1/5">
+  <img src="../../imeges/logo/arab-vetrans.png" alt="" />
+</a>
+
+<!-- زر القائمة للموبايل -->
+<button
+class="menu-btn block lg:hidden text-lime-800 p-2 rounded hover:bg-lime-100"
+onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')"
+>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+stroke-width="2"
+stroke="currentColor"
+class="w-6 h-6"
+>
+<path
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  d="M4 6h16M4 12h16M4 18h16"
+/>
+</svg>
+</button>
+  
+
+    <!-- قائمة الموبايل -->
+<ul class="mobile-menu  flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+
+>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>عن الاتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="ahdaf-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
+          <!-- <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a> -->
+          <a href="methk-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
+          <!-- <a href="shakl-eltanzemy.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+          <a href="rqasaq-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
+          <a href="nouab-alraqes.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
+          <a href="ameen-aam.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
+          <a href="ameen-aam-mouseed.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام المساعد </a>
+          <a href="ameen-alsondok.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أمين الصندوق</a>
+          <a href="#" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a>
+          <a href="tshelat-dewal.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">خدمات و تسهيلات الدول</a>
+</div>
+</div>
+
+
+</li>
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>المنظمات الدولية
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="fedralya-alamya.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
+          
+</div>
+</div>
+
+
+</li>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>أنشطة و اصدارات الإتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="zyarat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
+<a href="nesf-sanwya.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+          
+</div>
+</div>
+
+
+</li>
+
+
+<li>
+  <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+  
+  
+  <a href="#"
+  type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+  >الجمعيه العمومية
+  <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+  </svg> 
+  </a>
+  <div  
+  x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+  
+  <a href="tkwen-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
+            <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة نشأة الإتحاد </a>
+            <a href="dwrat-egtmaat.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
+            <!-- <a href="shakl-eltanzemy.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+  
+  </div>
+  </div>
+  
+  
+  </li>
+
+
+
+
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>صور 
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="imege-for-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الإتحاد  </a>
+<a href="panorama-octobr.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
+<a href="imege-for-ensha-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> إنشاء الإتحاد  </a>
+<a href="imege-for-history.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور تاريخية </a>
+<a href="imege-for-mgtama-madany.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مشاركة في المجتمع المدني  </a>
+<a href="imege-for-yom-shahed.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم الشهيد </a>
+          
+</div>
+</div>
+
+
+</li>
+<li><a href="contact-us.html">تواصل معنا</a></li>
+
+</ul>  
+
+
+
+
+</nav>
+
+<!-- end navbar -->
+    <!--  start section -->
+
+   <section id="clients" class="clients section">
+    <h1 class=" mx-6  w-full  text-balance text-2xl  font-bold">       تقرير المؤتمر الدولي ،  صحة مقاتلي المقاومة السابقين والمحاربين القدامى الرفاهية وواجب الاعتراف  .      </h1>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المنعقد فى الفترة من 23 – 26  سبتمبر 2025 فى كابوت – الرباط    .      </h1>
+    <h1 class=" mx-6  w-full  text-balance text-2xl  font-bold">       التقرير الموجز للندوة الدولية   .      </h1>
+    <h1 class=" mx-6  w-full  text-balance text-2xl  font-bold">       " مقاتلو المقاومة السابقون والمحاربون القدامى، الصحة والرفاهية وواجب الامتنان"   .      </h1>
+    <h1 class=" mx-6  w-full  text-balance text-2xl  font-bold">       الرباط، 25-26 سبتمبر 2025  .      </h1>
+    <h1 class="text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">      تحت الرعاية السامية لصاحب الجلالة الملك محمد السادس أعزه الله    .      </h1>
+    <p class="font-bold mx-6">
+        يشكل هذا التقرير التوليف الشامل لعمل المجمع الدولي "صحة ورفاهية وواجب الاعتراف لقدماء مقاتلي المقاومة والمحاربين القدامى"، الذي نظمته اللجنة العليا لقدماء مقاتلي المقاومة والمحاربين القدامى في جيش التحرير المغربي، بالشراكة مع التحالف الأوروبي المغربي لطب الشيخوخة وعلم الشيخوخة (A2G) والاتحاد العالمي لقدامى المحاربين (WFV) . <br>
+        جمع هذا اللقاء العلمي الدولي الهام، الذي عقد في الإطار الرمزي للفضاء الوطني للذاكرة التاريخية للمقاومة والتحرير، كوكبة من الخبراء البارزين وصناع القرار المؤسسي والعاملين في مجال الصحة وممثلي المجتمع المدني، من المغرب وغانا ومنغوليا والأردن، جميعهم مدفوعون بالرغبة المشتركة في تكريم الذاكرة وخدمة رفاهية أولئك الذين كرسوا حياتهم للدفاع عن قيم السلام والحرية والكرامة.التوافق الاستراتيجي والإطار المالي للندوةيتوافق هذا الندوة الدولية تمامًا مع الخطة الاستراتيجية للاتحاد العالمي للمحاربين القدامى (WVF)، الذي يدعو إلى تعزيز السلام والأمن الدوليين ورفاهية المحاربين القدامى في جميع أنحاء العالم. وتماشيًا مع رؤية الاتحاد ورسالته، كما هو محدد في خطته الاستراتيجية لعام ٢٠٢٤، تُولي هذه المبادرة أولويةً لتنظيم فعاليات عامة وأكاديمية تهدف إلى تسليط الضوء على إنجازات المحاربين القدامى، وتحسين صحتهم ورفاهيتهم، وتعزيز التعاون الدولي بين المؤسسات الأعضاء . <br>
+        في هذا السياق، تُوجّه الخطة الاستراتيجية لـ FMAC وتُلهم تصميم هذه الندوة، المفتوحة لجميع الجمعيات والمؤسسات الأعضاء حول العالم. وتهدف إلى أن تكون منصةً للتفكير الجماعي والتشاور العالمي حول سبل تحسين صحة مقاتلي المقاومة السابقين والمحاربين القدامى، والاعتراف بهم، وجودة حياتهم. وبالتالي، يُمثّل هذا الحدث تعبيرًا ملموسًا عن الأولويات الاستراتيجية لـ FMAC، لا سيما تلك المتعلقة بتبادل الخبرات، والتواصل بين المنظمات الأعضاء، وتعزيز أفضل ممارساتها في خدمة رفاهية المحاربين القدامى والمحاربين القدامى . <br>
+        من الناحية المالية، من المهم توضيح أنه لم يتم طلب أي تمويل من المنظمات الأعضاء في الاتحاد العالمي لقدامى المحاربين (FMAC) لهذا المؤتمر. وقد تمت تغطية جميع التكاليف اللوجستية والفنية والتنظيمية بالكامل بفضل الدعم السخي من العديد من الشركاء والمتبرعين. وقد ساهمت مساهماتهم بشكل كبير في ضمان الجودة العلمية والدقة المنهجية وحسن سير العمل. وفي هذا الصدد، تتقدم الهيئة العليا لقدامى المحاربين وأعضاء جيش التحرير السابقين، بالتعاون مع الاتحاد العالمي لقدامى المحاربين (FMAC)، <br><br>
+         (  بجزيل الشكر والامتنان للأفراد والمؤسسات التالية أسماؤهم  ) .<br>  
+        
+    </p>
+    <p class="font-bold mx-6">
+      <span class="text-green-800">1-</span>  Mme Amal EL FALLAH SEGHROUCHNI   /  الوظيفة :- (  الوزير المنتدب لدى رئيس الحكومة المكلف بالتحول الرقمي والإصلاح الإداري )  / مبلغ المساهمة :-   10.000 دولار أمريكي .   <br>
+      <span class="text-green-800">2-</span>  M. Rachid EL ABDI   /  الوظيفة :- (  رئيس المجلس الإقليمي الرباط سلا القنيطرة )  / مبلغ المساهمة :-  500 دولار أمريكي .   <br>
+      <span class="text-green-800">3-</span>  السيد يحيى الشرايبي   /  الوظيفة :- (   المدير العام لشركة التأمين سانلام المغرب   )  / مبلغ المساهمة :- 10.000 دولار أمريكي .   <br>
+      <span class="text-green-800">4-</span>  السيد محمد بن عودة     /  الوظيفة :- (   الرئيس التنفيذي لشركة ABA Technology المغرب   )  / مبلغ المساهمة :- 5.000 دولار أمريكي .   <br>
+      <span class="text-green-800">5-</span>    السيد مهدي التازي   /  الوظيفة :- (   رئيس مجلس الإدارة والرئيس التنفيذي لشركة مارش المغرب   )  / مبلغ المساهمة :- 4000 دولار أمريكي .   <br>
+      <span class="text-green-800">6-</span>      الأستاذ محمد البوحمادي   /  الوظيفة :- (   رئيس الاتحاد المغربي للصناعة الدوائية والابتكار (FMIIP)   )  / مبلغ المساهمة :- 3.000  دولار أمريكي .   <br>
+      <span class="text-green-800">  المبلغ الإجمالي  </span>       (   34500 دولار أمريكي   )   .   <br><br>
+       </p>
+       <p class="font-bold mx-6">
+        
+        لقد ضمن التزامهم، الذي جمع بين الكرم والشعور بالواجب والتضامن، نجاح هذه الندوة الدولية الهامة. وتتقدم المفوضية العليا وهيئة مكافحة الفساد المالي والإداري بجزيل الشكر على دعمهم المعنوي والمادي، الذي يُجسّد بوضوح روح الشراكة والمسؤولية الاجتماعية في خدمة ذكرى مقاتلي المقاومة السابقين والمحاربين القدامى وتقديرهم ورفاهيتهم .
+        
+    </p><br>
+    <h1 class=" Bahreen mx-6  w-full  text-balance text-2xl  font-bold">       أولاً  :-  السياق العام والتبرير الاستراتيجي   .      </h1><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        1 - الإطار السياقي والتحديات الديموغرافية  .      </h1>
+    <p class="font-bold mx-6">
+      إن تسارع شيخوخة سكان المقاومة السابقة والمحاربين القدامى ظاهرة ديموغرافية خطيرة لا شك فيها، تُشكل تحديًا لضميرنا الجماعي ومسؤولياتنا المؤسسية. هذا الواقع يُضفي على نهجنا طابعًا مُلحًا، ويجعل من هذا المؤتمر الدولي لحظة تاريخية للتأمل في واجبنا في الاعتراف والتضامن الفعال.
+يُجسّد مقاتلو المقاومة السابقون والمحاربون القدامى ذاكرةً حيةً للتاريخ الوطني والعالمي. وقد خلّف التزامهم القتالي، الذي غالبًا ما اتسم بظروفٍ قاسية من النزاع المسلح، ندوبًا جسدية ونفسية لا تزال تدوم طويلًا بعد سنوات خدمتهم الفعلية. واليوم، وهم يقتربون حتمًا من نهاية حياتهم، تبرز تحديات جديدة تتعلق بصحتهم العامة، واندماجهم الاجتماعي، والتقدير المؤسسي لخدمتهم البطولية .    
+  </p><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        2 - الرؤية الملكية والتوجه الاستراتيجي .      </h1>
+    <p class="font-bold mx-6">
+      إن الرؤية المستنيرة والملهمة لجلالة الملك محمد السادس، نصره الله، والتي عبّر عنها بوضوح لافت في رسالته إلى المشاركين في يوم الصحة العالمي لعام ٢٠١٩، تُشكّل البوصلة الفكرية والأخلاقية لنهجنا الجماعي. فعندما يؤكد جلالته
+"إن الرعاية الصحية الأولية تكتسي أهمية قصوى لأنها تمكن من إرساء التغطية الصحية الشاملة، من خلال اعتماد آليات التكافل والتضامن"، يرسم جلالته، برؤية ملكية مستقبلية، مسار العمل العام الحديث، ويرسم معالم مجتمع موحد ومتضامن حقيقي  .    
+  </p><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        3 - الأهداف الاستراتيجية للندوة .      </h1>
+    <p class="font-bold mx-6">
+      لقد حدد المؤتمر الدولي ستة أهداف استراتيجية رئيسية .
+  </p>
+    <p class="font-bold mx-6">
+      <span class="text-green-800">1-</span>  زيادة الوعي بين الجهات الفاعلة المؤسسية والجمعية والطبية بشأن التحديات الصحية العقلية والجسدية المحددة التي يواجهها مقاتلو المقاومة السابقون والمحاربون القدامى  .   <br>
+      <span class="text-green-800">2-</span>  تسليط الضوء على الأمراض المرتبطة بالخدمة العسكرية وظروف الشيخوخة لدى هذه الفئات السكانية، التي غالبا ما تكون هشة وضعيفة  .   <br>
+      <span class="text-green-800">3-</span>  تعزيز التبادلات الدولية بشأن أنظمة الرعاية والابتكارات العلاجية والسياسات العامة التي تخدم المحاربين القدامى  .   <br>
+      <span class="text-green-800">4-</span>   تعزيز المبادرات المحلية والدولية المتخذة ضد العزلة الاجتماعية والتي تهدف إلى الاعتراف الأخلاقي والطبي بالآثار المترتبة على الحرب  .   <br>
+      <span class="text-green-800">5-</span>   تعزيز الحلول المبتكرة، بما في ذلك الحلول الرقمية، للوصول إلى الرعاية والمراقبة الطبية والنفسية    .   <br>
+      <span class="text-green-800">6-</span>   تعزيز الشراكات بين المؤسسات والباحثين والعاملين في مجال الصحة وجمعيات المقاتلين السابقين والمحاربين القدامى     .   <br>
+       </p><br>
+       <h1 class=" Bahreen mx-6  w-full  text-balance text-2xl  font-bold">       ثانياً  :-  الهيكل التنظيمي والمنهجية  .      </h1><br>
+       <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        1 - الهيكل المؤسسي .      </h1>
+    <p class="font-bold mx-6">
+      استفادت الندوة من بنية مؤسسية قوية، جمعت بين أبرز اللاعبين الوطنيين والدوليين .
+  </p>
+  <h1 class="  mx-6  w-full  text-balance text-2xl  font-bold">        على المستوى الوطني :-      </h1>
+  <p class="font-bold mx-6">
+    الهيئة العليا لقدماء المقاومين وأعضاء جيش التحرير القدماء  - وزارة التحول الرقمي والإصلاح الإداري - مؤسسة محمد السادس للعلوم والصحة  .<br>
+     (
+      جهة الرباط سلا القنيطرة - الرابطة الوطنية للمحاربين القدامى - جمعية العيادات الخاصة بالمغرب - الجمعية المغربية للعلوم الطبية - الاتحاد المغربي للصناعة الدوائية والابتكار (FMIIP) - شركة التأمين SANLAM MAROC - شركة ABA Technology -شركة مارش المغرب
+     )   .<br>
+</p>
+  <h1 class="  mx-6  w-full  text-balance text-2xl  font-bold">        وعلى المستوى الدولي  :-      </h1>
+  <p class="font-bold mx-6">
+     (
+      الاتحاد العالمي للمحاربين القدامى (WFV) والمؤسسات والجمعيات الأعضاء فيه - التحالف الأوروبي المغربي لطب الشيخوخة وطب الشيخوخة (A2G)  - وفود من المغرب وغانا ومنغوليا والأردن
+     )   <br>
+</p><br>
+<h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        2 -  منهجية العمل  .      </h1>
+<p class="font-bold mx-6">
+  تم تنظيم العمل حول منهجية صارمة تجمع بين جلسات عامة بقيادة خبراء معروفين دوليا؛ خمس حلقات نقاش مواضيعية متعددة التخصصات؛ شهادات مباشرة من مقاتلي المقاومة السابقين؛ جلسات تبادل ومناقشة تشاركية.<br>
+وقد سمح هذا النهج المنهجي متعدد التخصصات بدراسة المشكلة من جميع جوانبها الطبية والنفسية والاجتماعية والثقافية والتكنولوجية والمؤسسية. 
+</p><br>
+<h1 class=" Bahreen mx-6  w-full  text-balance text-2xl  font-bold">       ثالثاُ  :-    ملخص شامل للحلقات النقاشية المواضيعية  .      </h1>
+<p class="font-bold mx-6">
+  نُظِّمت هذه الندوة الدولية حول خمس حلقات نقاش مواضيعية متكاملة، صُمِّمت لتقديم رؤية شاملة ومتكاملة للرعاية المُقدَّمة لمقاتلي المقاومة السابقين والمحاربين القدامى. يعكس هذا الإطار العلمي تعقيد القضايا الصحية والاجتماعية والتكنولوجية والذاكرة المتعلقة بهذه الشريحة من السكان.
+وقد جمعت كل حلقة نقاشية خبراء معروفين على المستوى الوطني والدولي من مختلف التخصصات بما في ذلك الطب وطب الشيخوخة والطب النفسي والصحة العامة والعلوم الاجتماعية والتاريخ والابتكار الرقمي وحوكمة الصحة، مما أتاح حوارًا متعدد التخصصات غنيًا وتوصيات عملية تستند إلى أفضل الممارسات الدولية .
+</p>
+<h1 class="  mx-6  w-full  text-balance text-2xl  font-bold">       تم تنظيم العمل حول خمسة محاور استراتيجية   .      </h1>
+<h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        1 -   (  اللجنة )     الصحة والبحث العلمي والتدريب ورأس المال البشري .      </h1>
+<p class="font-bold mx-6">
+  شكلت هذه الندوة الأولى الأساس العلمي والطبي للندوة، التي كُرِّست لتحديد دقيق لأمراض محددة تصيب مقاتلي المقاومة السابقين والمحاربين القدامى، بالإضافة إلى تطوير بروتوكولات علاجية مبتكرة تتكيف مع احتياجاتهم المعقدة. كما ركّز العمل على تدريب متخصصين في الرعاية الصحية على درجة عالية من التخصص، قادرين على رعاية هذه الفئة في سياقها السريري والنفسي والتاريخي الفريد . <br>
+  وضعت اللجنة تشخيصًا شاملًا للمظاهر المرضية الخاصة بهذه الفئة العمرية المتقدمة، كاشفةً عن صورة سريرية بالغة التعقيد تتحدى الأساليب الطبية التقليدية. وإلى جانب تحديد الأمراض، قدّم الخبراء ابتكارات علاجية واعدة تجمع بين الأبعاد الجسدية والنفسية والاجتماعية. ونوقشت القضية المحورية المتمثلة في نقص رأس المال البشري المؤهل بشكل مستفيض، مما أدى إلى توصيات ملموسة لإنشاء دورات جامعية متخصصة وبرامج تعليم مستمر لجميع العاملين في مجال الرعاية الصحية الذين يعملون مع قدامى المحاربين والمقاتلين . <br>
+  وسلطت المداخلات الضوء على الحاجة الملحة لإنشاء نظام حقيقي لطب المحاربين القدامى في المغرب، يجمع بين التميز السريري والبحث العلمي المتطور ونقل المعرفة الطبية المتخصصة إلى الأجيال القادمة من مقدمي الرعاية . <br>
+</p><br>
+<h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        2 -   (  اللوحة )    النظام الصحي والحوكمة .      </h1>
+<p class="font-bold mx-6">
+  شكلت هذه الجلسة الثانية العمود الفقري المؤسسي والتنظيمي للندوة، حيث خُصصت لإجراء تحليل مقارن متعمق لنماذج رعاية المحاربين القدامى الدولية، ولتحديد آليات فعّالة للحوكمة المنسقة والتمويل المستدام. وقد كشف العمل عن تنوع ملحوظ في الهياكل التنظيمية، بدءًا من النماذج المركزية المتكاملة ووصولًا إلى النماذج المجتمعية اللامركزية، حيث يوفر كل منها مزايا محددة تبعًا للسياقات الوطنية، والموارد المتاحة، والتركيبة السكانية.
+وقد أتاحت المناقشات فرصة لدراسة تجارب الدول الأعضاء في الاتحاد العالمي للمحاربين القدامى، حيث قدمت نظرة عامة غنية على الدروس المستفادة والتجارب وأفضل الممارسات القابلة للنقل . <br>
+نوقشت مسألة التمويل المستدام لأنظمة الرعاية الصحية على نطاق واسع، مما أدى إلى طرح مقترحات عملية، منها إنشاء بنود ميزانية مخصصة، ودراسة آليات التأمين الصحي التكميلي، وإنشاء صناديق خاصة تُموّل من مساهمات عامة وخاصة. كما أكدت اللجنة على الأهمية الحاسمة لنظام 
+معلومات صحية متكامل يُمكّن من رصد وبائي دقيق وتخطيط رعاية صحية قائم على الأدلة . <br>
+</p>
+<h1 class="  mx-6  w-full  text-balance text-2xl  font-bold">        التجربة المنغولية - نموذج ICOPE :-      </h1>
+<p class="font-bold mx-6">
+  ركزت مداخلة الوفد المنغولي، التي قدمها السيد بوجي نيابةً عن البروفيسور دافادورج ريندو، على تقييم ICOPE الذي أُجري على 392 عسكريًا سابقًا. وكشفت النتائج عن ارتفاع معدل انتشار اضطرابات الحركة (86.7%)، والإعاقات البصرية (86%)، والسمعية (78.3%)، مع ظهور تدهور إدراكي لدى 25.3%، وعلامات اكتئاب لدى 20% . <br>
+  وسلط السيد بوجي الضوء على أهمية نموذج الرعاية المتكاملة للرعاية في البيئات ذات الموارد المحدودة، مؤكداً على أهمية النهج القائم على المجتمع وتعبئة العاملين الداعمين من الأقران لتعزيز استمرارية الرعاية .
+</p>
+<h1 class="  mx-6  w-full  text-balance text-2xl  font-bold">       تحليل النظم المقارنة :-      </h1>
+<p class="font-bold mx-6">
+  لقد تم تحديد ثلاثة نماذج تنظيمية :
+</p>
+
+    <p class="font-bold mx-6">
+<span class="text-green-800">1-</span>   نموذج مركزي متكامل، أنظمة مخصصة حصريًا للمحاربين القدامى .   <br>
+<span class="text-green-800">2-</span>   نموذج الشراكة المختلطة بين القطاعين العام والخاص بدعم من الدولة .     <br>
+<span class="text-green-800">3-</span>    نموذج المجتمع اللامركزي، والمراكز المحلية مع الطب عن بعد .   <br>
+    </p><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        3 -   (  الجلسة )   الصحة الإلكترونية والابتكار الرقمي    .      </h1>
+    <p class="font-bold mx-6">
+      تناولت هذه الندوة الثالثة حدود الابتكار التكنولوجي في صحة المحاربين القدامى، وفحصت الفرص الاستثنائية التي يوفرها التحول الرقمي، والطب عن بعد، والذكاء الاصطناعي، وتكنولوجيا الشيخوخة لتحسين الوصول إلى الرعاية الصحية بشكل كبير . <br>
+      المتابعة الطبية والنفسية لمقاتلي المقاومة السابقين والمحاربين القدامى. تُقدّم الحلول الرقمية حلولاً مبتكرة وفعّالة ومجدية اقتصاديًا للقيود الجغرافية، لا سيما في المناطق الريفية والضواحي حيث يقيم العديد من المحاربين القدامى . <br>
+      قدّم الخبراء لمحةً شاملةً عن التطبيقات العملية للطب عن بُعد، بما في ذلك الاستشارات الطبية عن بُعد المتخصصة التي تُمكّن المحاربين القدامى المقيمين في مناطق بعيدة من الحصول على استشارات مع أخصائيين دون الحاجة إلى السفر، والمراقبة الطبية عن بُعد باستخدام أجهزة متصلة لمراقبة العلامات الحيوية عن بُعد، والخبرة عن بُعد التي تُسهّل التعاون بين المتخصصين في الحالات المعقدة. وناقش المشاركون بشكلٍ مُستفيضٍ الابتكارات في مجال تكنولوجيا الشيخوخة، مع عروضٍ لأجهزةٍ تدعم الحياة المستقلة (أتمتة المنزل الذكي، وأنظمة الرعاية عن بُعد، وأجهزة كشف السقوط)، وتطبيقات الصحة المتنقلة، والألعاب العلاجية الجادة للتحفيز المعرفي . <br>
+      تناولت الندوة أيضًا الإمكانات الهائلة للذكاء الاصطناعي، لا سيما من خلال تطوير خوارزميات تنبؤية قادرة على تحديد المحاربين القدامى المعرضين لخطر كبير من فقدان التعويض، وروبوتات الدردشة العلاجية التي تقدم دعمًا نفسيًا مباشرًا على مدار الساعة طوال أيام الأسبوع، وأدوات تحليل اللغة للكشف المبكر عن علامات الضيق. إلا أن المتحدثين شددوا على التحديات الرئيسية التي يجب التغلب عليها، وهي: الفجوة الرقمية بين الأجيال، والوصول العادل إلى التكنولوجيا، والقبول الثقافي للأدوات، وأمن البيانات الطبية الحساسة وسريتها، وتدريب المهنيين على هذه الممارسات السريرية الرقمية الجديدة . <br>
+    </p><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        4 -   (  الجلسة )    الرفاهية والإدماج الاجتماعي    .      </h1>
+    <p class="font-bold mx-6">
+      ركزت على مكافحة العزلة الاجتماعية، وتقدير دور المقاتلين القدامى والمحاربين القدامى في المجتمع، والنموذج المتكامل للاعتراف الإداري والرمزي الذي طورته الهيئة العليا للمقاتلين القدامى من المقاومة وأعضاء جيش التحرير السابقين .
+    </p><br>
+    <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">        5 -   (  اللوحة )    التاريخ وعلم النفس العرقي والثقافة   .      </h1>
+    <p class="font-bold mx-6">
+      تناول الأبعاد التاريخية والثقافية والأجيالية لنقل الذاكرة الوطنية، بالإضافة إلى المناهج العلاجية الملائمة ثقافيا وبرامج التحفيز المعرفي . <br>
+      يكشف هذا الندوة الدولية عن نهج متعدد الأبعاد ومتكامل يجمع بين :
+    </p>
+    <p class="font-bold mx-6">
+      <span class="text-green-800">1- التميز الطبي :-</span>   لرعاية المتخصصة والبحث والابتكار   .   <br>
+      <span class="text-green-800">2-  الابتكار التكنولوجي :-</span>    الصحة الإلكترونية، والذكاء الاصطناعي، والطب عن بعد  .     <br>
+      <span class="text-green-800">3-  العدالة الاجتماعية :-</span>     الإدماج، ومحاربة الهشاشة، والوصول إلى الحقوق  .   <br>
+      <span class="text-green-800">4-  الذاكرة الوطنية  :-</span>      الحفاظ على التراث التاريخي ونقله   .   <br>
+      <span class="text-green-800">5-   التضامن بين الأجيال   :-</span>  الحوار بين الشباب ومقاتلي المقاومة السابقين والمحاربين القدامى .   <br>
+          </p>
+          <p class="font-bold mx-6">
+            يُمثل النموذج المغربي مرجعًا دوليًا مُحتملًا، يجمع بين الكرامة والكفاءة والتقدير في إطار متماسك ومستدام. ويُظهر إرادة سياسية قوية لوضع مقاتلي المقاومة السابقين وأعضاء جيش التحرير في صميم الأولويات الوطنية، من خلال الجمع بين التميز في الرعاية والابتكار التكنولوجي والعدالة الاجتماعية ونقل الذاكرة . 
+            
+          </p><br>
+          <h1 class=" Bahreen mx-6  w-full  text-balance text-2xl  font-bold">       رابعاً  :-   التوصيات الاستراتيجية . </h1>
+          <p class="font-bold mx-6">
+            أثمر يومان من العمل المكثف عن مجموعة واسعة من التوصيات العملية، تتمحور حول خمسة محاور استراتيجية تتوافق مع الجلسات المواضيعية. تُشكل هذه التوصيات خارطة طريق للعمل العام والمؤسسي والجمعوي في السنوات القادمة . 
+            
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المحور الأول: الصحة والبحث العلمي والتدريب ورأس المال البشري   .      </h1>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">       توصيات صحية .      </h1>   
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       1 - إنشاء مراكز مرجعية وطنية لصحة المحاربين القدامى :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء مراكز مرجعية في المناطق الرئيسية للمملكة مخصصة للرعاية الشاملة لمقاتلي المقاومة السابقين والمحاربين القدامى، وتقديم الاستشارات الطبية المتخصصة (طب الشيخوخة، الطب النفسي، طب الألم، أمراض القلب)؛ برامج إعادة التأهيل الوظيفي والجسدي؛ الرعاية التمريضية المتخصصة والمتابعة المنزلية؛ منصات الطب عن بعد للوصول إلى المناطق الريفية؛ التنسيق مع النظام الصحي العام والهياكل الاستشفائية .
+           
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       2 - بروتوكولات لإدارة اضطراب ما بعد الصدمة  :        </h1>
+          <p class="font-bold mx-6">
+            تطوير ونشر بروتوكولات وطنية موحدة لتشخيص وعلاج اضطراب ما بعد الصدمة لدى المحاربين القدامى، ودمجها. أدوات فحص مناسبة ومعتمدة ثقافيا؛ العلاجات السلوكية المعرفية المتخصصة (CBT)؛ العلاج بإزالة حساسية حركة العين وإعادة المعالجة (EMDR)؛ النهج الدوائي الشخصي؛
+المراقبة الطولية على مدى عدة سنوات؛ تدخلات الوقاية من الانتكاس . 
+           
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       3 -   برامج إدارة الألم المزمن  :        </h1>
+          <p class="font-bold mx-6">
+            تنفيذ برامج متعددة التخصصات لإدارة الألم المزمن، والجمع بين: تقييم طبي شامل وعلاج دوائي مثالي؛ تقنيات التحفيز العصبي والتدخلات التدخلية؛
+الأساليب النفسية (العلاج بالقبول والالتزام، التنويم المغناطيسي الطبي)؛ تقنيات إعادة التأهيل والعلاج الطبيعي؛ الطب التكميلي (الوخز بالإبر، الاسترخاء) .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       4 -   المراقبة الوبائية والبحث   :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء نظام وطني للمراقبة الوبائية للأمراض التي تصيب المحاربين القدامى من خلال إنشاء سجل وطني إلكتروني لمقاتلي المقاومة السابقين والمحاربين القدامى؛ دراسات الأتراب الطولية حول الشيخوخة والأمراض المحددة؛ البحث في عوامل الخطر ومحددات الصحة؛ تقييم فعالية التدخلات العلاجية؛ المنشورات العلمية في المجلات الدولية المحكمة .  .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       5 -     استشارات طب الشيخوخة المتخصصة  :        </h1>
+          <p class="font-bold mx-6">
+            توسيع نطاق الوصول إلى التقييمات الشيخوخية الموحدة (SGAs) لجميع المحاربين القدامى الذين تبلغ أعمارهم 65 عامًا فأكثر، بما في ذلك تقييم طبي شامل ومراجعة الأدوية؛  التقييم الوظيفي (الاستقلالية، والتنقل)؛ التقييم المعرفي وفحص الخرف؛ التقييم الغذائي والوقاية من سوء التغذية؛ التقييم الاجتماعي وتقييم الظروف المعيشية؛ تقييم خطط الرعاية الشخصية . 
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">       توصيات التدريب   .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       6 -      التدريب الأولي لمقدمي الرعاية الصحية   :        </h1>
+          <p class="font-bold mx-6">
+            دمجها في المناهج الدراسية لكليات الطب والصيدلة ومعاهد التدريب الطبي المساعد. وحدات حول الأمراض الخاصة بالمحاربين القدامى؛ تدريس علم الصدمات النفسية للحرب؛ طب الشيخوخة العسكري كتخصص ناشئ؛ الأبعاد الثقافية والأخلاقية لدعم المحاربين القدامى؛ التدريب السريري في المرافق المخصصة لمقاتلي المقاومة السابقين والمحاربين القدامى . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       7 -      التعليم المستمر والتطوير المهني  :        </h1>
+          <p class="font-bold mx-6">
+            تطوير برامج التعليم المستمر للمهنيين الممارسين. دبلومات جامعية (DU) في طب الصدمات النفسية وصحة المحاربين القدامى؛ شهادات التدريب في طب الشيخوخة المتخصص؛ دورات تدريبية قصيرة حول الابتكارات العلاجية؛ ندوات دولية لتبادل الخبرات؛ منصات التعليم الإلكتروني متاحة عن بعد .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       8 -       تعزيز رأس المال البشري  :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء حوافز لجذب المهنيين في القطاع والاحتفاظ بهم: منح دراسية تخصصية للطلاب العاملين في مجال صحة المحاربين القدامى؛ مكافآت جاذبية للمهنيين العاملين في المناطق الريفية؛ آفاق مهنية واعدة وتقدير أكاديمي؛ ظروف عمل مثالية ودعم مؤسسي . 
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">        توصيات للبحث العلمي  .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       9 -      إنشاء كراسي جامعية متخصصة   :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء كراسي بحثية في الجامعات المغربية الرئيسية. شيخوخة السكان المقاتلين؛ الصدمات النفسية الناجمة عن الحرب؛ الابتكارات العلاجية في طب الشيخوخة؛ أخلاقيات الاعتراف والسياسة العامة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       10 -       برامج البحث الوطنية والدولية  :        </h1>
+          <p class="font-bold mx-6">
+            تطوير برامج بحثية تنافسية ممولة من الأموال العامة والخاصة. دعوات سنوية للمشاريع المواضيعية؛ شراكات بحثية مع مؤسسات دولية مرموقة؛
+المشاركة في الشبكات العلمية الأوروبية والعالمية؛ نشر وتوزيع نتائج البحوث .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       11 -      البحث التطبيقي والابتكار   :        </h1>
+          <p class="font-bold mx-6">
+            تشجيع البحوث الترجمية الموجهة نحو حلول ملموسة. تطوير الأجهزة الطبية المبتكرة. التجارب السريرية للعلاجات الجديدة؛ تقييم التدخلات النفسية الاجتماعية المعقدة؛ البحث في العلوم الإنسانية والاجتماعية حول الذاكرة والتعرف   .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المحور الثاني : النظام الصحي والحوكمة   .      </h1>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">       توصيات الحوكمة   .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       1 -      تعزيز التنسيق بين الوزارات   :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء هيكل تنسيقي دائم بين الوزارات برئاسة الهيئة العليا لقدماء المقاومين وأعضاء جيش التحرير السابقين وجمعهم. وزارة الصحة والحماية الاجتماعية؛ وزارة التضامن والتكامل الاجتماعي والأسرة؛ وزارة الدفاع وهيئة التفتيش الصحي العسكري؛ وزارة الاقتصاد والمالية؛ السلطات المحلية؛ ممثلو جمعيات المحاربين القدامى .
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">       مهمات هذا الهيكل  .      </h1>
+          <p class="font-bold mx-6">
+            إعداد ومتابعة الاستراتيجية الوطنية لصحة ورفاهية المحاربين القدامى؛ تنسيق السياسات العامة القطاعية؛ تعبئة الموارد المالية والبشرية؛
+ تقييم البرامج والتعديلات الاستراتيجية .
+          </p>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       2 -      تعزيز الإطار التشريعي والتنظيمي   :        </h1>
+          <p class="font-bold mx-6">
+            مراجعة وتعزيز الإطار القانوني لضمان الحق الفعال والقابل للتنفيذ في الصحة لجميع مقاتلي المقاومة السابقين والمحاربين القدامى؛ الوصول إلى الرعاية المتخصصة مجانًا أو بسعر مخفض؛ تبسيط الإجراءات الإدارية للحصول على الحقوق؛ الحماية القانونية ضد التمييز؛ الاعتراف الرسمي بالأمراض التي يُفترض أنها مرتبطة بالخدمة العسكرية . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       3 -      آليات التمويل المستدامة   :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء آليات تمويل مستدامة وقابلة للتنبؤ. خطوط الميزانية المخصصة في قانون المالية السنوي؛ صندوق خاص لصحة المحاربين القدامى، يتم تمويله من خلال المساهمات العامة والخاصة؛ آليات محددة للتأمين الصحي التكميلي؛ الشراكات بين القطاعين العام والخاص لتمويل المرافق الصحية؛
+  حشد التضامن الوطني والدولي . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       4 -     نظام المعلومات الصحية المتكامل   :        </h1>
+          <p class="font-bold mx-6">
+            تطوير نظام معلومات صحي وطني. التعداد الشامل للمقاتلين السابقين والمحاربين القدامى؛  المراقبة الطولية لحالتهم الصحية؛ التخطيط الصحي المبني على الأدلة؛ تقييم جودة وفعالية الخدمات؛ البحث الوبائي والاستخبارات الصحية. توصيات بشأن تنظيم الرعاية  . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       5 -     نموذج الرعاية المتكاملة والشخصية    :        </h1>
+          <p class="font-bold mx-6">
+            اعتماد نموذج الرعاية المتكاملة الذي يجمع بين: الرعاية الصحية الأولية المحلية المقدمة من قبل الأطباء العامين المدربين؛  استخدام الاستشارات المتخصصة حسب الحاجة؛ الاستشفاء في وحدات مخصصة داخل المستشفيات العامة؛الرعاية المنزلية للمحاربين القدامى ذوي القدرة المحدودة على الحركة؛ التنسيق من قبل مديري الحالة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       6 -      شبكة من هياكل الرعاية الصحية اللامركزية   :        </h1>
+          <p class="font-bold mx-6">
+            نشر شبكة وطنية من مرافق الرعاية الصحية التي يمكن الوصول إليها، المراكز الصحية المحلية في كافة المحافظات؛ وحدات متنقلة للمناطق الريفية والمعزولة؛ مرافق إقامة مجهزة طبيا للمحاربين القدامى المعتمدين؛ مراكز نهارية تقدم أنشطة علاجية واجتماعية .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       7 -      جودة واعتماد الهياكل  :        </h1>
+          <p class="font-bold mx-6">
+            تنفيذ آليات ضمان الجودة. المعايير الوطنية للجودة للمرافق المخصصة للمحاربين القدامى؛ عملية الاعتماد والتصديق؛ التدقيقات الدورية والتقييمات الخارجية؛ عمليات تحسين الجودة المستمرة؛ استطلاعات رضا المستفيدين. توصيات بشأن التعاون الدولي .
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">      توصيات بشأن التعاون الدولي  .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       8 -     شراكات استراتيجية مع FMAC وأعضائها    :        </h1>
+          <p class="font-bold mx-6">
+            تعزيز التعاون مع الاتحاد العالمي للمحاربين القدامى. المشاركة الفعالة في الهيئات الإدارية لـFMAC؛ التبادل المنتظم للخبرات وأفضل الممارسات؛ تنظيم بعثات دراسية إلى الدول ذات النظم المتقدمة؛ استضافة وفود دولية لتبادل التجربة المغربية؛ مشاريع البحوث المقارنة الدولية . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       9 -    التعاون مع التحالف الأوروبي المغربي لطب الشيخوخة وعلم الشيخوخة     :        </h1>
+          <p class="font-bold mx-6">
+            لتعزيز الشراكة مع A2G من أجل. تدريب المهنيين على المعايير الأوروبية؛ نقل التكنولوجيات والابتكارات العلاجية؛ تنقل المهنيين والخبراء؛ مشاريع بحثية مشتركة؛ التناغم التدريجي للممارسات السريرية .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       10 -     الشبكات العلمية والأكاديمية الدولية    :        </h1>
+          <p class="font-bold mx-6">
+            دمج المؤسسات المغربية في الشبكات الدولية. العضوية في الجمعيات العلمية الدولية لطب الشيخوخة والصدمات النفسية؛ المشاركة في اتحادات الأبحاث الأوروبية والدولية؛ تبادل الطلاب والباحثين؛ النشر العلمي المشترك وتنظيم المؤتمرات الدولية . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المحور الثالث :   الصحة الإلكترونية والابتكار الرقمي   .      </h1>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">     توصيات بشأن الطب عن بعد    .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       1 -      منصة وطنية للطب عن بعد للمحاربين القدامى    :        </h1>
+          <p class="font-bold mx-6">
+            تطوير منصة وطنية متكاملة لتقديم الاستشارات عن بعد مع الأطباء العامين والمتخصصين؛ الخبرة عن بعد للحالات المعقدة؛ المراقبة الطبية عن بعد للأمراض المزمنة؛ رعاية تمريضية على مدار الساعة طوال أيام الأسبوع؛ تطبيق جوال سهل الاستخدام وسهل الوصول إليه .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       2 -      المعدات والاتصال   :        </h1>
+          <p class="font-bold mx-6">
+            ضمان الوصول العادل إلى التكنولوجيات. توزيع الأجهزة اللوحية أو الهواتف الذكية مجانًا على المحاربين القدامى الذين لا يملكون معدات؛ دعم الوصول إلى الإنترنت عريض النطاق؛ الشراكة مع مشغلي الاتصالات للحصول على باقات تفضيلية؛ تعزيز البنية التحتية للاتصال في المناطق الريفية  . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       3 -     التدريب والدعم الرقمي  :        </h1>
+          <p class="font-bold mx-6">
+             تنفيذ برامج محو الأمية الرقمية. ورش عمل عملية لتقديم الأدوات الرقمية؛ دعم شخصي من الوسطاء الرقميين؛ مواد تعليمية مبسطة ومكيفة؛ خط ساخن مخصص للدعم الفني. توصيات بشأن تكنولوجيا الشيخوخة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       4 -      حلول الأتمتة المنزلية والمساعدة :        </h1>
+          <p class="font-bold mx-6">
+            نشر التكنولوجيات لدعم الاستقلال. أنظمة الإنذار عن بعد واكتشاف السقوط؛ أجهزة استشعار بيئية ذكية (الحركة، درجة الحرارة)؛ أجهزة تذكير الدواء؛ أنظمة تحديد الموقع الجغرافي للمحاربين القدامى ذوي الإعاقات الإدراكية؛ واجهات صوتية وعناصر تحكم مبسطة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       5 -     تطبيقات صحية مخصصة    :        </h1>
+          <p class="font-bold mx-6">
+            تطوير عروض تطبيقات الهاتف المحمول المخصصة مراقبة المعايير الصحية (ضغط الدم، سكر الدم، الوزن)؛ تقويمات المواعيد والتذكيرات؛ تأمين السجلات الصحية الرقمية؛ وحدات تعليمية علاجية تفاعلية؛ ألعاب جادة لتحفيز الإدراك . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       6 -      الواقع الافتراضي العلاجي   :        </h1>
+          <p class="font-bold mx-6">
+            تجربة تطبيقات الواقع الافتراضي التعرض التدريجي في علاج اضطراب ما بعد الصدمة؛ إدارة الألم المزمن . إعادة التأهيل الحركي والمعرفي. الاسترخاء والتأمل الموجه؛ السفر الافتراضي للمحاربين القدامى ذوي القدرة المحدودة على الحركة. توصيات بشأن الذكاء الاصطناعي . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       7 -      الخوارزميات التنبؤية ودعم القرار  :        </h1>
+          <p class="font-bold mx-6">
+            تطوير أدوات الذكاء الاصطناعي التعرف المبكر على المحاربين القدامى المعرضين لخطر فقدان التعويض؛ دعم القرارات السريرية للمهنيين؛
+تحسين مسارات الرعاية؛ التنبؤ باحتياجات موارد الرعاية الصحية . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       8 -     روبوتات الدردشة والمساعدون الافتراضيون   :        </h1>
+          <p class="font-bold mx-6">
+            نشر مساعدين المحادثة. الدعم النفسي في الخطوط الأمامية متاح على مدار الساعة طوال أيام الأسبوع؛ إجابات على الأسئلة الشائعة حول الوصول إلى الحقوق؛ الإحالة إلى الخدمات المناسبة؛ الكشف عن حالات الضيق التي تتطلب التدخل البشري   . 
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">   توصيات شاملة   .      </h1>
+
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       9 -     أمن البيانات وسريتها  :        </h1>
+          <p class="font-bold mx-6">
+            ضمان حماية البيانات الصحية. الالتزام بمعايير الأمن السيبراني الدولية: تشفير الاتصالات والبيانات؛ الموافقة المستنيرة والشفافية فيما يتعلق باستخدام البيانات؛ عمليات تدقيق أمنية منتظمة؛ تدريب المهنيين على التحديات الأخلاقية التي تفرضها التكنولوجيا الرقمية في مجال الرعاية الصحية .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       10 -     التوافق والمعايير  :        </h1>
+          <p class="font-bold mx-6">
+            التأكد من توافق النظام اعتماد المعايير الدولية لتبادل البيانات الصحية؛ التفاعل مع السجل الطبي المشترك الوطني؛ التكامل مع أنظمة معلومات المستشفيات؛ هندسة تقنية قابلة للتطوير ومفتوحة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المحور الرابع :   الرفاهية والإدماج الاجتماعي   .      </h1>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">    توصيات لمكافحة العزلة   .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       1 -     الشبكة الوطنية لمنازل المحاربين القدامى :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء منازل للمحاربين القدامى في جميع المناطق التي تقدم مساحات للتواصل الاجتماعي والاجتماع؛ الأنشطة الثقافية والترفيهية والرياضية الملائمة؛ الخدمات الإدارية والدعم في الوصول إلى الحقوق؛ المكتبات ومراكز التوثيق التاريخي؛ الكافيتريات ومناطق تقديم الأطعمة بأسعار معقولة؛
+غرف الوسائط المتعددة والوصول إلى الإنترنت . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       2 -    برامج الزيارة المنزلية    :        </h1>
+          <p class="font-bold mx-6">
+            نشر فرق متنقلة متعددة التخصصات. الأخصائيون الاجتماعيون لتقييم الاحتياجات؛ ممرضات للرعاية والمراقبة الطبية؛ علماء النفس للدعم النفسي؛
+مساعدو الرعاية الشخصية للمساعدة في الأنشطة اليومية؛  تكرار الزيارات بما يتناسب مع مستوى الضعف  . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       3 -     أنظمة دعم الأقران   :        </h1>
+          <p class="font-bold mx-6">
+            تدريب وتعبئة المحاربين القدامى المتطوعين التدريب على الاستماع النشط ودعم الأقران؛ زيارات منتظمة للمحاربين القدامى المعزولين؛ تسهيل المناقشات ومجموعات الدعم؛ المساعدة في الإجراءات الإدارية؛ الوساطة مع الخدمات الصحية والاجتماعية   . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       4 -     البرامج بين الأجيال  :        </h1>
+          <p class="font-bold mx-6">
+            تنظيم أنشطة تجمع المحاربين القدامى والشباب معًا. شهادات في المدارس والجامعات؛ المشاريع الثقافية المشتركة (المسرح، الأفلام الوثائقية، المعارض)؛ ورش عمل لنقل المعرفة التقليدية؛ الإرشاد المتبادل بين المحاربين القدامى والشباب؛ أحداث تذكارية تشمل جميع الأجيال . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       5 -     منصات الشبكات الرقمية   :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء شبكات اجتماعية مخصصة تسمح بذلك العلاقة بين المحاربين القدامى من مناطق مختلفة؛ تبادل الخبرات والموارد؛ تنظيم الفعاليات والاجتماعات؛ الدعم المتبادل عبر الإنترنت؛ الوصول إلى المعلومات حول الخدمات المتاحة .
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">    توصيات للاعتراف الإداري   .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       6 -     متاجر مخصصة في مكان واحد  :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء مراكز خدمات متكاملة في كافة المحافظات. الترحيب الشخصي والدعم الإداري؛ معالجة سريعة للطلبات؛ واجهة واحدة مع كافة الدوائر الحكومية ذات الصلة؛ ساعات العمل الرسمية في المناطق الريفية؛ خدمات النقل المجانية للوصول إلى مكاتب التذاكر .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       7 -      تبسيط الإجراءات  :        </h1>
+          <p class="font-bold mx-6">
+            إصلاح الإجراءات الإدارية. رقمنة الإجراءات بمساعدة تقنية؛ تقليص الإجراءات الإدارية والوثائق الداعمة المطلوبة؛ أوقات معالجة أقصر ويمكن التنبؤ بها؛ افتراض حسن النية وعكس عبء الإثبات؛ عملية استئناف سهلة في حالة صدور قرار غير ملائم . 
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       8 -     بطاقة المحاربين القدامى الوطنية  :        </h1>
+          <p class="font-bold mx-6">
+            إنشاء بطاقة هوية خاصة لمقاتلي المقاومة السابقين والمحاربين القدامى، شهادة رسمية بالوضع والحقوق؛ الوصول المجاني أو التفضيلي إلى الخدمات العامة؛  مزايا في النقل والثقافة والترفيه؛ اعتراف رمزي قوي بالمكانة الاستثنائية .
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">    توصيات بشأن الوصول إلى الأنشطة الاجتماعية والثقافية   .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       9 -    التسعير المجاني والاجتماعي :        </h1>
+          <p class="font-bold mx-6">
+            ضمان الوصول إلى الأنشطة الثقافية والرياضية الدخول مجاني إلى المتاحف والمعالم التاريخية والمسارح؛ أسعار تفضيلية للفعاليات الرياضية والثقافية؛ أولوية الوصول ومرافق الحجز؛النقل المجاني إلى المواقع الثقافية. تطوير برامج النشاط البدني. تمارين الجمباز اللطيفة، والتاي تشي، وجلسات اليوغا؛ ورش عمل المشي النوردي والمشي لمسافات طويلة المعدلة؛ الأنشطة المائية في حمام السباحة؛ رياضات تتناسب مع القدرات؛
+            ؛إشراف تربويين متخصصين .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       10 -   نوادي وجمعيات المحاربين القدامى   :        </h1>
+          <p class="font-bold mx-6">
+            دعم مؤسسات المجتمع. دعم جمعيات المقاتلين السابقين والمحاربين القدامى؛ توفير المباني والمعدات؛ -الدعم في إقامة المشاريع للمستفيدين منها؛ تعزيز المبادرات المجتمعية المبتكرة   .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       المحور الخامس :   التاريخ والثقافة وعلم النفس العرقي   .      </h1>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">     توصيات للحفاظ على الذاكرة  .      </h1>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       1 -   برنامج الأرشيف الشفوي الوطني  :        </h1>
+          <p class="font-bold mx-6">
+            إطلاق برنامج جمع منهجي تسجيل شهادات المحاربين القدامى بالصوت والصورة؛منهجية صارمة للمقابلات السيرة الذاتية؛الرقمنة والأرشفة الآمنة
+إمكانية الوصول للباحثين وعامة الناس؛إنشاء مكتبة وطنية لمذكرات المناضلين والمقاومة .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       2 -  المتاحف والأماكن التذكارية :        </h1>
+          <p class="font-bold mx-6">
+            تطوير المواقع التذكارية التفاعلية. تجديد وتحديث المتاحف القائمة؛ إنشاء مساحات تذكارية جديدة في البلديات التي يوجد بها عدد كبير من المحاربين القدامى؛ المعارض الدائمة والمؤقتة؛ عروض متحفية مبتكرة (الواقع المعزز، الأجهزة الغامرة)؛ البرامج التعليمية لأطفال المدارس  .
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       3 -  المنشورات والإنتاج السمعي والبصري :        </h1>
+          <p class="font-bold mx-6">
+            دعم الإنتاج الثقافي. السيرة الذاتية وقصص حياة المحاربين القدامى؛ الأفلام الوثائقية السمعية والبصرية الاحترافية؛ أفلام خيالية مستوحاة من تجارب الحياة الواقعية؛ الكتب المصورة والأعمال التعليمية للشباب؛ منصات التوزيع الرقمية .
+          </p><br>
+          <h1 class="  mx-6  w-full underline  text-balance text-2xl  font-bold">     الاستنتاج العام  .      </h1>
+          <p class="font-bold mx-6">
+            لقد أصبح الملتقى الدولي حول قدماء المقاومين والمحاربين القدامى، الصحة والرفاه وواجب الاعتراف، المنظم تحت الرعاية السامية لصاحب الجلالة الملك محمد السادس، نصره الله، لحظة أساسية للتأمل العلمي وتبادل الخبرات والتعبئة الجماعية حول قضية إنسانية ووطنية بالغة الأهمية.
+سلّط ​​هذا العمل الضوء على الحاجة المُلِحّة إلى نهج شامل ومتكامل ومتعدد القطاعات لمواجهة التحديات المُعقّدة التي يواجهها مقاتلو المقاومة السابقون والمحاربون القدامى. هؤلاء النساء والرجال، أصحاب الذاكرة البطولية والتراث الأخلاقي القيّم، يُطالبون الآن باستجابة مُتجدّدة قائمة على التقدير والكرامة والتضامن الفعّال  . <br>
+مهدت هذه الندوة الطريق لاستراتيجية وطنية ودولية تتمحور حول خمسة محاور رئيسية: الصحة والبحث العلمي، وحوكمة نظام الرعاية الصحية، والابتكار الرقمي والصحة الإلكترونية، والرفاهية والإدماج الاجتماعي، وحفظ الذاكرة والثقافة. ويشكل كل محور من هذه المحاور ركيزة أساسية لسياسة عامة متقدمة وعادلة تجاه من ساهموا في بناء استقلال بلدانهم وتحررها.
+تُمثل التوصيات التي صيغت في ختام هذا العمل خارطة طريق عملية للسلطات العامة والمؤسسات الشريكة والباحثين والمنظمات غير الربحية. وتدعو إلى تنفيذ منسق ومستدام، مدعومًا بتنسيق معزز بين الوزارات، وآليات تمويل طويلة الأجل، ومشاركة متزايدة من المجتمع العلمي والطبي.
+إلى جانب الاعتبارات التقنية والمؤسسية، ذكّر هذا المؤتمر بحقيقة جوهرية: لا يقتصر واجب الاعتراف بتضحيات المقاومين والمحاربين القدامى على مجرد لفتات رمزية، بل يجب أن يتجسد في سياسات عامة ملموسة، ودعم إنساني مستمر، ونقل قيمهم إلى الأجيال القادمة.
+وبذلك يفتح هذا اللقاء الدولي الطريق أمام عصر جديد من العمل الجماعي، حيث تصبح الذاكرة رافعة للتنمية، وحيث يتحول التضامن إلى أداة للعدالة، وحيث يصبح الاعتراف عملاً من أعمال الاستمرارية الوطنية . <br>
+تتقدم الهيئة العليا لقدماء المقاومين وقدامى المحاربين في جيش التحرير بخالص الشكر والامتنان لجميع المؤسسات الوطنية والدولية الشريكة التي ساهمت في إنجاح الندوة الدولية "قدامى المقاومين والمحاربين القدامى: الصحة والرفاهية وواجب التكريم"، المنعقدة تحت الرعاية السامية لصاحب الجلالة الملك محمد السادس، أعزه الله . <br>
+وتتوجه المفوضية السامية بخالص الشكر إلى التحالف الأوروبي المغربي لطب الشيخوخة وعلم الشيخوخة (A2G)، وكذلك إلى رئيسه الدكتور عماد الحافظي، منسق البرنامج العلمي لهذه الندوة، لمساهمتهما القيمة في نجاح هذا الحدث .
+
+          </p><br>
+          <h1 class=" text-green-800 mx-6  w-full  text-balance text-2xl  font-bold">       4 -  الأنشطة البدنية المُكيَّفة .        </h1>
+          <p class="font-bold mx-6">
+            كما يعرب عن عميق امتنانه للوفود من غانا ومنغوليا والأردن والمغرب، التي ساهمت مشاركتها الفعالة بشكل كبير في إثراء الموارد العلمية والبشرية لهذا الاجتماع العلمي الدولي . <br>
+            ( يتم تقديم تقدير خاص للمؤسسات الشريكة ) :
+           
+          </p>
+          <p class="font-bold mx-6">
+            <span class="text-green-800">1- السيدة أمال الفلاح الصغروشني / </span>   الوزيرة المنتدبة لدى رئيس الحكومة المكلفة بالتحول الرقمي والإصلاح الإداري  .   <br>
+            <span class="text-green-800">2-  السيد رشيد العبدي /  </span>    رئيس مجلس جهة الرباط سلا القنيطرة  .     <br>
+            <span class="text-green-800">3-  السيد يحيى الشرايبي /  </span>     المدير العام لشركة سانلام المغرب للتأمينات  .   <br>
+            <span class="text-green-800">4-  السيد محمد بنعودة /   </span>       الرئيس التنفيذي لشركة ABA Technology في المغرب   .   <br>
+            <span class="text-green-800">5-  السيد مهدي التازي /   </span>  الرئيس التنفيذي لشركة مارش المغرب  .   <br>
+            <span class="text-green-800">6-  الأستاذ محمد البوحمادي /   </span>  رئيس الفيدرالية المغربية للصناعة الدوائية والابتكار (FMIIP)  .   <br>
+                </p>
+                <p class="font-bold mx-6">
+                  لدعمهم اللوجستي والمالي، وخبرتهم الفنية والتزامهم بصحة ورفاهية مقاتلي المقاومة السابقين والمحاربين القدامى . 
+                
+                 
+                </p>
+                <p class="font-bold mx-6">
+                  تقدير خاص للوكالة المغربية المكلفة بتنظيم الندوة الدولية . 
+                </p>
+                <p class="font-bold mx-6">
+                  يتقدم بخالص امتنانه للرعاة والشركاء الفنيين، الذين ساهم كرمهم والتزامهم في نجاح هذا الحدث. وقد مكّننا دعمهم من تحسين جودة العمل، وتجهيز الجلسات، ونشر نتائج الندوة في ظل ظروف مثالية . 
+                </p>
+                <p class="font-bold mx-6">
+                  كما نتوجه بالشكر إلى شركائنا الإعلاميين - القنوات التلفزيونية ومحطات الإذاعة والمنصات الرقمية ووسائل الإعلام المطبوعة - لتغطيتهم الناجحة ومساهمتهم في نشر رسائل الاعتراف والتضامن التي ينقلها هذا المؤتمر .
+                </p><br>
+
+                <p class="font-bold mx-6"> 
+                  وأخيراً، تُشيد الهيئة العليا بالالتزام المُثلى لجميع اللجان العلمية والتنظيمية، والفرق الإدارية والفنية، وموظفي المفتشية الإدارية والفنية والمركز الوطني للذاكرة التاريخية للمقاومة والتحرير. فقد كانت احترافيتهم ودقتهم وتفانيهم عوامل أساسية في نجاح هذا المؤتمر الدولي وتأثيره.
+ومن خلال هذه التكريمات والشكر، تؤكد الهيئة العليا التزامها الراسخ بقيم التذكر والامتنان والوفاء، وتشيد بكل أولئك الذين يواصلون من خلال التزامهم الجماعي المهمة النبيلة المتمثلة في التكريم لقدماء المقاومين والمحاربين القدامى في المملكة المغربية والمجتمع العالمي بأكمله في  ( F.M.A.C  ) .
+                </p>
+
+
+
+
+
+
+
+
+   
+   </section>
+
+
+
+    <!--  end section -->
+
+
+     
+
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full bg-gray-200 ">
+      <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
+          
+          <div class="max-w-96">
+              <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <img src="../../imeges/logo/arab-vetrans.png" alt="">
+              </svg>
+              <p class="mt-6 text-sm text-gray-500">
+                كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
+              </p>
+              
+          </div>
+  
+          <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
+                  <ul class="text-sm text-gray-500 space-y-2 list-none">
+                      <li><a href="rqasaq-ethad.html">رؤساء الإتحاد</a></li>
+                      <li><a href="nouab-alraqes.html">نواب الرئيس</a></li>
+                      <li><a href="ameen-aam.html">الأمين العام</a></li>
+                      <li><a href="ameen-aam-mouseed.html"> الأمين العام المساعد </a></li>
+                      <li><a href="ameen-alsondok.html">أمين الصندوق</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
+                  <div class="text-sm text-gray-500 space-y-2 list-none ">
+                      <li><a href="zyarat.html">زيارات</a></li>
+                      <li><a href="nesf-sanwya.html">نصف سنوية</a></li>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      <p class="py-4 text-center text-xs md:text-sm text-gray-500">
+        جميع الحقوق محفوظة ©  الاتحاد العربي للمحاربين القدماء  
+      </p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector("nav button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  </script>
+    
+  </body>
+</html>
