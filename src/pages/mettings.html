@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>الاتحاد العربي للمحاربين القدماء</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../../imeges/logo/arab-vetrans-white.png" rel="icon" />
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@615&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4G6K0E8XV1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4G6K0E8XV1');
+</script>
+
+  </head>
+  <body dir="rtl">
+   
+
+
+
+   <!-- start navbar -->
+
+<nav
+class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]"
+>
+<div
+  class="container flex flex-wrap items-center justify-around mx-auto text-slate-800"
+>
+<a href="../../index.html" class="mr-4 block cursor-pointer py-1.5 w-1/5">
+  <img src="../../imeges/logo/arab-vetrans.png" alt="" />
+</a>
+
+<!-- زر القائمة للموبايل -->
+<button
+class="menu-btn block lg:hidden text-lime-800 p-2 rounded hover:bg-lime-100"
+onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')"
+>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+stroke-width="2"
+stroke="currentColor"
+class="w-6 h-6"
+>
+<path
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  d="M4 6h16M4 12h16M4 18h16"
+/>
+</svg>
+</button>
+  
+
+    <!-- قائمة الموبايل -->
+<ul class="mobile-menu  flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+
+>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>عن الاتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="ahdaf-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
+          <!-- <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a> -->
+          <a href="methk-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
+          <!-- <a href="shakl-eltanzemy.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+          <a href="rqasaq-ethad.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
+          <a href="nouab-alraqes.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
+          <a href="ameen-aam.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
+          <a href="ameen-aam-mouseed.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام المساعد </a>
+          <a href="ameen-alsondok.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أمين الصندوق</a>
+          <!-- <a href="#" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a> -->
+          <a href="tshelat-dewal.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">خدمات و تسهيلات الدول</a>
+</div>
+</div>
+
+
+</li>
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>المنظمات الدولية
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="fedralya-alamya.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
+          
+</div>
+</div>
+
+
+</li>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>أنشطة و اصدارات الإتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="zyarat.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
+<a href="nesf-sanwya.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+          
+</div>
+</div>
+
+
+</li>
+
+
+<li>
+  <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+  
+  
+  <a href="#"
+  type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+  >الجمعيه العمومية
+  <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+  </svg> 
+  </a>
+  <div  
+  x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+  
+  <a href="tkwen-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
+            <a href="mettings.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة نشأة الإتحاد </a>
+            <a href="dwrat-egtmaat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
+            <!-- <a href="shakl-eltanzemy.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+  
+  </div>
+  </div>
+  
+  
+  </li>
+
+
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+>صور 
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
+
+<a href="imege-for-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الإتحاد  </a>
+<a href="panorama-octobr.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
+<a href="imege-for-ensha-ethad.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> إنشاء الإتحاد  </a>
+<a href="imege-for-history.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور تاريخية </a>
+<a href="imege-for-mgtama-madany.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مشاركة في المجتمع المدني  </a>
+<a href="imege-for-yom-shahed.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم الشهيد </a>
+          
+</div>
+</div>
+
+
+</li>
+<li><a href="contact-us.html">تواصل معنا</a></li>
+
+</ul>  
+
+
+
+
+</nav>
+
+<!-- end navbar -->
+
+    <!--  start section -->
+
+
+    
+    
+    <p class="font-bold mx-6 text-center">
+        التغطية الأعلامية<br>
+        
+    </p>
+    <h1 class="text-green-800 mx-6 text-center  w-full  text-balance text-2xl  font-bold">  
+        للدورة رقم ( 29 ) للجمعية العمومية للإتحاد العربى للمحاربين القدماء وضحايا الحرب <br>
+        المنعقدة فى دولة المقر ( جمهورية مصر العربية )<br>
+        الفترة من 04 / 05 / 2025 إلى 06/05/2025<br> 
+           
+         </h1>
+         <p class="font-bold mx-6 text-center">
+            تحت شعار معاً للسلام
+            
+        </p>
+
+                    <br>
+                    <p class="font-bold mx-6">
+                      وقد تمت تغطية الحدث عبر الصحف المصرية والدول العربية .
+                      <br>
+    
+                    </p>
+
+                    
+
+
+                    <img src="../../imeges/mettings/News.png" style="    display: block;margin-left: auto; margin-right: auto;">
+                    <br><br>
+    
+                    <p class="font-bold mx-6">
+                      أنعقدت فاعليات الدورة التاسعة والعشرون للجمعية العمومية للإتحاد العربى ( الهيئة العليا للإتحاد )
+                      <br>
+                      خلال ثلاثة أيام متتالية بدار قوات الدفاع الجوى ( النزهة)<br>
+                      • شارك فى فاعليات الدورة . . السادة رؤساء وأعضاء الوفود المشاركة . . . السادة الملحقين العسكريين
+                      بالسفارات وبعض الشخصيات العامة أعضاء الإتحاد .<br>
+                      • إجمالى الدول المشاركة بالدورة عدد (14) من إجمالى عدد ( 18 ) بنسبة مشاركة وحضور ( 77%) ولم يحضر كل
+                      من<br>
+                     - الجمهورية العربية السورية<br>
+                      - المملكة العربية السعــــودية<br>
+                      - الجمهورية الجزائرية الديمقراطية الشعبية <br>
+                      - جمهورية اليمن <br><br>
+                      وحضرت جمهورية جيبوتى كمراقب فى الدورة رقم ( 29 ) للجمعية العمومية للإتحاد العربى للمحاربين القدماء
+                      وضحايا الحرب<br>
+                      <br>
+                      وقد تم إستقبال الوفود الخاصة بالمنظمات المشاركة فى الدورة ( 29 ) <br>
+                      يومى الجمعة و السبت الموافق 03 / 05 / 2025 م بدار قوات الدفاع الجوى ( النزهة ) من قبل الامانة العامة
+                      للإتحاد <br>
+                      والترحاب بهم فى وطنهم الثانى جمهورية مصر العربية <br>
+    
+    
+                    </p><br><br>
+                    <img src="../../imeges/mettings/Wofod-1.png" style="    display: block;margin-left: auto; margin-right: auto;">
+                    <br> <br>
+    
+                    <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                      تضمنت فاعليات الدورة<br>
+                      عدد ( 10 ) جلسات على مدارثلاثة أيام متتالية<br>
+                      
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                      وفقاً للبرنامج الزمنى الأتى :<br>
+                      اليوم الأول من فاعليات الدورة رقم ( 29 ) للجمعية العمومية<br>
+                      للإتحاد العربى للمحاربين القدماء<br>
+                      الأحد الموافق 04 / 05 / 2025<br>
+                    </p>
+
+                    <h1 class="text-green-800 mx-6  w-full text-2xl  font-bold">
+                        مراسم الجلسة الأولى الأفتتاحية  :-
+
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                        تتضمن كلمة كلاً من : <br>
+                        <span class="text-green-800">1-</span> رئيس الدورة ( مدير جمعية المحاربين القدماء المصرية )   .  <br>
+                        <span class="text-green-800">2-</span> رئيس إتحادالفيدرالية العالمية للمحاربين القدماء  .  <br>
+                        <span class="text-green-800">3-</span> ممثل الأمين العام لجامعة الدول العربية  .   <br>
+                        <span class="text-green-800">4-</span>  الأمين العام للإتحاد العربى للمحاربين القدماء وضحايا الحرب    .<br>
+        
+                      </p><br>
+
+                    <h1 class="text-green-800 mx-6  w-full text-2xl  font-bold">
+                        الجلسة الثانية للجمعية العمومية :-
+
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                        تتضمن : <br>
+                        <span class="text-green-800">1-</span> افتتاح وتسمية أعضاء الوفود المشاركة من الدول المختلفة   .  <br>
+                        <span class="text-green-800">2-</span> عرض تقرير الأمين العام والأستراتيجية العربية المقترحة  .  <br>
+                        <span class="text-green-800">3-</span> عرض تقرير أمين الصندوق .   <br>        
+                      </p><br>
+
+
+                    <h1 class="text-green-800 mx-6  w-full text-2xl  font-bold">
+                        الجلسة الثالثة للجمعية العمومية  :-
+
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                        تتضمن : <br>
+                        <span class="text-green-800">1-</span> إنتخاب رئيس الإتحاد والأمانة العامة للإتحاد ونواب الرئيس   .  <br>
+                        <span class="text-green-800">2-</span> إنتخاب المفوض المالى للجمعية العمومية  .  <br>
+                        <span class="text-green-800">3-</span> إختيار مقررى الجلسات ورؤساء وأعضاء اللجان الفرعية وتوزيع المشاريع .   <br>        
+                        <span class="text-green-800">4-</span> كلمة لرئيس الإتحاد المنتخب  .   <br>        
+                      </p>
+
+                      <p class=" font-bold mx-6">
+                         (  وفى نهاية اليوم تم التحرك لتناول وجبة عشاء على الباخرة النيلية   يوم    الأثنين الموافق 05 / 05 / 2025   )
+                       
+                      </p><br><br>
+
+
+                      <h1 class="text-green-800 mx-6  w-full text-2xl  font-bold">
+                        الجلسة الرابعة والخامسة للجمعية العمومية العمومية  :-
+
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                      تم خلالها  : <br>
+                      <span class="text-green-800">1-</span> عقد اللجنة ( أ ) والمختصة بدراسة مشروعات القرارات ( المالية والإدارية )   .  <br>
+                      <span class="text-green-800">2-</span> عقد اللجنة ( ب ) المختصة بدراسة مشروعات القرارات الخاصة بالقضايا العربية  .  <br>
+                      <span class="text-green-800">3-</span> القيام بزيارة إلى جمعية المحاربين القدماء المصرية.   <br>        
+                    </p>
+                    <p class=" font-bold mx-6">
+                      ( 
+                        وفى نهاية اليوم تم دعوة جميع المنظمات المشاركة من الدول العربية المختلفة
+                    لحضور حفل عشاء مجمع بدار الدفاع الجوى فندق تيبا روز جاردن  ،
+                    ومن ثم حضور تخت عربى أصيل مع نسمات الهواء الجميله على حمام السباحة   
+                        )  . 
+                     
+                    </p><br><br><br>
+
+
+                    <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                      الثلاثاء الموافق 06 / 05 / 2025 
+                    </h1><br>
+                    <h1 class="text-green-800 mx-6  w-full  text-2xl  font-bold">
+                      الجلسة السادسة / السابعة / الثامنة   ،  للجمعية العمومية   :-
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                      تتضمن  : <br>
+                      <span class="text-green-800">1-</span> عرض تقارير اللجان الفرعية ( أ. ب ) وإتخاذ القرارات والتوصيات   .  <br>
+                      <span class="text-green-800">2-</span> دراسة وتعديل فقرة فى اللائحة الأساسية للإتحاد  .  <br>
+                      <span class="text-green-800">3-</span> عرض أنشطة وأعمال وإنجازات أعضاء الإتحاد ( المملكة الأدرنية الهاشمية )   .    <br>        
+                    </p><br><br>
+
+
+                    <h1 class="text-green-800 mx-6  w-full  text-2xl  font-bold">
+                      الجلسة التاسعة للجمعية العمومية  :-
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                      تتضمن  : <br>
+                      <span class="text-green-800">1-</span> موافاة الأمانة بموافقة سلطنة عمان على عقد الدورة رقم ( 30 ) لإتخاذ الإجراءات اللازمة   .  <br>
+                      <span class="text-green-800">2-</span>  إختيار الأم المثالية  .  <br>
+                      <span class="text-green-800">3-</span> توزيع جوائز الإتحاد   .    <br>        
+                    </p><br><br>
+
+
+                    <h1 class="text-green-800 mx-6  w-full  text-2xl  font-bold">
+                      الجلسة العاشرة والختامية   ، للجمعية العمومية :-
+                    </h1><br>
+                    <p class=" font-bold mx-6">
+                      تتضمن  : <br>
+                      <span class="text-green-800">1-</span> تبادل الهدايا بين المنظمات والجمعيات والإدارات أعضاء الإتحاد   .  <br>
+                      <span class="text-green-800">2-</span>  تكريم المصابين المقاتلين العرب  .  <br>
+                      <span class="text-green-800">3-</span> تورزيع هدايا الورقة البحثية   .    <br>        
+                      <span class="text-green-800">4-</span> عرض التقرير الختامى   .    <br>        
+                      <span class="text-green-800">5-</span> التحرك لزيارة المتحف الكبير   .    <br>        
+                    </p><br><br>
+
+                    <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                      اليوم الأول<br>
+                      2025/05/04<br><br>
+                    </h1>
+                    <p class=" font-bold mx-6">
+                      <span class="text-green-800">1-</span>  الجلسه الافتتاحية   .  <br>
+                      <span class="text-green-800">2-</span>  الجلسه الثانية للجمعية العمومية .  <br>
+                      <span class="text-green-800">3-</span>  الجلسه الثالثة للجمعية العمومية .  <br>
+                    </p><br><br>
+                    <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                      و تضمنت الجلسة الأفتتاحية  :
+                    </h1><br>
+                    <p class="font-bold mx-6  " >
+                      كلمة الترحيب بالسادة رؤساء وأعضاء الوفود المشاركين فى الدورة  . 
+
+                    </p><br><br>
+
+                  <img src="../../imeges/mettings/General-Medhat.png" style="display: block;margin-left: auto;margin-right: auto;">
+                  <br><br>
+                  <img src="../../imeges/mettings/General-Tarek.png" style="display: block;margin-left: auto;margin-right: auto;">
+                  <br>
+                  <br>
+                  <img src="../../imeges/mettings/General-Khaled.png" style="display: block;margin-left: auto;margin-right: auto;">
+                  <br>
+                  <br>
+                  <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                    وقد شرفت الجلسة بحضور كل من :
+                  </h1><br>
+                  <img src="../../imeges/mettings/Galsa.png" style="display: block;margin-left: auto;margin-right: auto;">
+                  <br>
+                  <br>
+                  <h1 class="text-green-800 mx-6  w-full  text-center text-2xl  font-bold">
+                    إختتام الجلسة الإفتتاحية و التقاط الصورة التذكارية  :
+                  </h1>  <br>
+
+                  <img src="../../imeges/mettings/Event.png" style="display: block;margin-left: auto;margin-right: auto;"><br><br>
+
+
+                 <!-- <img src="images/Event-1.png" style="display: block;margin-left: auto;margin-right: auto;width: 470px;"> -->
+
+                 <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+                    الجلسة الثانية ،
+                     للجمعية العمومية ( 29 ):-
+                </h1><br>
+                <p class="font-bold mx-6  " >
+                  تم إفتتاح الجلسة وتسمية رؤساء و أعضاء الوفود : وعددهم (14) دولة  . 
+
+                </p><br><br>
+
+                <div class=" mohareb container ">
+                  <div class="mohareb1">
+                    <img  src="../../imeges/mettings/Galset-Gameeya-1.png"  class="w-full " >
+                  </div>
+                  <div class="mohareb1">
+                    <img  src="../../imeges/mettings/Galset-Gameeya-2.png"  class="w-full " >
+                  </div>
+                  <div class="mohareb1">
+                    <img  src="../../imeges/mettings/Galset-Gameeya-4.png"  class="w-full " >
+                  </div>
+                </div><br><br>
+
+
+                <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+                   وخلال الجلسة الثانية ،
+تم عرض تقرير الأمين العام والذى تضمن :-
+              </h1><br>
+
+              <p class=" font-bold mx-6">
+                <span class="text-green-800">   البند الأول :-   </span>  الأنشطة والأعمال التى تم تنفيذها  .  <br>
+                <span class="text-green-800">         البند الثاني :-     </span>  الملامح الرئيسية للإستراتيجية العربية   .  <br>
+                <span class="text-green-800">      البند الثالث :-      </span>   المقترحــــــات   .  <br>
+                <span class="text-green-800">      البند الرابع :-      </span>  المطــــــــــالب   .  <br>
+              </p><br>
+              <div class=" mohareb container ">
+                <div class="mohareb1">
+                  <img  src="../../imeges/mettings/Galsa2-1.png"  class="w-full " >
+                </div>
+                <div class="mohareb1">
+                  <img  src="../../imeges/mettings/Galsa2-2.png"  class="w-full " >
+                </div>
+              </div><br><br>
+
+
+              
+              <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+                البند الأول : الأنشطة والأعمال التى تم تنفيذها  .
+
+           </h1><br>
+
+
+               <img src="../../imeges/mettings/Activities.png" style="display: block;margin-left: auto;margin-right: auto;"><br><br>
+                  <img src="../../imeges/mettings/Acticities2.png" style="display: block;margin-left: auto;margin-right: auto;"><br><br>
+                  <img src="../../imeges/mettings/Activities3.png" style="display: block;margin-left: auto;margin-right: auto;"><br><br>
+                  <img src="../../imeges/mettings/Activities4.png" style="display: block;margin-left: auto;margin-right: auto;">   <br><br><br> 
+
+
+
+                  <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+                    البند الثاني : الملامح الرئيسية للإستراتيجية العربية  .
+    
+               </h1><br>
+               <p class="font-bold mx-6  " >
+                الاستراتيجية العربية الجديدة   ،  تبدأ من أول العام الحالى ويتم تقييمها سنوياً  (  2025  - 2026  -  2027    ) . 
+
+              </p><br><br>
+
+
+              <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+                وتشمل الإستراتيجية العربية الجديدة ( 4 ) محاور رئيسية   :- 
+
+           </h1><br>
+           <p class=" font-bold mx-6">
+            <span class="text-green-800">   المحور الأول :-   </span>  الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب  .  <br>
+            <span class="text-green-800">         المحور الثاني  :-     </span>  أعضاء الإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
+            <span class="text-green-800">      المحور الثالث :-      </span>   الجمعية العمومية للإتحاد العربى للمحاربين القدماء   .  <br>
+            <span class="text-green-800">      المحور الرابع :-      </span> تعظيم دور المحارب العربى القديم   .  <br>
+          </p><br>
+
+          <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+            المحور الأول :      ويشمل قيام الأمانة العامة للإتحاد العربى بالتخطيط والأعداد للإستراتيجية ومتابعة تنفيذها من خلال :-
+       </h1>
+       <p class=" font-bold mx-6">
+        <span class="text-green-800">   1 -   </span>  التنسيق بين الجمعيات والهيئات أعضاء الإتحاد لتنفيذ الأنشطة والأعمال المخططة والعمل على تحديثها وتطويرها لتواكب الهدف المرجو منها  .  <br>
+        <span class="text-green-800">        2 -     </span>  التنسيق والتواصل مع الإتحادات الأخرى لخدمة وتحقيق أهداف الإتحاد والمحارب العربى القديم    .  <br>
+        <span class="text-green-800">      3 -      </span>   دراسة مطالب ومقترحات أعضاء الإتحاد أثناء وبعد إنعقاد الجمعية العمومية والعمل على إيجاد الحلول المناسبة لها    .  <br>
+        <span class="text-green-800">     4 -      </span> زيارة المقاتلين المصابين والمحاربين المقيمين بدولة المقر لتلاقى العلاج بصفة دورية بالمجمعات والمستشفيات والمراكز الطبية وتقديم هدايا عينية   .  <br>
+        <span class="text-green-800">     5 -      </span> المشاركة فى الندوات التثيقيفية والإحتفالات القومية لأعضاء الإتحاد من المنظمات والهيئات   .  <br>
+        <span class="text-green-800">     6 -      </span> تخليد يوم إنشاء الإتحاد العربى للمحاربين القدماء وضحايا الحرب ( يوم العشرون من شهر فبراير من كل عام ) وإعداد تقرير عن الأعمال والأنشطة التى تم تنفيذها عن عام سابق   .  <br>
+        <span class="text-green-800">     7 -      </span> الإستمرار فى تطوير وتحديث مجلة المحارب العربى القديم لتواكب الأحداث الجارية والأعمال والأنشطة التى تقوم بها المنظمات لصالح المحارب العربى القديم   .  <br>
+        <span class="text-green-800">     8 -      </span> تفعيل صفحة الموقع الخاص بالإتحاد العربى بتحديث البيانات للأعضاء ةوعرض الأنشطة والأعمال التى تقدمها الجمعيات والمنظمات  .  <br>
+        <span class="text-green-800">     9 -      </span>مشاركة أمانة الإتحاد العربى فى المناسبات والأعياد القومية للمجتمع المدنى .  <br>
+        <span class="text-green-800">   10 -      </span>    تم إنضمام دولة البحرين إلى عضوية الإتحاد العربى حديثاً والسعى لإنضمام باقى الدول العربية التى لم تنضم ( تونس – جيبوتى – الصومال – جزر القمر ) وتفعيل تشكيل لجنة دائمة سياسية لذات الشأن .  <br>
+        <span class="text-green-800">   11 -      </span>   التواصل مع المنظمات والإدارات التى لم تشارك بالجمعية العمومية ( السعودية – الجزائر – سوريا – اليمن ) .  <br>
+      </p><br><br>
+
+
+          <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+            المحور الثاني :    تفعيل مهام وواجبات وأهداف أعضاء الإتحاد من الهيئات والمؤسسات من خلال  :-
+
+       </h1>
+       <p class=" font-bold mx-6">
+        <span class="text-green-800">   1 -   </span>   أهمية تنفيذ أعمال وأنشطة الجمعيات والهيئات والإدارات .  <br>
+        <span class="text-green-800">        2 -     </span>  تكريم أم مثالية من كل منظمة أثناء إنعقاد الجمعية العمومية بعرض قصة كفاحها وعملها والتوثيق بمجلة المحارب العربى القديم وبالموقع   .  <br>
+        <span class="text-green-800">      3 -      </span>   تنفيذ مسابقات متنوعة فى المجالات ( التاريخية – الثقافية ) ويتم توزيع هدايا عينية للفائزين أثناء إنعقاد الجمعية العمومية أو فى مناسبات رئيسية    .  <br>
+        <span class="text-green-800">     4 -      </span> حث الباحثين من الجمعيات والمنظمات على تقديم أرائهم ومقترحاتهم لتفعيل وتنشيط الأداء وتحقيق أهدافهم  .  <br>
+      </p><br><br>
+
+
+
+      <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+        المحور الثالث :    أهمية وضرورة عقد الجمعية العمومية سنوياٌ لأهميتها ولإصدار القرارات المتعلقة بالأعضاء     .
+
+   </h1>
+   <p class=" font-bold mx-6">
+    <span class="text-green-800">   1 -   </span>    وضع ألية ومعايير للأعضاء للحرص على تنفيذ الجمعية العمومية سنوياُ والالتزام بما تم الإتفاق عليه .  <br>
+    <span class="text-green-800">        2 -     </span>   إنتخاب / تجديد الأمانة العامة للإتحاد ( رئيس – النائبين – الأمين العام - الأمين العام المساعد – أمين الصندوق – المفوض المالى – اللجان المختلفة )   .  <br>
+    <span class="text-green-800">      3 -      </span>     مناقشة مشروعات القرارات المقدمة من أعضاء الإتحاد العربى من المنظمات والتصديق عليها   .  <br>
+    <span class="text-green-800">     4 -      </span> تعديل / إلغاء / دمج / تحديث بعض المواد باللائحة الأساسية للإتحاد العربى   .  <br>
+    <span class="text-green-800">     5 -      </span>   التصديق على الميزانية التقديرية الجديدة   .  <br>
+    <span class="text-green-800">     6 -      </span>    عرض تقرير الأمين العام – عرض تقرير أمين الصندوق  .  <br>
+    <span class="text-green-800">     7 -      </span>    التواصل والتفاعل بين الأمانة العامة والأعضاء للإتحاد العربى  .  <br>
+    <span class="text-green-800">     8 -      </span>     التكريم ( المصابين – الشهداء – الأم المثالية – الباحثين ) مناقشة القضايا العربية / مناقشة وتبادل الأراء والأفكار والمقترحات لتطوير الأداء / التعرف على الثقافات المختلفة  .  <br>
+    <span class="text-green-800">     9 -      </span>     التصديق على أعضاء جدد  .  <br>
+  </p><br><br>
+
+
+
+  <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+    المحور الرابع :    تعظيم دور المحارب العربى القديم من خلال مزايا , خدمات مختلفة  :-
+
+</h1>
+<p class=" font-bold mx-6">
+<span class="text-green-800">   1 -   </span>     إصدار بطاقة المحارب العربى تحتوى على خدمات ومميزات ( تقديم علاج طبى متكامل – تحاليل – أشعة – إقامة وإعاشة – دورات تدريبية – تأهيل علمى يواكب العمل بالقطاع المدنى ) أثناء تواجده بدولة المقر   .  <br>
+<span class="text-green-800">        2 -     </span>     تفعيل يوم الشهيد العربى ( يوم القدس ) بإعداد وتجهيز إحتفال لتعظيم دور المحارب العربى القديم ( الجمعة الأخيرة من شهر رمضان )     .  <br>
+<span class="text-green-800">      3 -      </span>      قيام أعضاء الإتحاد بتقديم خدمات ومميزات للمحارب العربى القديم أثناء تواجده بدولهم على غرار ما تم تقديمه بدولة المقر   .  <br>
+</p><br><br>
+<h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+  وخلال الجلسة الثانية   :    تم عرض تقرير أمين الصندوق و الموازنة التقديرية للعام 2025 /2026 م   .
+
+</h1><br>
+<h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+  وخلال الجلسة الثالثة    :    تم عقد الإنتخابات   .
+
+</h1><br>
+<p class="font-bold mx-6  " >
+  و قامت الجمعية العمومية بإنتخاب  ،  لمدة ( 4 )  سنوات    . 
+
+</p><br>
+
+<div class=" flex justify-center ">
+
+<article class="card">
+  <img
+    class="card__background"
+    src="../../imeges/people/Khaled-Moustafa.png"
+    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+    width="1920"
+    height="2193"
+  />
+  <div class="card__content | flow">
+    <div class="card__content--container | flow">
+      <h2 class="card__title">لواء أ . ح . م / خالد مصطفى توفيق </h2>
+      <p class="card__description">
+         تم الانتخاب :- <br>
+         رئيساً للإتحاد العربي للمحاربين القدماء  . 
+         
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="card">
+  <img
+    class="card__background"
+    src="../../imeges/people/sabah.JPG"
+    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+    width="1920"
+    height="2193"
+  />
+  <div class="card__content | flow">
+    <div class="card__content | flow">
+      <h2 class="card__title">         معالي الشيخ  / صباح العبد لله الصباح     </h2>
+      <p class="card__description">
+        تم الانتخاب :- <br>
+        نائباً أول لرئيس للإتحاد العربي للمحاربين القدماء   .  
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="card">
+  <img
+    class="card__background"
+    src="../../imeges/people/meky.jpg"
+    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+    width="1920"
+    height="2193"
+  />
+  <div class="card__content | flow">
+    <div class="card__content | flow">
+      <h2 class="card__title">           العميد  / مكي محمد أحمد الكناني     </h2>
+      <p class="card__description">
+        تم الانتخاب :- <br>
+        نائباً ثانياً لرئيس للإتحاد العربي للمحاربين القدماء   .  
+      </p>
+    </div>
+  </div>
+</article>
+
+</div><br><br><br>
+
+<h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+  كما قامت الجمعية العمومية    :   بإنتخاب الأمانه العامة للإتحاد ممثلة فى   :-
+
+</h1><br>
+
+
+<div class=" flex justify-center ">
+
+
+<article class="card">
+  <img
+    class="card__background"
+    src="../../imeges/people/Al-Amin-Elaam.jpg"
+    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+    width="1920"
+    height="2193"
+  />
+  <div class="card__content | flow">
+    <div class="card__content | flow">
+      <h2 class="card__title">لواء . م / مصطفى أحمد مصطفى عميره </h2>
+      <p class="card__description">
+        تم الانتخاب :- <br>
+          أميناً عاماً للإتحاد العربي للمحاربين . 
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="card">
+  <img
+    class="card__background"
+    src="../../imeges/people/Hazem-Hassan-ElSayed.jpg"
+    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+    width="1920"
+    height="2193"
+  />
+  <div class="card__content | flow">
+    <div class="card__content | flow">
+      <h2 class="card__title">لواء . م /   حازم حسن السيد بيومي   </h2>
+      <p class="card__description">
+        تم الانتخاب :- <br>
+          أمين صندوق الإتحاد العربي للمحاربين .
+      </p>
+    </div>
+  </div>
+</article>
+
+</div><br><br><br>
+
+
+<h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+  كما قامت الجمعية العمومية    :    بإنتخاب المفوض المالى للإتحاد العربى للمحاربين   :-
+
+</h1><br>
+
+<div class=" flex justify-center ">
+
+
+  <article class="card">
+    <img
+      class="card__background"
+      src="../../imeges/people/Nakola.png"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content | flow">
+        <h2 class="card__title">لواء ركن / نقولا  مزهر  </h2>
+        <p class="card__description">
+          تم الانتخاب :- <br>
+            كمفوض مالي للإتحاد العربي للمحاربين . 
+        </p>
+      </div>
+    </div>
+  </article>
+  
+  
+ 
+  
+  </div><br><br><br>
+
+
+
+  <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+    وتم خلالها أيضاٌ    :   تحديد مقررى الجلسات الفرعية ( أ. ب )  ،  حيث تم تقرير اللجنة الفرعية ( أ ) الإدارية والإجتماعية    .   
+  
+  </h1><br>
+
+
+  <div class=" flex justify-center ">
+
+
+    <article class="card">
+      <img
+        class="card__background"
+        src="../../imeges/people/Fayez-al3anzy.jpg"
+        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+        width="1920"
+        height="2193"
+      />
+      <div class="card__content | flow">
+        <div class="card__content | flow">
+          <h2 class="card__title">    الســـــــــــــيد / فايز العنزى    </h2>
+          <p class="card__description">
+            رئيس اللجنة   . 
+          </p>
+        </div>
+      </div>
+    </article>
+    
+    
+   
+    
+    </div><br>
+
+
+    <h2 class="text-green-800 font-bold mx-6 text-2xl" >          بحضور كلاً   من    :-</h2>
+    <p class="font-bold mx-6">
+  <span class="text-green-800">1-</span>            اللواء أ. ح . م / خالد مصطفى توفيق . . رئيس الإتحاد    .     <br>
+  <span class="text-green-800">2-</span>          الأستاذة / مروة سعد خليل . . مقرر اللجنة      .     <br>
+    </p><br>
+    <h2 class="text-green-800 font-bold mx-6 text-2xl" >        وعضوية ( 16 ) عضو    :-</h2>
+    <p class="font-bold mx-6">
+      <span class="text-green-800">1-</span>            لواء  ركن  / عدنان أحمد الرقاد   ،  دولة الأردن  ( المؤسسه الاقتصادية للمتقاعين  )   .     <br>
+      <span class="text-green-800">2-</span>          العقيد    / عبدالله  أحمد عبيد آل علي   ،  دولة الإمارات  ( جمعية العسكريين للمتقاعين  )   .      .     <br>
+      <span class="text-green-800">3-</span>          الرائد    / خالد حمد سيف العبري   ،  دولة الإمارات  ( جمعية العسكريين للمتقاعين  )   .           <br>
+      <span class="text-green-800">4-</span>          العقيد   الركن  / مبارك علي مبارك النعيمي   ،  دولة البحرين  ( شعبة القوة  الاحتياطية و المتطوعين  )   .           <br>
+      <span class="text-green-800">5-</span>          العميد  طيار  / حمدتو حسن   ،  دولة السودان  ( المؤسسه السودانية لقدامي المحاربين  )     .         <br>
+      <span class="text-green-800">6-</span>          عميد  الركن  / علي بن سليمان بن علي الذهلي    ،  دولة سلطنة عمان  ( الخدمات الاجتماعية العسكرية  )     .         <br>
+      <span class="text-green-800">7-</span>          الرائد    / يحيى بن سالم بن محمد الحوسني    ،  دولة سلطنة عمان  ( الخدمات الاجتماعية العسكرية  )      .        <br>
+      <span class="text-green-800">8-</span>          العميد   / هشام داود عبدالهادي طعمه  ،  دولة فلسطين  ( رابطة المحاربين القدماء  )       .       <br>
+      <span class="text-green-800">9-</span>          عميد  الركن  / سويدان محمد الغيثاني   ،  دولة قطر  ( لجنة التقاعد العسكري  )        .      <br>
+      <span class="text-green-800">10-</span>          العميد   / مصطفى مسلماني    ،  دولة لبنان  ( رابطة قدماء القوى المسلحة  )        .      <br>
+      <span class="text-green-800">11-</span>          العميد   / حسن بشير عثمانلطيوش   ،  دولة ليبيا  ( إدارة شئون الشهداء  )      .      <br>
+      <span class="text-green-800">12-</span>          العميد  / رضوان إبراهيم محمد الغراري   ،  دولة ليبيا  ( إدارة المجاهدين  )       .      <br>
+      <span class="text-green-800">13-</span>          لواء  أ . ح  / مدحت عبدالعزيز فاوي  ،  دولة مصر  ( جمعية المحاربين القدماء  )       .     <br>
+      <span class="text-green-800">14-</span>          السيد   / يوسف بنرحو   ،  دولة المغرب  ( المندوبية السامية  )         .    <br>
+      <span class="text-green-800">15-</span>          السيد   /  أحمد بويقوشان   ،  دولة المغرب  ( الجمعية الوطنية  )        .    <br>
+      <span class="text-green-800">16-</span>          السيد   /  محمد سالم ولد اعلى   ،  دولة موريتانيا  ( الرابطة الوطنية لتخليد بطولات المقاومة  )        .    <br>
+        </p><br><br>
+
+        <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+          حيث تم تقرير اللجنة الفرعية ( ب ) قضايا عربية   .   
+        
+        </h1><br>
+
+        <div class=" flex justify-center ">
+        <article class="card">
+          <img
+            class="card__background"
+            src="../../imeges/people/mostafa-karthy.bmp"
+            width="1950"
+            height="2200"
+          />
+          <div class="card__content | flow">
+            <div class="card__content | flow ">
+              <h2 class="card__title ">  دكتور  / مصطفى الكثيري    </h2><br>
+              <p class="card__description">
+                رئيس اللجنة   . 
+                 
+              </p>
+            </div>
+          </div>
+        </article>
+        </div><br><br>
+        <h2 class="text-green-800 font-bold mx-6 text-2xl" >          بحضور كلاً   من    :-</h2>
+        <p class="font-bold mx-6">
+      <span class="text-green-800">1-</span>            اللـــــــــواء / مصطفى أحمد عميره . . الأمين العام الإتحاد   .     <br>
+      <span class="text-green-800">2-</span>          السيد / حسن العجمى . . مقرر اللجنة     .     <br>
+        </p><br>
+        <p class="font-bold mx-6">
+          <span class="text-green-800">-  </span>          العميد  / مكي محمد أحمد   ،  دولة السودان  ( المؤسسه السودانية لقدامي المحاربين  )   .     <br>
+          <span class="text-green-800">-  </span>          العقيد الركن   / محمد بن سليمان بن خميس الهطال  ،  دولة سلطنة عمان  ( الخدمات الاجتماعية العسكرية  )   .      .     <br>
+          <span class="text-green-800">-  </span>          السيد    / وليد عطا الله أبو شعبان  ،  دولة فلسطين  ( جمعية المحاربين القدماء  )   .           <br>
+          <span class="text-green-800">-  </span>          السيد  / مصباح جمعة مصباح  ،  دولة قطر  ( لجنة التقاعد  العسكري  )   .           <br>
+          <span class="text-green-800">-  </span>          العميد  بحري  / أحمد يوسف محمد العبيدان  ،  دولة قطر  (  لجنة التقاعد  العسكري  )     .         <br>
+          <span class="text-green-800">-  </span>          لواء  ركن  / نقولا مزهر   ،  دولة لبنان  (  رابطة قدماء القوى المسلحة  )     .         <br>
+          <span class="text-green-800">-  </span>          عميد ركن    / خضر منصور  ،  دولة لبنان  (  رابطة قدماء القوى المسلحة  )      .        <br>
+          <span class="text-green-800">-  </span>          العميد   / أبو قاسم مفتاح أبو القاسم ،  دولة ليبيا  (  إدارة شئون الشهداء  )       .       <br>
+          <span class="text-green-800">-  </span>          العميد    / سعد محمد سعد أبو قبة   ،  دولة ليبيا  ( إدارة المجاهدين  )        .      <br>
+          <span class="text-green-800">-  </span>          العقيد أ . ح   / طارق  كامل   ،  دولة مصر  ( جمعية المحاربين القدماء )        .      <br>
+          <span class="text-green-800">-  </span>          السيد   / الحبيب الحسيني  ،  دولة المغرب  ( الجمعية الوطنية  )      .      <br>
+          <span class="text-green-800">-  </span>          السيد  / محمد محمود ولد بكار   ،  دولة موريتانيا  ( الرابطة الوطنية لتخليد بطولات المقاومة   )       .      <br>
+            </p><br><br>
+
+
+            <p class="font-bold mx-6  " >
+              وفى نهاية اليوم الأول تم التحرك لتناول وجبة العشاء على الباخرة النيلية   . 
+            
+            </p><br>
+
+            <div class=" mohareb container ">
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-1.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-2.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-3.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-4.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-5.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-6.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-7.png"  class="w-full " >
+              </div>
+              <div class="mohareb1">
+                <img  src="../../imeges/mettings/Bakhera-8.png"  class="w-full " >
+              </div>
+            </div><br><br>
+
+
+            <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+              الدورة رقم ( 29 ) للجمعية العمومية للإتحاد العربى للمحاربين القدماء وضحايا الحرب  .   
+            
+            </h1><br>
+            <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+              فاعليات اليوم الثانى  <br>
+              2025/05/06 
+  
+            
+            </h1><br>
+
+            <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+              و تضمنت الجلسة الرابعة و الخامسة      :   القيام بأعمال اللجان الفرعية ( أ . ب )  .
+            
+            </h1><br>
+            <h2 class="text-green-800 font-bold mx-6 text-2xl" >         حيث تشكلت اللجنة من ( أ ) الإدارية والإجتماعية        :-</h2>
+            <p class="font-bold mx-6">
+              <span class="text-green-800">1-</span>           السيد / فايز عبد الله العنزى. . .رئيس اللجنة   .     <br>
+              <span class="text-green-800">2-</span>          اللواء أ . ح .م/ خالد مصطفى توفيق. . ( رئيس الإتحاد)     .     <br>
+              <span class="text-green-800">3-</span>         الاستاذة /مروة سعد خليل . . مقرر اللجنة     .     <br>
+                </p><br>
+
+                <div class=" mohareb container ">
+                  <div class="mohareb1">
+                    <img  src="../../imeges/mettings/Event-1.png"  class="w-full " >
+                  </div>
+                  <div class="mohareb1">
+                    <img  src="../../imeges/mettings/Event-2.png"  class="w-full " >
+                  </div>
+                 
+                </div><br><br>
+                <h2 class="text-green-800 font-bold mx-6 text-2xl" >       وخلالها تم التصديق على ( 16 ) قرار وهم      :-</h2>
+                <p class="font-bold mx-6  " >
+                  عناوين القرارات المصادق عليها ( اللجنة أ ) الإدارية والإجتماعية                  . 
+                
+                </p><br>
+                <p class="font-bold mx-6">
+                  <span class="text-green-800">1-</span>        تنظيم وتفعيل الاحتفال بيوم الشهيد العربي ( يوم القدس ) الجمعة الأخيرة من شهر رمضان سنوياً   .     <br>
+                  <span class="text-green-800">2-</span>          تجميد عضوية جمعية معاقي الحرب والواجب وأسر الشهداء اليمنية    .     <br>
+                  <span class="text-green-800">3-</span>           تطوير وتفعيل موقع الإتحاد   .     <br>
+                  <span class="text-green-800">4-</span>          بشأن تطوير مجلة المحارب العربي القديم باشتراك أعضاء الإتحاد لتقديم الأعمال والأنشطة والإنجازات كل 6 شهور .     <br>
+                  <span class="text-green-800">5-</span>         دورية انعقاد الجمعية العمومية  .     <br>
+                  <span class="text-green-800">6-</span>          الأثار الاجتماعية و النفسية للحرب و اضطرابات ما بعد الصدمة كذلك المواكبة النفسية و المعنوية لقدماء المحاربين   .     <br>
+                  <span class="text-green-800">7-</span>          نشر الوعي و تنمة روح الولاء و الانتماء و حب الوطن العربي و الوحدة الوطنية لدى المجتمع العربي و خاصة الشباب العربي     .     <br>
+                  <span class="text-green-800">8-</span>          التعاون بين الجمعيات الأعضاء فيما يختص بتقديم التكنولوجيا الخاصة بأجهزة المعاقين من المحاربين القدماء     .     <br>
+                  <span class="text-green-800">9-</span>          إبراز قدرات القادرون بإختلاف  .     <br>
+                  <span class="text-green-800">10-</span>         من أجل ترسيخ الهوية الوطنية وتقوية الشعور بالانتماء الوطني لدى الفرد في العالم العربي عبر حفظ وصيانة الذاكرة التاريخية للشعوب   .     <br>
+                  <span class="text-green-800">11-</span>          تعزيز التعاون والشراكة والتعاضد بين مؤسسات الإتحاد العربي للمحاربين القدامي وضحايا الحرب ومنظماته العضوة رافعة للرقي الشامل بالأوضاع المادية والاجتماعية والصحية والمعنوية والتشريعية لقدماء المقاومين  و قدماء المحاربين وضحايا الحرب في الوطن العربي .     <br>
+                  <span class="text-green-800">12-</span>           قيادة المستقبل : تمكين بنات و أبناء الشهداء و قدماء المقاومين و المحاربين عبر برامج التشغيل الذاتي و العمل المقاولات و إشاعة و نشر ثقافة ريادة الأعمال  .     <br>
+                  <span class="text-green-800">13-</span>          ضرورة دعم صناديق وروابط جمعيات المحاربين القدماء  .     <br>
+                  <span class="text-green-800">14-</span>          بشأن موقف المنظمات المتأخرة عن سداد الإشتراكات السنوية  .     <br>
+                  <span class="text-green-800">15-</span>          تشكيل لجنة دائمة للشؤون السياسية .     <br>
+                  <span class="text-green-800">16-</span>           تشكيل لجنة دائمة للشؤون الإدارية والمالية   .     <br>
+                    </p><br><br>
+
+
+
+                    <h2 class="text-green-800 font-bold mx-6 text-2xl" >         كما تشكلت اللجنة من ( ب ) قضايا عربية       :-</h2>
+                    <p class="font-bold mx-6">
+                      <span class="text-green-800">1-</span>           السيد / مصطفى الكثيرى. . .رئيس اللجنة   .     <br>
+                      <span class="text-green-800">2-</span>          اللواء/ مصطفى أحمد عميرة . . .الامين العام للإتحاد    .     <br>
+                      <span class="text-green-800">3-</span>        السيد/ حسن العجمى. . مقرر اللجنة    .     <br>
+                        </p><br>
+
+                        <div class=" mohareb container ">
+                          <div class="mohareb1">
+                            <img  src="../../imeges/mettings/Events-1.png"  class="w-full " >
+                          </div>
+                          <div class="mohareb1">
+                            <img  src="../../imeges/mettings/Events-2.png"  class="w-full " >
+                          </div>
+                         
+                        </div><br><br>
+
+
+                        <h2 class="text-green-800 font-bold mx-6 text-2xl" >      وخلالها تم التصديق على ( 7 ) قرار وهم     :-</h2>
+
+                        <p class="font-bold mx-6  " >
+                          عناوين القرارات المصادق عليها ( اللجنة ب ) قضايا عربية       . 
+                        
+                        </p><br>
+                        <p class="font-bold mx-6">
+                          <span class="text-green-800">1-</span>        التصدي لتهجير الشعب الفلسطيني بقطاع غزة والضفة الغربية وتهويد القدس الشريف  .     <br>
+                          <span class="text-green-800">2-</span>         تقديم الدعم الكامل والشامل للقيادة السودانية والشعب السوداني للحفاظ على أمن وسلامة السودان والخروج من الأزمه التى يمر بها   .     <br>
+                          <span class="text-green-800">3-</span>           تقديم الدعم الكامل و التضامن  الشامل لجمهورية لبنان الشقيقة لمجابهة الاعتداءات الإسرائيلية داخل أرضيها وعد التزامها  التام باتفاقية وقف إطلاق النار   .     <br>
+                          <span class="text-green-800">4-</span>           ضرورة وضع حد لهجرة الأدمغة العربية و الاستفادة منها داخل أوطانها    .     <br>
+                          <span class="text-green-800">5-</span>         حماية البنايات و المأثر التاريخية .     <br>
+                          <span class="text-green-800">6-</span>         من أجل إبراز القدوة برسائل المقامة و الكفاح في العالم العربي و توجية الناشئة إلى التحلي بقيمها  .     <br>
+                          <span class="text-green-800">7-</span>          صون السيادة الوطنية و الحفاظ على الوحدة الترابية بالبلدان العربية مسئولية تاريخية   .     <br>
+                            </p><br><br>
+
+
+                            <p class="font-bold mx-6  " >
+                              ثم القيام بزيارة إلى الجمعية المصرية      . 
+                            
+                            </p><br>
+
+                            <div class=" mohareb container ">
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-1.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-2.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-3.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-4.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-5.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-6.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-7.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-8.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-9.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Event3-10.png"  class="w-full " >
+                              </div>
+                             
+                            </div><br><br>
+
+                            <p class="font-bold mx-6  " >
+                              وفى نهاية اليوم الثانى  : تم إقامة عشاء مجمع بالفندق   . 
+
+                            
+                            </p><br>
+
+                            <div class=" mohareb container ">
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-1.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-2.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-3.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-4.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-5.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-6.png"  class="w-full " >
+                              </div>
+                              <div class="mohareb1">
+                                <img  src="../../imeges/mettings/Events2-7.png"  class="w-full " >
+                              </div>
+                             
+                            </div><br><br><br><br>
+
+                            <h1 class="text-green-800 mx-6 text-center  w-full  text-2xl  font-bold">
+                              فاعليات   اليوم الثالث <br>
+                              2025/05/07
+                  
+                            
+                            </h1><br>
+
+                            <h2 class="text-green-800 font-bold mx-6 text-2xl" >    (  الجلسة السادسة - الجلسة السابعة  - الجلسة الثامنة  - الجلسة التاسعة  - الجلسة العاشرة  )      .  </h2><br>
+                            <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+                              وتضمنت الجلسة السادسةوالسابعة والثامنة      :-   
+                            </h1>
+                            <p class="font-bold mx-6">
+                              <span class="text-green-800">1-</span>           تم عرض تقارير اللجان الفرعية ( أ. ب ) وإتخاذ القرارات والتوصيات  .     <br>
+                              <span class="text-green-800">2-</span>          دراسة وتعديل فقرة فى اللائحة الأساسية للإتحاد   .     <br>
+                                </p><br>
+
+                                <h2 class="text-green-800 font-bold mx-6 text-2xl" >   صدقت الجمعية العامة على تعديل المادة ( 44 )     .  </h2>
+                                <p class="font-bold mx-6  " >
+                                  وقد تم إستكمال الإنتخابات وذلك من خلال تشكيل لجنة لإنتخاب اللجنة الدائمة للشئون الأدارية والمالية و اللجنة السياسية  . 
+    
+                                
+                                </p><br><br>
+                                
+                                <h2 class="text-green-800 font-bold mx-6 text-2xl" >   حيث تم تشكيل لجنة مكونة من  :-     </h2>
+                                <p class="font-bold mx-6">
+                                  <span class="text-green-800">1-  رئيس اللجنة : </span>          لواء أ.ح / مدحت عبد العزيز فاوى  .     <br>
+                                  <span class="text-green-800">2- العضو الأول  :  </span>          العمـــيد / مصطفى مسلمانى   .     <br>
+                                  <span class="text-green-800">3- العضو الثاني  :  </span>         الســيد /محمد سالم ولد اعلى   .     <br>
+                                    </p><br>
+
+                                    <h2 class="text-green-800 font-bold mx-6 text-2xl" >  وقد تم إنتخاب كل من :   اللجنة الدائمة للشئون الادارية والمالية  :-     </h2>
+                                    <p class="font-bold mx-6  text-green-800 " >
+                                      وعددهم ( 4 ) أعضاء برئاسة    اللواء أ . ح . م / خالد مصطفى توفيق . . رئيس الاتحاد  . 
+        
+                                    
+                                    </p>
+                                    <p class="font-bold mx-6  " >
+                                     (  لمدة 4 سنوات  )  
+        
+                                    
+                                    </p>
+                                    <p class="font-bold mx-6">
+                                      <span class="text-green-800">1-  </span>         العمــــيد /حسن بشير عثمان لطيوش . . ليبيا ( نائب رئيس اللجنة ) .     <br>
+                                      <span class="text-green-800">2-   </span>          الســــــيد/ حســـــن العجمى . . . الكويت ( مقرر اللجنة )  .     <br>
+                                      <span class="text-green-800">3-  </span>         السيد / أحمد بويقشـــــــــان . . . المغرب  .     <br>
+                                      <span class="text-green-800">4-  </span>         العمــــيد /هشام داود عبد الهادى . . . فلسطين  .     <br>
+                                        </p><br><br>
+
+                                        <h2 class="text-green-800 font-bold mx-6 text-2xl" > اللجنة الدائمة للشئون السياسية     :-     </h2>
+                                        <p class="font-bold mx-6  text-green-800 " >
+                                          وعددهم ( 4 ) أعضاء برئاسة السيد / محمد محمود ولد بكار  . 
+            
+                                        
+                                        </p>
+                                        <p class="font-bold mx-6  " >
+                                          (  لمدة 4 سنوات  )  
+             
+                                         
+                                         </p>
+                                         <p class="font-bold mx-6">
+                                          <span class="text-green-800">1-  </span>         لواء أ. ح . م / خـــالد مصطفى توفيق. . . رئيس الإتحاد  .     <br>
+                                          <span class="text-green-800">2-   </span>          اللـــــــــواء / رضوان ابراهيم محمد الغرارى . . . ليبيا    .     <br>
+                                          <span class="text-green-800">3-  </span>        العميد طيار /حمدتو حســــن إبراهيم . . . السودان   .     <br>
+                                          <span class="text-green-800">4-  </span>         الســــــــيد / يوســــف بنرحو . . . . . . المغرب   .     <br>
+                                            </p><br><br>
+
+                                            <h2 class="text-green-800 font-bold mx-6 text-2xl" >   عرض أنشطة وأعمال وإنجازات أعضاء الإتحاد ( المملكة الأدرنية الهاشمية )   .  </h2><br>
+                                            <h1 class="text-green-800 mx-6   w-full  text-2xl  font-bold">
+                                              وتضمنت الجلسة التاسعة       :   صدقت الجمعية العمومية على قيام الامانة بمخاطبة سلطنة عمان لموافاتها بمقترح عقد الدورة رقم (30) خلال العام الأول 2026 وذلك طبقاً للترتيب  سلطنة عمان نفذت دورة واحدة عام 2007  .
+                                            
+                                            </h1><br>
+                                            <h2 class="text-green-800 font-bold mx-6 text-2xl" > سلطنة عمان      :-     </h2>
+                                            <p class="font-bold mx-6">
+                                              <span class="text-green-800">1-  </span>          السيدة/ فاطمة بنت مسلم بن محمد المعشلى   .     <br>
+                                              <span class="text-green-800">2-   </span>          السيدة/ شمساء بنت اسحاق بن شاهين البلوشية    .     <br>
+                                                </p><br><br>
+                                                <h2 class="text-green-800 font-bold mx-6 text-2xl" > المغرب      :-   المندوبية السامية لأعضاء جيش التحرير   .  </h2>
+                                                <p class="font-bold mx-6">
+                                                  <span class="text-green-800">-  </span>         المرحومة / فاطمة سقيم. . مقاومة        .     <br>
+                                                    </p><br><br>
+                                                <h2 class="text-green-800 font-bold mx-6 text-2xl" > فلسطين      :-     رابطة مقاتلى الثورة الفلسطينية   .  </h2>
+                                                <p class="font-bold mx-6">
+                                                  <span class="text-green-800">-  </span>        السيدة/ نجاح عبد الفتاح حسين . . رائد متقاعد        .     <br>
+                                                    </p><br><br>
+
+                                                    <h2 class="text-green-800 font-bold mx-6 text-2xl" >       بالإضافة إلى تكريم الأم المثالية الفلسطينية    .  </h2>
+                                                    <p class="font-bold mx-6  " >
+                                                         حيث صدقت الجمعية العمومية  :   على منح السيدة /منال حسين عبدالرؤوف ابو شعبان. . من جمعية المحاربين القدماء الفلسطينية ( دولة فلسطين )  .  <br>
+                                                         وقد تم منح سيادتها جائزة مالية قدرها الف دولار بالإضافة إلى نوط الإتحاد وهدية وشهادة تقدير . 
+                         
+                                                     
+                                                     </p>
+
+                                                     <div class=" mohareb container ">
+                                                      <div class="mohareb1">
+                                                        <img  src="../../imeges/mettings/Manal-huseen.png"  class="w-full " >
+                                                      </div>
+                                                     
+                                                    </div><br>
+                                                    <p class="font-bold mx-6  " >
+                                                      هى أم شريف أبوشعبان - إمرأة عادية فى ظاهرها ولكن فى قلبها وطن . أم لأربعة شباب وسندهم الوحيد بعد أن غاب الأب عام 2019 م - عاشت حروباُ متتالية من 2008 حتى اليوم تحملت الجوع والوجع وإنقطاع الكهرباء والدواء - فى 23 مارس 2024 دخل الجيش الإحتلال إلى بيتها أعتقل أبنائها الأربعة أمام عينيها ثم أحرق البيت ولم يترك شيئاً - عاد أولادها الثلاثة وأحدهم عليه أثار تعذيب والضرب ثم جاءها الخبر بأعدام الرابع بدم بارد وأحتسبته عند الله مع النبيين والصديقين والشهداء .
+                                                
+                      
+                                                  
+                                                  </p><br><br><br>
+                                                  <h2 class="text-green-800 font-bold mx-6 text-2xl" >       وخلال الجلسة العاشرة تم تكريم الأبطال المصابين المقاتلين   .  </h2>
+                                                  <p class="font-bold mx-6  " >
+
+                                                    تم تكريم عميدأ.ح / محمودعلى عبده هلال. . مصاب العمليات الأرهابية بسيناء
+بسلاح المشاة أصابة باليد اليسرى  . 
+                                                </p><br>
+
+
+                                                <div class=" mohareb container ">
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-1.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-2.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-3.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-4.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-5.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-6.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-7.png"  class="w-full " >
+                                                  </div>
+                                                  <div class="mohareb1">
+                                                    <img  src="../../imeges/mettings/Events4-8.png"  class="w-full " >
+                                                  </div>
+                                                 
+                                                </div><br><br><br>
+
+                                                <p class="font-bold mx-6  text-green-800 " >
+                                                  م تكريم نقيب / أحمد محمد عبد اللطيف . . مصاب العمليات الأرهابية بسيناء   (  الإصابة بترفى الساق اليسرى  )  . 
+
+                                              </p><br>
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events5-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events5-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events5-3.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+                                                <p class="font-bold mx-6  text-green-800 " >
+                                                  تم تكريم نقيب . م / محمود سامح محمود المنصورى. . مصاب العمليات الأرهابية  بسيناء    (  الإصابة شظايا بالضهر و الكتف  )  . 
+
+                                              </p><br>
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events6-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events6-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events6-3.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+                                                <p class="font-bold mx-6  text-green-800 " >
+                                                  تم تكريم مجند/هيثم عادل .. مصاب العمليات الارهابيه بسيناء     (  الاصابه في النخاع الشوكي )  . 
+
+                                              </p><br>
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events7-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events7-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events7-3.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+                                                <p class="font-bold mx-6  text-green-800 " >
+                                                  تم تكريم جندى / أبوالحمد عبد القادر أبو الحمد. . مصاب العمليات الأرهابية بسيناء     (  الإصابة بترالأطراف تحت الركبة الشمال والذراع الأيمن  )  . 
+
+                                              </p><br>
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events8-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events8-3.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events8-2.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+                                                  <h2 class="text-green-800 font-bold mx-6 text-2xl" >       أيضاُ خلال الجلسة تم تكريم الباحثين بشهادات شكر وتقدير   .  </h2>
+
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-3.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-4.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-5.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-6.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events9-7.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+
+
+                                                  <h2 class="text-green-800 font-bold mx-6 text-2xl" >       وقد تم تبادل الهدايا بين الأعضاء   .  </h2>
+
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-3.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-4.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-5.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-6.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-7.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-8.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-9.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-10.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-11.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-12.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-13.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-14.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-15.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events10-16.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br><br>
+
+
+
+                                                  <h2 class="text-green-800 font-bold mx-6 text-2xl" >            وفى نهاية اليوم تم زيارة إلى المتحف المصري الكبير   .  </h2>
+
+                                              <div class=" mohareb container ">
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events11-1.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events11-2.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events11-3.png"  class="w-full " >
+                                                </div>
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events11-4.png"  class="w-full " >
+                                                </div>
+                                               
+                                                <div class="mohareb1">
+                                                  <img  src="../../imeges/mettings/Events11-5.png"  class="w-full " >
+                                                </div>
+                                               
+                                               
+                                              </div><br><br>
+
+
+
+
+    <!--  end section -->
+
+
+     
+
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full bg-gray-200 ">
+      <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
+          
+          <div class="max-w-96">
+              <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <img src="../../imeges/logo/arab-vetrans.png" alt="">
+              </svg>
+              <p class="mt-6 text-sm text-gray-500">
+                كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
+              </p>
+              
+          </div>
+  
+          <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
+                  <ul class="text-sm text-gray-500 space-y-2 list-none">
+                      <li><a href="rqasaq-ethad.html">رؤساء الإتحاد</a></li>
+                      <li><a href="nouab-alraqes.html">نواب الرئيس</a></li>
+                      <li><a href="ameen-aam.html">الأمين العام</a></li>
+                      <li><a href="ameen-aam-mouseed.html">الأمين العام المساعد </a></li>
+                      <li><a href="ameen-alsondok.html">أمين الصندوق</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
+                  <div class="text-sm text-gray-500 space-y-2 list-none ">
+                      <li><a href="zyarat.html">زيارات</a></li>
+                      <li><a href="nesf-sanwya.html">نصف سنوية</a></li>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      <p class="py-4 text-center text-xs md:text-sm text-gray-500">
+        جميع الحقوق محفوظة ©  الاتحاد العربي للمحاربين القدماء  
+      </p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector("nav button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  </script>
+
+  </body>
+</html>
