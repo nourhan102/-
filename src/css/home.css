@@ -15,7 +15,11 @@
     justify-items: center;
     justify-content: baseline;
 }
-
+.mlaf2{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
 .khabar{
  object-fit: contain;
  width: 100%;
