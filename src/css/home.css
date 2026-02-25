@@ -20,6 +20,11 @@
   justify-items: center;
   justify-content: center;
 }
+.mlaf3{
+  display: flex;
+  justify-items: center;
+  justify-content: flex-start;
+}
 .khabar{
  object-fit: contain;
  width: 100%;
@@ -171,19 +176,96 @@
   }
   /* بطاقة end */
 
-/*     Table  start     */
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients3 {
+  overflow-x: hidden;
+}
+
+.clients3 .clients-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  animation: scroll 50s linear infinite;
+}
 
 
+.clients3 .clients-slider:not(:last-child) {
+  margin-bottom: 5px;
+  margin-top: 15px;
 
+}
 
+.clients3 .clients-track {
+  display: flex;
+  width: fit-content;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation: scroll 50s linear infinite;
+  flex-shrink: 0; /* مهم جدا */
+}
 
+.clients3 .clients-track.track-1 {
+  animation-name: scroll-left;  
+}
 
-/*     Table  end     */
+.clients3 .clients-track.track-2 {
+  animation-name: scroll-right;
+}
 
+.clients3 .clients-track:hover {
+  animation-play-state: paused;
+}
+/* box */
+.clients3 .clients-slide {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
- 
+.clients3 .clients-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
 
+.clients3 .clients-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
 
+.clients3 .clients-slide:hover::before {
+  left: 100%;
+}
 
+.clients3 .clients-slide:hover img {
+  filter: none;
+  opacity: 1;
+}
+/* img */
+
+.clients3 .clients-slide img {
+  max-width: 100%;
+  max-height: 120%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
 
 

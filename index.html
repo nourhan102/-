@@ -106,7 +106,7 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
-    >المنظمات الدولية
+     >      بطاقة المحارب
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
   </svg> 
@@ -114,7 +114,11 @@
   <div  
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
-  <a href="src/pages/fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
+  <a href="src/pages/btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  عام </a>
+  <a href="src/pages/btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a href="src/pages/btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   مهام المحارب </a>
+  <a href="src/pages/btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+  <a href="src/pages/btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
                 
   </div>
     </div>
@@ -137,6 +141,8 @@
 
   <a href="src/pages/zyarat.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
   <a href="src/pages/nesf-sanwya.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+  <a href="src/pages/fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> المنظمات الدولية </a>
+
                 
   </div>
     </div>
@@ -214,6 +220,15 @@
 
     <!-- end navbar -->
 
+
+
+  
+
+
+
+
+
+
          <!-- start slider -->
 
 <div x-data="{  
@@ -280,7 +295,7 @@
   </button>
  
   <!-- slides -->
-  <div class="relative h-svh w-full">
+  <div  class="relative h-svh w-full">
       <template x-for="(slide, index) in slides" >
           <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
               
@@ -301,8 +316,350 @@
           <button class="size-2 rounded-full transition" x-on:click="currentSlideIndex = index + 1" x-bind:class="[currentSlideIndex === index + 1 ? 'bg-on-surface-dark' : 'bg-on-surface-dark/50']" x-bind:aria-label="'slide ' + (index + 1)"></button>
       </template>
   </div>
-</div><br><br><br><br>
+</div> <br>
     <!-- end slider 1 -->
+
+
+
+
+
+       <!-- Clients Section -->
+    <section id="clients" class="clients3 section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <h3 class="text-green-800 font-bold mx-6 " >               الجهات التى تم التنسيق معها لخصومات بطاقة المحارب :    </h3>
+        <div class="clients-slider">
+          <div class="clients-track track-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-qahera-eyes.html" >
+                <img src="imeges/logo/descaunt/hospital-qahera-eyes2.jpg" class="img-fluid" alt="Client 1">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-alaraby.html" >
+                <img src="imeges/logo/descaunt/hospital-alaraby.jpg" class="img-fluid" alt="Client 2">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospitai-salamdawly-mohandsen.html" >
+                <img src="imeges/logo/descaunt/hospitai-salamdawly-mohandsen.jpg" class="img-fluid" alt="Client 3">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-flasten-masrgdeda.html" >
+                <img src="imeges/logo/descaunt/hospital-flasten-masrgdeda.png" class="img-fluid" alt="Client 4">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-DR-abdelqader.html" >
+                <img src="imeges/logo/descaunt/hospital-DR-abdelqader.png" class="img-fluid" alt="Client 5">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-askarya.html" >
+                <img src="imeges/logo/descaunt/hospital-askarya.png" width="80%" class="img-fluid" alt="Client 6">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-tabarak.html" >
+                <img src="imeges/logo/descaunt/hospital-tabarak.jpg" width="80%" class="img-fluid" alt="Client 7">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-global-city.html" >
+                <img src="imeges/logo/descaunt/hospital-global-city.jpg" class="img-fluid" alt="Client 8">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/eyadat-alaraby.html" >
+                <img src="imeges/logo/descaunt/eyadat-alaraby.jpg" class="img-fluid" alt="Client 9">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-saif.html" >
+                <img src="imeges/logo/descaunt/pharmacy-saif.png" class="img-fluid" alt="Client 10">
+              </a>
+            </div>
+            <!-- <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaraby.html" >
+                <img src="imeges/logo/descaunt/pharmacy-alaraby.png" class="img-fluid" alt="Client 11">
+              </a>
+            </div> -->
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-tohamy.html" >
+                <img src="imeges/logo/descaunt/pharmacy-tohamy.jpg" width="80%" class="img-fluid" alt="Client 12">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mera.html" >
+                <img src="imeges/logo/descaunt/pharmacy-mera.jpg" class="img-fluid" alt="Client 13">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-nour.html" >
+                <img src="imeges/logo/descaunt/pharmacy-nour.jpg" class="img-fluid" alt="Client 14">
+              </a>
+            </div>
+            <!-- <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mahoud-fouda.html" >
+                <img src="imeges/logo/descaunt/pharmacy-mahoud-fouda.jpg" class="img-fluid" alt="Client 15">
+              </a>
+            </div> -->
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaa-deen.html" >
+                <img src="imeges/logo/descaunt/pharmacy-alaa-deen.jpg" class="img-fluid" alt="Client 16">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/maamal-borg.html" >
+                <img src="imeges/logo/descaunt/maamal-borg.jpg" class="img-fluid" alt="Client 17">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/douky-scan.html" >
+                <img src="imeges/logo/descaunt/douky-scan.jpg" class="img-fluid" alt="Client 18">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/maamal-mktabar.html" >
+                <img src="imeges/logo/descaunt/maamal-mktabar.jpg" class="img-fluid" alt="Client 19">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/cairo-lab.html" >
+                <img src="imeges/logo/descaunt/cairo-lab.jpg" class="img-fluid" alt="Client 20">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/royal-lab.html" >
+                <img src="imeges/logo/descaunt/royal-lab.jpg" class="img-fluid" alt="Client 21">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/alaraby-motaheda.html" >
+                <img src="imeges/logo/descaunt/alaraby-motaheda.jpg" class="img-fluid" alt="Client 22">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/EGYPTAIR.html" >
+                <img src="imeges/logo/descaunt/Egyptair.png" class="img-fluid" alt="Client 23">
+              </a>
+            </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Sonesta-hotels.jpg" class="img-fluid" alt="Client 24">
+            </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Baron-hotel.jpg" class="img-fluid" alt="Client 25">
+            </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Flamenco-hotel.jpg" class="img-fluid" alt="Client 26">
+            </div>
+            <!-- <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Goldeninn-hotel.jpg" class="img-fluid" alt="Client 27">
+            </div> -->
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Azal-hotel.jpg" class="img-fluid" alt="Client 28">
+            </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Om-Kolthoom-Hotel.jpg" class="img-fluid" alt="Client 29">
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/dwrat-tdrebya.html" >
+                <img src="imeges/logo/descaunt/dwrat-tdrebya.jpg" class="img-fluid" alt="Client 30">
+              </a>
+            </div>
+
+
+
+            <!-- Duplicate for seamless looping -->
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-qahera-eyes.html" >
+                <img src="imeges/logo/descaunt/hospital-qahera-eyes2.jpg" class="img-fluid" alt="Client 1">
+              </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-alaraby.html" >
+                <img src="imeges/logo/descaunt/hospital-alaraby.jpg" class="img-fluid" alt="Client 2">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospitai-salamdawly-mohandsen.html" >
+                <img src="imeges/logo/descaunt/hospitai-salamdawly-mohandsen.jpg" class="img-fluid" alt="Client 3">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-flasten-masrgdeda.html" >
+                <img src="imeges/logo/descaunt/hospital-flasten-masrgdeda.png" class="img-fluid" alt="Client 4">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-DR-abdelqader.html" >
+                <img src="imeges/logo/descaunt/hospital-DR-abdelqader.png" class="img-fluid" alt="Client 5">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-askarya.html" >
+                <img src="imeges/logo/descaunt/hospital-askarya.png" width="80%" class="img-fluid" alt="Client 6">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-tabarak.html" >
+                <img src="imeges/logo/descaunt/hospital-tabarak.jpg" width="80%" class="img-fluid" alt="Client 7">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/hospital-global-city.html" >
+                <img src="imeges/logo/descaunt/hospital-global-city.jpg" class="img-fluid" alt="Client 8">
+              </a>            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/eyadat-alaraby.html" >
+                <img src="imeges/logo/descaunt/eyadat-alaraby.jpg" class="img-fluid" alt="Client 9">
+              </a>           </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-saif.html" >
+                <img src="imeges/logo/descaunt/pharmacy-saif.png" class="img-fluid" alt="Client 10">
+              </a>          </div>
+            <!-- <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaraby.html" >
+                <img src="imeges/logo/descaunt/pharmacy-alaraby.png" class="img-fluid" alt="Client 11">
+              </a>          </div> -->
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-tohamy.html" >
+                <img src="imeges/logo/descaunt/pharmacy-tohamy.jpg" width="80%" class="img-fluid" alt="Client 12">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mera.html" >
+                <img src="imeges/logo/descaunt/pharmacy-mera.jpg" class="img-fluid" alt="Client 13">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-nour.html" >
+                <img src="imeges/logo/descaunt/pharmacy-nour.jpg" class="img-fluid" alt="Client 14">
+              </a>          </div>
+            <!-- <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mahoud-fouda.html" >
+                <img src="imeges/logo/descaunt/pharmacy-mahoud-fouda.jpg" class="img-fluid" alt="Client 15">
+              </a>          </div> -->
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaa-deen.html" >
+                <img src="imeges/logo/descaunt/pharmacy-alaa-deen.jpg" class="img-fluid" alt="Client 16">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/maamal-borg.html" >
+                <img src="imeges/logo/descaunt/maamal-borg.jpg" class="img-fluid" alt="Client 17">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/douky-scan.html" >
+                <img src="imeges/logo/descaunt/douky-scan.jpg" class="img-fluid" alt="Client 18">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/maamal-mktabar.html" >
+                <img src="imeges/logo/descaunt/maamal-mktabar.jpg" class="img-fluid" alt="Client 19">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/cairo-lab.html" >
+                <img src="imeges/logo/descaunt/cairo-lab.jpg" class="img-fluid" alt="Client 20">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/royal-lab.html" >
+                <img src="imeges/logo/descaunt/royal-lab.jpg" class="img-fluid" alt="Client 21">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/alaraby-motaheda.html" >
+                <img src="imeges/logo/descaunt/alaraby-motaheda.jpg" class="img-fluid" alt="Client 22">
+              </a>          </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/EGYPTAIR.html" >
+                <img src="imeges/logo/descaunt/Egyptair.png" class="img-fluid" alt="Client 23">
+              </a>          </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Sonesta-hotels.jpg" class="img-fluid" alt="Client 24">
+               </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Baron-hotel.jpg" class="img-fluid" alt="Client 25">
+               </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Flamenco-hotel.jpg" class="img-fluid" alt="Client 26">
+               </div>
+            <!-- <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Goldeninn-hotel.jpg" class="img-fluid" alt="Client 27">
+               </div> -->
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Azal-hotel.jpg" class="img-fluid" alt="Client 28">
+               </div>
+            <div class="clients-slide">
+                <img src="imeges/logo/descaunt/Om-Kolthoom-Hotel.jpg" class="img-fluid" alt="Client 29">
+               </div>
+               <div class="clients-slide">
+                <a class="clients-slide" href="src/pages/mgalat-albtaqa/dwrat-tdrebya.html" >
+                  <img src="imeges/logo/descaunt/dwrat-tdrebya.jpg" class="img-fluid" alt="Client 30">
+                </a>          </div>
+
+
+          </div>
+        </div>
+        
+
+
+      </div>
+
+    </section><br><br>
+    <!-- / java script -->
+
+   
+  <script>
+
+
+  function aosInit() {
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+      
+    });
+  }
+  window.addEventListener('load', aosInit);
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
+
+  /**
+   * Frequently Asked Questions Toggle
+   */
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
+    });
+  });
+
+  /**
+   * Init swiper sliders
+   */
+  function initSwiper() {
+    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+      let config = JSON.parse(
+        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+      );
+
+      if (swiperElement.classList.contains("swiper-tab")) {
+        initSwiperWithCustomPagination(swiperElement, config);
+      } else {
+        new Swiper(swiperElement, config);
+      }
+    });
+  }
+
+  window.addEventListener("load", initSwiper);
+
+</script>
+
+    <!-- /Clients Section -->
+
+
+
+
+
+
+
+
+
+
 
 
     <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
@@ -427,7 +784,7 @@
 
           <!-- start btaqa -->
 
-          <br><br>
+          <!-- <br><br>
       <div class=" btaqa relative flex flex-col my-6 bg-green-800 shadow-md border  border-green-800 rounded-lg  p-6">
         <div class="flex items-center mb-4">
           <div class="flex justify-center items-center h-screen m-20 ">
@@ -456,7 +813,7 @@
             
           </a>
         </div>
-      </div>
+      </div> -->
 
                 <!-- end btaqa -->
 
