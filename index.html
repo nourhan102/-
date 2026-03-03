@@ -256,6 +256,12 @@
         title: 'الدور 29 ',
         description: 'الجمعية العمومية للاتحاد العربي للمحاربين القدماء وضحايا الحرب',              
     },             
+      {
+        imgSrc: 'imeges/logo/descaunt/All-descaunt.jpeg',
+        title: '  ',
+        description: '  ',   
+        link: 'src/pages/descaunt-btaqa.html' ,           
+    },             
                   
           
   ],            
@@ -303,8 +309,12 @@
                   <p class="lg:w-1/2 w-full text-pretty text-sm text-on-surface-dark" x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'"></p>
               </div>
 
-              <img class="absolute w-full khabar h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark" x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
-          </div>
+              <a :href="slide.link">
+                <img class="absolute w-full khabar h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark cursor-pointer"
+                     :src="slide.imgSrc"
+                     :alt="slide.title" />
+            </a>      
+              </div>
       </template>
   </div>
   
