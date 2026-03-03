@@ -115,9 +115,9 @@
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
   <a href="src/pages/btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  عام </a>
-  <a href="src/pages/btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
   <a href="src/pages/btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   مهام المحارب </a>
   <a href="src/pages/btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+  <a href="src/pages/btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
   <a href="src/pages/btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
                 
   </div>
@@ -234,22 +234,20 @@
 <div x-data="{  
   slides: [ 
 
-
   {
-    imgSrc: 'imeges/ztarat/Wazeer-elkargya/DR-Badr.jpeg',
-    title: ' لقاء مع   وزير الخارجية والهجرة وشئون المصريين بالخارج     ',
-    description: '    لقـاء مع معالى الدكتور  / بدر عبد العاطى   وزير الخارجية والهجرة وشئون المصريين بالخارج اليوم الخميس الموافق 05 / 02 /2026، اللواء أ.ح. خالد مصطفى توفيق رئيس الاتحاد العربى للمحاربين القدماء وضحايا الحرب، وذلك فى إطار الاهتمام بدعم المحاربين القدماء وأسر الشهداء، وتقديرًا لتضحياتهم الوطنية .     ',              
-},
-  {
-    imgSrc: 'imeges/conrty/Bahren/Sarera-Fawzya1.jpg',
-    title: ' لقاء مع   سفيرة مملكة البحرين   ',
-    description: '    لقـاء مع   معالى السفيرة  / فوزية بنت عبد الله زينل    بجمهورية مصر العربية    ',              
-},             
-{
-  imgSrc: 'imeges/conrty/Bahren/Sarera-Fawzya2.jpg',
-  title: '  لقاء مع   سفيرة مملكة البحرين   ',
-  description: '    لقـاء مع   معالى السفيرة  / فوزية بنت عبد الله زينل    بجمهورية مصر العربية    ',              
-},             
+    imgSrc: 'imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-9.jpg',
+    title: '  لقاء مع  الهيئة العربية للتصنيع   ',
+    description: '    فى إطار التواصل التشاور والتعارف مع كافة مؤسسات الدولة المختلفة وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب والهيئة العربية للتصنيع    يوم الثلاثاء  الموافق 24 من فبراير 2026  قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب  بزيارة إلى الهيئة العربية للتصنيع لعقد بروتوكول تعاون بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب       ',              
+}, {
+  imgSrc: 'imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-3.jpg',
+  title: '     لقاء مع  الهيئة العربية للتصنيع        ',
+  description: '    فى إطار التواصل التشاور والتعارف مع كافة مؤسسات الدولة المختلفة وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب والهيئة العربية للتصنيع    يوم الثلاثاء  الموافق 24 من فبراير 2026  قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب  بزيارة إلى الهيئة العربية للتصنيع لعقد بروتوكول تعاون بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب    ',              
+}, {
+  imgSrc: 'imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-4.jpg',
+  title: '      لقاء مع  الهيئة العربية للتصنيع        ',
+  description: '     فى إطار التواصل التشاور والتعارف مع كافة مؤسسات الدولة المختلفة وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب والهيئة العربية للتصنيع    يوم الثلاثاء  الموافق 24 من فبراير 2026  قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب  بزيارة إلى الهيئة العربية للتصنيع لعقد بروتوكول تعاون بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب       ',              
+}, 
+               
   
      
         
@@ -380,11 +378,11 @@
                 <img src="imeges/logo/descaunt/pharmacy-saif.png" class="img-fluid" alt="Client 10">
               </a>
             </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaraby.html" >
-                <img src="imeges/logo/descaunt/pharmacy-alaraby.png" class="img-fluid" alt="Client 11">
+                <img src="imeges/logo/descaunt/pharmacy-alaraby.jpg" class="img-fluid" alt="Client 11">
               </a>
-            </div> -->
+            </div>
             <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-tohamy.html" >
                 <img src="imeges/logo/descaunt/pharmacy-tohamy.jpg" width="80%" class="img-fluid" alt="Client 12">
@@ -400,11 +398,11 @@
                 <img src="imeges/logo/descaunt/pharmacy-nour.jpg" class="img-fluid" alt="Client 14">
               </a>
             </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mahoud-fouda.html" >
                 <img src="imeges/logo/descaunt/pharmacy-mahoud-fouda.jpg" class="img-fluid" alt="Client 15">
               </a>
-            </div> -->
+            </div>
             <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaa-deen.html" >
                 <img src="imeges/logo/descaunt/pharmacy-alaa-deen.jpg" class="img-fluid" alt="Client 16">
@@ -454,9 +452,9 @@
             <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Flamenco-hotel.jpg" class="img-fluid" alt="Client 26">
             </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Goldeninn-hotel.jpg" class="img-fluid" alt="Client 27">
-            </div> -->
+            </div>
             <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Azal-hotel.jpg" class="img-fluid" alt="Client 28">
             </div>
@@ -467,6 +465,11 @@
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/dwrat-tdrebya.html" >
                 <img src="imeges/logo/descaunt/dwrat-tdrebya.jpg" class="img-fluid" alt="Client 30">
               </a>
+            </div>
+            <div class="clients-slide">
+              <a class="clients-slide" href="src/pages/mgalat-albtaqa/Hayaa-Arabya-tasne3.html" >
+                <img src="imeges/logo/descaunt/Hayaa-Arabya-tasne3.png" class="img-fluid" alt="Client 31">
+              </a>       
             </div>
 
 
@@ -513,10 +516,10 @@
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-saif.html" >
                 <img src="imeges/logo/descaunt/pharmacy-saif.png" class="img-fluid" alt="Client 10">
               </a>          </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaraby.html" >
-                <img src="imeges/logo/descaunt/pharmacy-alaraby.png" class="img-fluid" alt="Client 11">
-              </a>          </div> -->
+                <img src="imeges/logo/descaunt/pharmacy-alaraby.jpg" class="img-fluid" alt="Client 11">
+              </a>          </div>
             <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-tohamy.html" >
                 <img src="imeges/logo/descaunt/pharmacy-tohamy.jpg" width="80%" class="img-fluid" alt="Client 12">
@@ -529,10 +532,10 @@
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-nour.html" >
                 <img src="imeges/logo/descaunt/pharmacy-nour.jpg" class="img-fluid" alt="Client 14">
               </a>          </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-mahoud-fouda.html" >
                 <img src="imeges/logo/descaunt/pharmacy-mahoud-fouda.jpg" class="img-fluid" alt="Client 15">
-              </a>          </div> -->
+              </a>          </div>
             <div class="clients-slide">
               <a class="clients-slide" href="src/pages/mgalat-albtaqa/pharmacy-alaa-deen.html" >
                 <img src="imeges/logo/descaunt/pharmacy-alaa-deen.jpg" class="img-fluid" alt="Client 16">
@@ -574,9 +577,9 @@
             <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Flamenco-hotel.jpg" class="img-fluid" alt="Client 26">
                </div>
-            <!-- <div class="clients-slide">
+            <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Goldeninn-hotel.jpg" class="img-fluid" alt="Client 27">
-               </div> -->
+               </div>
             <div class="clients-slide">
                 <img src="imeges/logo/descaunt/Azal-hotel.jpg" class="img-fluid" alt="Client 28">
                </div>
@@ -586,6 +589,10 @@
                <div class="clients-slide">
                 <a class="clients-slide" href="src/pages/mgalat-albtaqa/dwrat-tdrebya.html" >
                   <img src="imeges/logo/descaunt/dwrat-tdrebya.jpg" class="img-fluid" alt="Client 30">
+                </a>          </div>
+               <div class="clients-slide">
+                <a class="clients-slide" href="src/pages/mgalat-albtaqa/Hayaa-Arabya-tasne3.html" >
+                  <img src="imeges/logo/descaunt/Hayaa-Arabya-tasne3.png" class="img-fluid" alt="Client 31">
                 </a>          </div>
 
 
@@ -663,123 +670,134 @@
 
 
     <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
-      لقاء مع  وزير الخارجية والهجرة وشئون المصريين بالخارج        . <br>
-      معالى الدكتور  / بدر عبد العاطى <br>
+      لقاء مع السادة مديرى إدارات الهيئة العربية للتصنيع  . <br>
          
        </h1><br>
 
        <p class="font-bold mx-6">
-        فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب ووزارة الخارجية المصرية    .
+        فى إطار التواصل التشاور والتعارف مع كافة مؤسسات الدولة المختلفة وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب والهيئة العربية للتصنيع    يوم الثلاثاء  الموافق 24 من فبراير 2026     .
   </p><br>
 
 
   <p class=" font-bold mx-6">
-    استقبل  (  يوم الخميس الموافق 05 / 02 /2026  )  : <br>
-  <span class="text-green-800">  د. بدر عبد العاطى  </span>   وزير الخارجية والهجرة وشئون المصريين بالخارج   .  <br>
-  <span class="text-green-800">   اللواء أ.ح. خالد مصطفى توفيق   </span>   رئيس الاتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
-  </p>
-
-  <p class="font-bold mx-6">
-    وذلك فى إطار الاهتمام بدعم المحاربين القدماء وأسر الشهداء، وتقديرًا لتضحياتهم الوطنية    .
-</p><br>
-
-
-<div class=" mohareb container ">
-  <div class="mohareb3">
-    <img  src="imeges/ztarat/Wazeer-elkargya/DR-Badr.jpeg"  class="w-full " >
-  </div>
- 
-</div><br><br>
-
- 
-<p class="font-bold mx-6">
-  وأعرب الوزير عبد العاطي عن ترحيبه برئيس الاتحاد، مشيدًا بما قدمه من تضحيات جسام دفاعًا عن أمن واستقرار الوطن. وأكد وزير الخارجية أهمية الدور الذي يقوم به الاتحاد العربي للمحاربين القدماء وضحايا الحرب في دعم المحاربين القدماء وضحايا الحروب وأسر الشهداء في مختلف الدول العربية، مشيدا بما يضطلع به الاتحاد من جهود لتعزيز التعاون والتنسيق بين جمعيات المحاربين القدماء على المستوى العربي   .
-</p><br>
+    قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة   : <br>
+    <span class="text-green-800">1- لواء أ . ح . م / خالد مصطفى توفيق . .  </span>   رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
+    <span class="text-green-800">2-  لواء / مصطفى أحمد عميرة . .  </span>  الأمين العام للإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
+    <span class="text-green-800">3- لواء أ. ح . م/ مدحت عبد العزيز فاوى . . </span>  الأمين العام المساعد للإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
+    <span class="text-green-800">4- لواء / حازم حسن بيومى  . .  </span>  أمين صندوق الإتحاد العربى للمحاربين القدماء وضحايا الحرب  .  <br>
+    <span class="text-green-800">5- الأستاذة / </span>  سارة سمير حامد  .  <br>
+  </p><br><br>
 
 
-<p class="font-bold mx-6">
-  ورحب الوزير عبد العاطي بالبعد الثقافي والتوعوي لأنشطة الاتحاد، مثمنًا استئناف انعقاد الجمعية العمومية للاتحاد، ولاسيما استضافة القاهرة لاجتماعات الجمعية العمومية في شهر مايو 2025  .
-</p><br>
-
-
-<p class="font-bold mx-6 text-center text-green-800 ">
-  وقد أشاد سيادة الدكتور الوزير بدر عبد العاطى وزير الخارجية والهجرة وشئون المصريين   
-</p>
-<p class="font-bold mx-6 text-center text-green-800">
-  بأهمية دور الاتحاد العربي للمحاربين القدماء وضحايا الحرب  
-</p>
-<p class="font-bold mx-6 text-center text-green-800">
-  والعلاقات المصرية الدولية علاقاتا أثرية وجذرية يجمع بنا التواصل والتعارف ووحدة الصف .
-</p><br>
-
-
-    <br><br><br><br><br>
-    <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
-      لقاء مع  سفيرة مملكة البحرين      . <br>
-      معالى السفيرة  / فوزية بنت عبد الله زينل  <br>
-         
-       </h1><br>
-
-       <p class="font-bold mx-6">
-        فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب وسفارة البحرين   يوم الاحد  الموافق الأول من فبراير 2026   .
+  <p class=" font-bold mx-6">
+    بزيارة إلى الهيئة العربية للتصنيع لعقد بروتوكول تعاون بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب بحضور كل من  : <br>
+    <span class="text-green-800">1- اللواء مهندس / عبد الرحمن عبد العظيم . . </span>  المدير العام للهيئة العربية للتصنيع   .  <br>
+    <span class="text-green-800">2- اللواء مهندس  / أحمد عبد العزيز. . </span>  ر . م . إ مصنع الالكترونيات   .  <br>
+    <span class="text-green-800">3- اللواء دكتور مهندس / عمرو عبد العزيز . . </span>  ر . م .إ مصنع  قادر للصناعات المتطورة   .  <br>
+    <span class="text-green-800">4- اللواء مهندس / ياسر عطية  . . </span>  ر. م إ لشركة العربية البريطانية للصناعات الديناميكية .  <br>
+    <span class="text-green-800">5- العميد دكتور مهندس / شريف رأفت. . </span> ا المدير التنفيذى لمصنع أتيكو للصناعات الخشبية .  <br>
+    <span class="text-green-800">6- اللواء / محمود كمال الدين . . </span>  رئيس قطاع الأمن   .  <br>
+    <span class="text-green-800">7- للواء أ. ح / مصطفى عبد القادر . . </span>   رئيس قطاع التسويق    .      <br>
+    <span class="text-green-800">8- اللواء / محمود فؤاد مرغنى . . </span>   مدير الإدارة العامة للعلاقات والإعلام   .      <br>
+    <span class="text-green-800">9- اللواء مهندس / وائل عبد الرحمن. . </span>   مدير مكتب رئيس مجلس الإدارة  .      <br>
+    <span class="text-green-800">10- اللواء مهندس / عبد الناصر مكى . . </span>   مدير الإدارة العامة للمكتب الفنى    .      <br>
+    <span class="text-green-800">11- المهندس / عصام نور الدين . . </span>   مدير الإدارة العامة للتسويق المدنى   .      <br>
   </p><br>
 
-  
+  <div class=" mohareb container ">
+    <div class="mohareb1">
+      <img  src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-1.jpg"  class="w-full " >
+    </div>
+    <div class="mohareb1">
+      <img src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-2.jpg"  class="w-full" >
+    </div>
+  </div><br>
 
-<p class=" font-bold mx-6">
-  قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة    : <br>
-<span class="text-green-800">1-</span> لواء أ . ح . م / خالد مصطفى توفيق  رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
-<span class="text-green-800">2-</span> لواء أ. م / حازم حسن بيومى  . . أمين صندوق الإتحاد العربى للمحاربين القدماء وضحايا الحرب     .  <br>
-</p>
-
-<p class="font-bold mx-6 text-green-800">
-  (   بزيارة معالى السفيرة  / فوزية بنت عبد الله زينل  . . سفيرة مملكة البحرين بجمهورية مصر العربية   )  .
+  <p class="font-bold mx-6">
+    تناول اللقاء الترحاب بالأمانة العامة للإتحاد وعرض نشأة وتاريخ ومهام الهيئة العربية للتصنيع بالإضافة إلى إستعراض الشركات المدنية والعسكرية للهيئة    .
 </p><br>
-
-
-<div class=" mohareb container ">
-  <div class="mohareb3">
-    <img  src="imeges/conrty/Bahren/Sarera-Fawzya1.jpg"  class="w-full " >
-  </div>
- 
-</div><br><br>
-
-<p class="font-bold mx-6">
-  لتبادل الأراء وعرض ما يقوم به الإتحاد العربى للمحاربين القدماء وضحايا الحرب من خلال الإستراتيجية العربية الجديدة وعرض رؤية الإتحاد فى تعميق الروابط والإخاء بين الإتحاد العربى وشعبة القوة الأحتياطية والمتطوعين والشهداء القيادة العامة ( قوة دفاع البحرين ) - المملكة البحرين  .
-</p><br>
-
-<p class="font-bold mx-6">
-  أسفر اللقاء عن إتخاذ إجراءات هادفة وبناءة تساعد فى تنمية العلاقات وتفعيل الأنشطة والأعمال خلال الفترة المقبلة  .
-</p><br>
-
-
-<p class=" font-bold mx-6">
-  وحضر اللقاء من السفارة البحرينية    : <br>
-<span class="text-green-800">   السيد العميد الركن دكتور / فيصل بن حسن العجمى . . الملحق العسكرى للمملكة البحرينية  بسفارة البحرين    </span>     .  <br>
-</p><br>
-
-<p class="font-bold mx-6">
-  وقام الإتحاد بهذه المناسبة بتقديم وسام الإتحاد لمعالى السفيرة   / فوزية بنت عبد الله زينل  . . سفيرة مملكة البحرين لدى جمهورية مصر العربية    تقديراً لحميد صفاتها  , وجليل خدماتها للأمة العربية .
+  <p class="font-bold mx-6">
+    كما قامت الأمانة العامة بقيادة  لواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد بتقديم الشكر والأمتنان والتقدير على حسن الأستقبال وعلى مبادرة الهيئة لأعداد بروتوكول يعود بالنفع على المحارب العربى القديم لتكريس كل إمكانيات الهيئة المدنية لخدمة المحارب العربى القديم   .
 </p><br>
 
 <div class=" mohareb container ">
   <div class="mohareb3">
-    <img  src="imeges/conrty/Bahren/Sarera-Fawzya2.jpg"  class="w-full " >
+    <img  src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-3.jpg"  class="w-full " >
   </div>
- 
-</div><br><br>
+</div><br>
 
 
+<p class=" font-bold mx-6">
+  وتم عقد بروتوكول تعاون بين كل من  : <br> </p>
+  <p class="mx-6 font-bold text-green-800 underline">  الطرف الأول :- الهيئة العربية للتصنيع ممثله فى :  </p>
+  <p class=" font-bold mx-6">
+  <span class="text-green-800">* </span>   السيد اللواء / عبد الرحمن عبد العظيم عثمان بصفته مدير عام الهيئة ومفوض من السيد اللواء أ. ح / مختار عبد اللطيف رئيس مجلس إدارة الهيئة العربية للتصنيع   .  <br>
+</p><br>
 
-<p class="font-bold mx-6">
-  والعلاقات المصرية الدولية علاقاتا أثرية وجذرية يجمع بنا التواصل والتعارف و وحدة الصف .
+  <p class="mx-6 font-bold text-green-800 underline">  الطرف الثانى :- الاتحاد العربى للمحاربين القدماء وضحايا الحرب ممثله فى :   </p>
+  <p class=" font-bold mx-6">
+  <span class="text-green-800">* </span>   لواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب  خلال فعاليات التوقيع , أعرب اللواء أ.ح مهندس مختار عبد اللطيف رئيس الهيئة العربية للتصنيع عن تقديره للدور الوطني الذي يقوم به الإتحاد العربي للمحاربين القدماء في خدمة ورعاية المحاربين القدماء وأسرهم وأسر الشهداء والمصابين    .  <br>
 </p><br>
   
 
-  
+<div class=" mohareb container ">
+  <div class="mohareb1">
+    <img  src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-4.jpg"  class="w-full " >
+  </div>
+  <div class="mohareb1">
+    <img src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-5.jpg"  class="w-full" >
+  </div>
+  <div class="mohareb1">
+    <img src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-6.jpg"  class="w-full" >
+  </div>
+</div><br><br>
 
 
+<p class="font-bold mx-6">
+  كما تم منح وسام الإتحاد العربى للمحاربين القدماء وضحايا الحرب اللواء أ.ح / مختار عبد اللطيف . . رئيس  مجلس إدارة الهيئة العربية للتصنيع    .
+</p><br>
 
+
+<div class=" mohareb container ">
+  <div class="mohareb1">
+    <img  src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-7.jpg"  class="w-full " >
+  </div>
+  <div class="mohareb1">
+    <img src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-8.jpg"  class="w-full" >
+  </div>
+</div><br>
+
+<p class="font-bold mx-6">
+  وتم إلتقاط صورة تذكارية على أن يتم تفعيل البروتوكول أعتباراً من مارس 2026 م ويشمل البروتوكول على أن مجالات التعاون تتضمن تقديم تخفيضات بنسبة 5% لأعضاء الإتحاد العربي للمحاربين القدماء وأسرهم على منتجات الهيئة العربية للتصنيع المتنوعة ومنها الأجهزة المنزلية الكهربائية والإلكترونية والأثاثات والكراسي الطبية المتحركة والأسرة الطبية وغيرها    .
+</p><br>
+
+<div class=" mohareb container ">
+  <div class="mohareb3">
+    <img  src="imeges/ztarat/Alhayaa-arabya-tasne3/Hayaa-9.jpg"  class="w-full " >
+  </div>
+</div><br>
+
+<p class="font-bold mx-6">
+  من جانبه , أعرب اللواء أ.ح خالد مصطفى توفيق رئيس الإتحاد العربي للمحاربين القدماء عن تقديره واعتزازه بالتعاون مع الهيئة العربية للتصنيع ودورها الوطني الرائد في الصناعة المصرية حيث تمتلك قاعدة صناعية وتكنولوجية ضخمة تمكنها من لعب دور حيوي ومؤثر في تصميم وتصنيع وتلبية كافة المنتجات والمكونات التي يتم إستيرادها من الخارج وهو الأمر الذي ينعكس إيجابيا على دعم خطط الدولة لتعميق التصنيع المحلي وتوطين التكنولوجيا والحد من الإستيراد    .
+</p><br>
+
+
+<h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  منافذ البيع :- </h2>
+<p class="font-bold mx-6 space ">
+   <span class="text-green-800"> 1- معرض الهيئة العربية للتصنيع ( رئيسى )  :-  </span>   الكيلو 17 طريق مصر السويس , الماظة , مصر الجديدة  .  <br>
+   <span class="text-green-800"> 2-  مصنع قادر للصناعات المتطورة  :-    </span>   2 شارع الطيران , مدينة نصر  .  <br>
+   <span class="text-green-800"> 3-  منافذ لونج لايف ( المصانع الحربية ) المنتشرة  :-    </span> <br> 
+   *  مدينة نصر 73 طريق النصر , بجوار طيبة مول .  <br>
+   *  الزاوية الحمراء شارع 6 أكتوبر , الزاوية الحمراء  .  <br>
+   *  حلوان وعين حلوان : مناطق متنوعة   .  <br>
+   *  شبرا : المظلات وشبرا الخيمة  .  <br>
+   *  الهرم : 4 شارع شكرى , عمارات الضباط , مزرعة  .  <br>
+</p><br><br>
+
+<h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  التواصل :- </h2>
+<p class="font-bold mx-6 space ">
+   <span class="text-green-800">  الخط الساخن  :-  </span>   19827   <br>
+</p><br>
 
 
           <!-- start btaqa -->
@@ -1223,6 +1241,8 @@ stroke-width="1.5" stroke="currentColor" class="h-4 w-4 text-white">
                   <div class="text-sm text-gray-500 space-y-2 list-none ">
                       <li><a href="src/pages/zyarat.html">زيارات</a></li>
                       <li><a href="src/pages/nesf-sanwya.html">نصف سنوية</a></li>
+                      <li><a href="src/pages/fedralya-alamya.html"> المنظمات الدولية</a></li>
+
                   </div>
               </div>
           </div>

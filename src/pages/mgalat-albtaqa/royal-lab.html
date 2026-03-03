@@ -106,7 +106,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 <a href="#"
 type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
->المنظمات الدولية
+>    بطاقة المحارب
 <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
 </svg> 
@@ -114,8 +114,12 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 <div  
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
-<a href="../fedralya-alamya.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
-          
+<a href="../btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  عام </a>
+  <a href="../btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   مهام المحارب </a>
+  <a href="../btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+  <a href="../btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a href="../btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
+              
 </div>
 </div>
 
@@ -137,6 +141,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 <a href="../zyarat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
 <a href="../nesf-sanwya.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+<a href="../fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> المنظمات الدولية </a>
           
 </div>
 </div>
@@ -275,6 +280,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
                   <div class="text-sm text-gray-500 space-y-2 list-none ">
                       <li><a href="../zyarat.html">زيارات</a></li>
                       <li><a href="../nesf-sanwya.html">نصف سنوية</a></li>
+                      <li><a href="../fedralya-alamya.html"> المنظمات الدولية</a></li>
                   </div>
               </div>
           </div>

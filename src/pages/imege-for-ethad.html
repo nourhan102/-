@@ -103,7 +103,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 <a href="#"
 type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
->المنظمات الدولية
+>    بطاقة المحارب
 <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
 </svg> 
@@ -111,8 +111,12 @@ type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedW
 <div  
 x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90  dark:bg-lime-800" role="menu">
 
-<a href="fedralya-alamya.html" class=" px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الفيدراليه العالمية </a>
-          
+<a href="btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  عام </a>
+  <a href="btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   مهام المحارب </a>
+  <a href="btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+  <a href="btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a href="btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
+              
 </div>
 </div>
 
@@ -134,6 +138,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
 
 <a href="zyarat.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
 <a href="nesf-sanwya.html" class="px-4 py-2 text-sm bg-lime-800 text-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+<a href="fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> المنظمات الدولية </a>          
           
 </div>
 </div>
@@ -217,6 +222,21 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
             description: 'الجمعية العمومية للاتحاد العربي للمحاربين القدماء وضحايا الحرب',              
         }, 
 
+        {
+          imgSrc: '../../imeges/ztarat/Wazeer-elkargya/DR-Badr.jpeg',
+          title: ' لقاء مع   وزير الخارجية والهجرة وشئون المصريين بالخارج     ',
+          description: '    لقـاء مع معالى الدكتور  / بدر عبد العاطى   وزير الخارجية والهجرة وشئون المصريين بالخارج اليوم الخميس الموافق 05 / 02 /2026، اللواء أ.ح. خالد مصطفى توفيق رئيس الاتحاد العربى للمحاربين القدماء وضحايا الحرب، وذلك فى إطار الاهتمام بدعم المحاربين القدماء وأسر الشهداء، وتقديرًا لتضحياتهم الوطنية .     ',              
+      },
+        {
+          imgSrc: '../../imeges/conrty/Bahren/Sarera-Fawzya1.jpg',
+          title: ' لقاء مع   سفيرة مملكة البحرين   ',
+          description: '    لقـاء مع   معالى السفيرة  / فوزية بنت عبد الله زينل    بجمهورية مصر العربية    ',              
+      },             
+      {
+        imgSrc: '../../imeges/conrty/Bahren/Sarera-Fawzya2.jpg',
+        title: '  لقاء مع   سفيرة مملكة البحرين   ',
+        description: '    لقـاء مع   معالى السفيرة  / فوزية بنت عبد الله زينل    بجمهورية مصر العربية    ',              
+      },
 
         {
           imgSrc: '../../imeges/home-slider/leka-waer-elsaqafa1.jpg',
@@ -397,6 +417,118 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
       <!-- end slider 1 -->
 
 
+      <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
+        لقاء مع  وزير الخارجية والهجرة وشئون المصريين بالخارج        . <br>
+        معالى الدكتور  / بدر عبد العاطى <br>
+           
+         </h1><br>
+  
+         <p class="font-bold mx-6">
+          فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب ووزارة الخارجية المصرية    .
+    </p><br>
+  
+  
+    <p class=" font-bold mx-6">
+      استقبل  (  يوم الخميس الموافق 05 / 02 /2026  )  : <br>
+    <span class="text-green-800">  د. بدر عبد العاطى  </span>   وزير الخارجية والهجرة وشئون المصريين بالخارج   .  <br>
+    <span class="text-green-800">   اللواء أ.ح. خالد مصطفى توفيق   </span>   رئيس الاتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
+    </p>
+  
+    <p class="font-bold mx-6">
+      وذلك فى إطار الاهتمام بدعم المحاربين القدماء وأسر الشهداء، وتقديرًا لتضحياتهم الوطنية    .
+  </p><br>
+  
+  
+  <div class=" mohareb container ">
+    <div class="mohareb3">
+      <img  src="../../imeges/ztarat/Wazeer-elkargya/DR-Badr.jpeg"  class="w-full " >
+    </div>
+   
+  </div><br><br>
+  
+   
+  <p class="font-bold mx-6">
+    وأعرب الوزير عبد العاطي عن ترحيبه برئيس الاتحاد، مشيدًا بما قدمه من تضحيات جسام دفاعًا عن أمن واستقرار الوطن. وأكد وزير الخارجية أهمية الدور الذي يقوم به الاتحاد العربي للمحاربين القدماء وضحايا الحرب في دعم المحاربين القدماء وضحايا الحروب وأسر الشهداء في مختلف الدول العربية، مشيدا بما يضطلع به الاتحاد من جهود لتعزيز التعاون والتنسيق بين جمعيات المحاربين القدماء على المستوى العربي   .
+  </p><br>
+  
+  
+  <p class="font-bold mx-6">
+    ورحب الوزير عبد العاطي بالبعد الثقافي والتوعوي لأنشطة الاتحاد، مثمنًا استئناف انعقاد الجمعية العمومية للاتحاد، ولاسيما استضافة القاهرة لاجتماعات الجمعية العمومية في شهر مايو 2025  .
+  </p><br>
+  
+  
+  <p class="font-bold mx-6 text-center text-green-800 ">
+    وقد أشاد سيادة الدكتور الوزير بدر عبد العاطى وزير الخارجية والهجرة وشئون المصريين   
+  </p>
+  <p class="font-bold mx-6 text-center text-green-800">
+    بأهمية دور الاتحاد العربي للمحاربين القدماء وضحايا الحرب  
+  </p>
+  <p class="font-bold mx-6 text-center text-green-800">
+    والعلاقات المصرية الدولية علاقاتا أثرية وجذرية يجمع بنا التواصل والتعارف ووحدة الصف .
+  </p><br>
+  
+  
+      <br><br><br><br><br>
+      <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
+        لقاء مع  سفيرة مملكة البحرين      . <br>
+        معالى السفيرة  / فوزية بنت عبد الله زينل  <br>
+           
+         </h1><br>
+  
+         <p class="font-bold mx-6">
+          فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب وسفارة البحرين   يوم الاحد  الموافق الأول من فبراير 2026   .
+    </p><br>
+  
+    
+  
+  <p class=" font-bold mx-6">
+    قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة    : <br>
+  <span class="text-green-800">1-</span> لواء أ . ح . م / خالد مصطفى توفيق  رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
+  <span class="text-green-800">2-</span> لواء أ. م / حازم حسن بيومى  . . أمين صندوق الإتحاد العربى للمحاربين القدماء وضحايا الحرب     .  <br>
+  </p>
+  
+  <p class="font-bold mx-6 text-green-800">
+    (   بزيارة معالى السفيرة  / فوزية بنت عبد الله زينل  . . سفيرة مملكة البحرين بجمهورية مصر العربية   )  .
+  </p><br>
+  
+  
+  <div class=" mohareb container ">
+    <div class="mohareb3">
+      <img  src="../../imeges/conrty/Bahren/Sarera-Fawzya1.jpg"  class="w-full " >
+    </div>
+   
+  </div><br><br>
+  
+  <p class="font-bold mx-6">
+    لتبادل الأراء وعرض ما يقوم به الإتحاد العربى للمحاربين القدماء وضحايا الحرب من خلال الإستراتيجية العربية الجديدة وعرض رؤية الإتحاد فى تعميق الروابط والإخاء بين الإتحاد العربى وشعبة القوة الأحتياطية والمتطوعين والشهداء القيادة العامة ( قوة دفاع البحرين ) - المملكة البحرين  .
+  </p><br>
+  
+  <p class="font-bold mx-6">
+    أسفر اللقاء عن إتخاذ إجراءات هادفة وبناءة تساعد فى تنمية العلاقات وتفعيل الأنشطة والأعمال خلال الفترة المقبلة  .
+  </p><br>
+  
+  
+  <p class=" font-bold mx-6">
+    وحضر اللقاء من السفارة البحرينية    : <br>
+  <span class="text-green-800">   السيد العميد الركن دكتور / فيصل بن حسن العجمى . . الملحق العسكرى للمملكة البحرينية  بسفارة البحرين    </span>     .  <br>
+  </p><br>
+  
+  <p class="font-bold mx-6">
+    وقام الإتحاد بهذه المناسبة بتقديم وسام الإتحاد لمعالى السفيرة   / فوزية بنت عبد الله زينل  . . سفيرة مملكة البحرين لدى جمهورية مصر العربية    تقديراً لحميد صفاتها  , وجليل خدماتها للأمة العربية .
+  </p><br>
+  
+  <div class=" mohareb container ">
+    <div class="mohareb3">
+      <img  src="../../imeges/conrty/Bahren/Sarera-Fawzya2.jpg"  class="w-full " >
+    </div>
+   
+  </div><br><br>
+  
+  
+  
+  <p class="font-bold mx-6">
+    والعلاقات المصرية الدولية علاقاتا أثرية وجذرية يجمع بنا التواصل والتعارف و وحدة الصف .
+  </p><br>
 
       <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
         لقاء مع وزير الثقافة المصرى  . <br>
@@ -722,6 +854,7 @@ x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKey
                   <div class="text-sm text-gray-500 space-y-2 list-none ">
                       <li><a href="zyarat.html">زيارات</a></li>
                       <li><a href="nesf-sanwya.html">نصف سنوية</a></li>
+                      <li><a href="fedralya-alamya.html"> المنظمات الدولية</a></li>
                   </div>
               </div>
           </div>
