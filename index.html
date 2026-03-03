@@ -117,7 +117,7 @@
   <a href="src/pages/btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  عام </a>
   <a href="src/pages/btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   مهام المحارب </a>
   <a href="src/pages/btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
-  <a href="src/pages/btaqet-almohareb.html#Rab3an" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a href="src/pages/descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
   <a href="src/pages/btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-lime-800 hover:bg-lime-950 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
                 
   </div>
@@ -313,8 +313,11 @@
   <!-- slides -->
   <div  class="relative h-svh w-full">
       <template x-for="(slide, index) in slides" >
-          <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
-              
+        <div x-cloak 
+        x-show="currentSlideIndex == index + 1" 
+        class="absolute inset-0 cursor-pointer"
+        x-transition.opacity.duration.1000ms
+        @click="slide.link && (window.location.href = slide.link)">              
               <!-- Title and description -->
               <div class="lg:px-32 lg:py-14 absolute inset-0 z-10 flex flex-col items-center justify-end gap-2 bg-linear-to-t from-surface-dark/85 to-transparent px-16 py-12 text-center">
                   <h3 class="w-full lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold text-on-surface-dark-strong" x-text="slide.title" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"></h3>
@@ -1176,7 +1179,7 @@
 
 
     <!-- start section 2 -->
-    <div class="mlaf">
+    <div  id="musabka" class="mlaf">
       <h2 class=" text-green-800 font-bold mx-6 text-2xl   " > تحميل ملف المسابقة الثقافية   :-</h2>
       <a href="files-pdf/Cultural-competition2025.pdf" target="_blank"
        download
@@ -1195,7 +1198,7 @@
 
   <!-- start gogele form musabka  -->
 
-  <div id="musabka" class="mlaf2">
+  <div class="mlaf2">
 
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqljZJCrcdXUExfajbAzxJtY40NcETtarysg_isEDVDnQOJw/viewform?usp=dialog" target="_blank"
        
