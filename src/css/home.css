@@ -176,6 +176,80 @@
   }
   /* بطاقة end */
 
+  /* Start news-bar  */
+
+
+  .news-bar {
+    width: 100%;
+    height: 50px;
+    background: #3f5839;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* أيقونة الجرس */
+  .icon {
+    font-size: 26px;
+    margin: 0 20px;
+    color: #e01313; /* لون واضح */
+    animation: shake 1s infinite;
+    transform-origin: top center;
+    text-shadow: 0 0 8px #e01313;
+
+  }
+  
+  /* حركة الاهتزاز */
+  @keyframes shake {
+    0% { transform: rotate(0); }
+    20% { transform: rotate(12deg); }
+    40% { transform: rotate(-12deg); }
+    60% { transform: rotate(8deg); }
+    80% { transform: rotate(-8deg); }
+    100% { transform: rotate(0); }
+  }
+  
+  /* التكر */
+  .ticker {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .ticker-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+  }
+  
+  /* اللينكات */
+  .ticker-track a {
+    color: #fff;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .ticker-track a:hover {
+    color: #e01313;
+  }
+  
+  /* حركة الأخبار */
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  /* news-bar end */
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
