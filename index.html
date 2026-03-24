@@ -26,57 +26,6 @@
   </head>
   <body dir="rtl">
    
-  <!-- start news bar -->
-
-  <div class="news-bar">
-  
-    <div class="icon">
-      🔔
-    </div>
-  
-    <div class="ticker">
-      <div class="ticker-track" id="ticker-track">
-        <!-- الأخبار -->
-      </div>
-    </div>
-  
-  </div>
-
-
-   <!-- Start  Java script  -->
-
-   <script>
-    const newsData = [
-      { text: "    تم عقد بروتوكول خصومات لحاملي بطاقة المحارب    ", link: "src/pages/descaunt-btaqa.html" },
-      { text: "   لقاء مع وزير الخارجية معالى الدكتور / بدر عبد العاطى   ", link: "src/pages/imege-for-ethad.html#Wazwr-karqya" },
-      { text: "   المسابقة الثقافية لعام 2026 متاحة للإجابة على الأسئلة   ", link: "index.html#musabka" }
-    ];
-  
-    const track = document.getElementById("ticker-track");
-  
-    function loadNews() {
-      track.innerHTML = "";
-  
-      newsData.forEach(news => {
-        const a = document.createElement("a");
-        a.href = news.link;
-        a.textContent = news.text;
-        a.target = "_blank";
-        track.appendChild(a);
-      });
-    }
-  
-    loadNews();
-  
-    setInterval(() => {
-      newsData.push(newsData.shift());
-      loadNews();
-    }, 40000);
-  </script>
-    <!-- Java script End -->
-
-   <!-- End news bar -->
-
 
     <!-- start navbar -->
 
@@ -270,6 +219,57 @@
     <!-- end navbar -->
 
 
+
+    <!-- start news bar -->
+
+  <div class="news-bar">
+  
+    <div class="icon">
+      🔔
+    </div>
+  
+    <div class="ticker">
+      <div class="ticker-track" id="ticker-track">
+        <!-- الأخبار -->
+      </div>
+    </div>
+  
+  </div>
+
+
+   <!-- Start  Java script  -->
+
+   <script>
+    const newsData = [
+      { text: "    تم عقد بروتوكول خصومات لحاملي بطاقة المحارب    ", link: "src/pages/descaunt-btaqa.html" },
+      { text: "   لقاء مع وزير الخارجية معالى الدكتور / بدر عبد العاطى   ", link: "src/pages/imege-for-ethad.html#Wazwr-karqya" },
+      { text: "   المسابقة الثقافية لعام 2026 متاحة للإجابة على الأسئلة   ", link: "index.html#musabka" }
+    ];
+  
+    const track = document.getElementById("ticker-track");
+  
+    function loadNews() {
+      track.innerHTML = "";
+  
+      newsData.forEach(news => {
+        const a = document.createElement("a");
+        a.href = news.link;
+        a.textContent = news.text;
+        a.target = "_blank";
+        track.appendChild(a);
+      });
+    }
+  
+    loadNews();
+  
+    setInterval(() => {
+      newsData.push(newsData.shift());
+      loadNews();
+    }, 40000);
+  </script>
+    <!-- Java script End -->
+
+   <!-- End news bar -->
 
   
 
