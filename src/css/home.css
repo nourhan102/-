@@ -249,6 +249,87 @@
 /* news-bar end */
 
 
+
+.split-section {
+  display: flex;
+  width: 100%;
+}
+
+.text-side1 {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.text-side2 {
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+
+}
+.text-side3 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+
+}
+
+.image-side1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.image-side1 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image-side1 .img2 {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+/* 📱 الموبايل فقط */
+@media (max-width: 768px) {
+  .split-section {
+    display: block; /* تحت بعض */
+  }
+
+  .text-side1,
+  .text-side2,
+  .text-side3,
+  .image-side1 {
+    width: 100%; /* عرض كامل */
+  }
+
+  .image-side1 {
+    display: block; /* يشيل flex من الصور */
+  }
+
+  .image-side1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/

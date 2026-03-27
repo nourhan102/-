@@ -666,17 +666,30 @@ p.card__description {
 
 .mohareb1 img,
 .mohareb2 img ,
-.mohareb3 img
- {
+.mohareb3 img ,
+.mohareb4 img ,
+.mohareb5 img 
+{
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+}
+
+.mohareb4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 .mohareb3 img{
   margin-top: 20px;
   margin-bottom: 20px;
 
 }
+
+
+
+
+
 
 .mohareb img:hover {
   transform: scale(1.03);
@@ -692,13 +705,18 @@ p.card__description {
   }
 
   .mohareb1,
-  .mohareb2 {
+  .mohareb2 ,
+  .mohareb3  
+   {
     width: 30%; /* كل واحدة تاخد تقريبًا نص العرض */
     margin: 0;
   }
 
   .mohareb1 img,
-  .mohareb2 img {
+  .mohareb2 img ,
+  .mohareb3 img ,
+  .mohareb4 img 
+  {
     width: 100%;
     height: auto;
   }
