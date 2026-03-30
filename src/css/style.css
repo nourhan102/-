@@ -373,13 +373,13 @@ scroll
 }
 h2.card__title {
   font-size: 1.80rem;
-  font-family: var(--font-title);
+  /* font-family: var(--font-title); */
   color: var(--white);
   line-height: 1.1;
 }
 
 p.card__description {
-  font-family: var(--font-text);
+  /* font-family: var(--font-text); */
   font-size: 1rem;
   line-height: 1.5;
   color: var(--white);

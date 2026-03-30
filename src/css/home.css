@@ -1,3 +1,11 @@
+* {
+  font-family: 'MyFont-bold';
+}
+@font-face {
+  font-family: 'MyFont-bold';
+  src: url('../../Font/Bahij_TheSansArabic-Bold.ttf');
+}
+
 .btaqa{
     width: 30%;
     margin: 30px;
@@ -185,7 +193,6 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* font-family: 'Segoe UI', sans-serif; */
 }
 
 /* أيقونة الجرس */
