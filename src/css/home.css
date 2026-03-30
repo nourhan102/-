@@ -1,10 +1,3 @@
-* {
-  font-family: 'MyFont-bold';
-}
-@font-face {
-  font-family: 'MyFont-bold';
-  src: url('../../Font/Bahij_TheSansArabic-Bold.ttf');
-}
 
 .btaqa{
     width: 30%;
@@ -330,7 +323,9 @@
   .text-side2,
   .text-side3,
   .image-side1,
-  .image-side2
+  .image-side2 ,
+  .mohareb1 ,
+  .mohareb2
    {
     width: 100%; /* عرض كامل */
   }

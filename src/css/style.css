@@ -57,11 +57,11 @@ html, body {
 
 @font-face {
   font-family: 'MyFont-bold';
-  src: url('../../Font/Bahij_TheSansArabic-Bold.ttf');
+  src: url('../../Font/Bahij_TheSansArabic-Bold.ttf') format('truetype');
 }
 
 * {
-  font-family: 'MyFont-bold';
+  font-family: 'MyFont-bold', sans-serif;
 }
 
 
@@ -73,7 +73,6 @@ html, body {
 /* slider2 */
 
 
-scroll
 
 
 /* end slider 2 */
