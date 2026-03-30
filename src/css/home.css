@@ -288,6 +288,13 @@
   gap: 20px;
   padding: 20px;
 }
+.image-side2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
 
 
 .image-side1 img {
@@ -305,6 +312,7 @@
 
 
 
+
 /* 📱 الموبايل فقط */
 @media (max-width: 768px) {
   .split-section {
@@ -314,15 +322,21 @@
   .text-side1,
   .text-side2,
   .text-side3,
-  .image-side1 {
+  .image-side1,
+  .image-side2
+   {
     width: 100%; /* عرض كامل */
   }
 
-  .image-side1 {
+  .image-side1 ,
+  .image-side2
+  {
     display: block; /* يشيل flex من الصور */
   }
 
-  .image-side1 img {
+  .image-side1 img,
+  .image-side2 img
+   {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
@@ -422,4 +436,201 @@
   transition: all 0.3s ease;
 }
 
+
+/*  start news */
+
+
+.cards-news {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+/* شكل البوكس */
+
+.news {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  max-width: 350px; /* 👈 ده أهم سطر */
+  width: 90%;
+}
+
+/* 📦 div الصورة */
+.news-img {
+  height: 230px;
+  width: 100%;
+  /* aspect-ratio: 4 / 2; */
+  aspect-ratio: 5 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  overflow: hidden;
+  border: 1px;
+  border-radius: 15px;
+}
+
+/* 🖼️ الصورة */
+.news-img img ,
+.All-news-img img
+ {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-fit: scale-down; */
+  transition: 0.4s;
+}
+
+/* hover على الصورة */
+.news:hover .news-img img ,
+.All-news:hover .All-news-img img 
+{
+  transform: scale(1.05);
+}
+
+/* حركة بسيطة للكارت */
+.news:hover ,
+.All-news:hover 
+{
+  transform: translateY(-5px);
+}
+
+/* العنوان */
+.news h3 ,
+.All-news h3 
+ {
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* لينك المزيد */
+.news a ,
+.All-news a 
+{
+  display: block;
+  padding: 0 15px 15px;
+  text-decoration: none;
+  color: #3f5839;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.news a span ,
+.All-news a span 
+{
+  transition: 0.3s;
+  font-size: large;
+  font-weight: bold;
+}
+
+.news a:hover span,
+.All-news a:hover span
+ {
+  margin-right: 5px;
+}
+
+
+/* 🔹 التابلت */
+@media (max-width: 892px) {
+  .cards-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 🟢 الكروت تتوسع وتنكمش */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .news {
+    width: 100%;
+    max-width: 320px; /* الحد الأقصى للكارت */
+  }
+
+  /* البوكس التالت في المنتصف */
+  .news:nth-child(3) {
+    grid-column: 1 / -1; /* ياخد صف كامل */
+    justify-self: center;  /* ييجي في المنتصف */
+  }
+   /* الجزء الخاص بالصورة يظل متناسق */
+   .news-img {
+    aspect-ratio: 4 / 2;
+  }
+}
+
+
+/* 📱 الموبايل */
+@media (max-width: 576px) {
+  .cards-news {
+    display: grid;
+    grid-template-columns: 1fr; /* كل بوكس في صف واحد */
+    gap: 25px;
+    justify-items: center;
+    padding: 15px;
+  }
+}
+
+
+/*   news end */
+
+/*  start All-news */
+
+/* شكل البوكس */
+
+.All-news {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  max-width: 350px; /* 👈 ده أهم سطر */
+  width: 90%;
+}
+
+/* 📦 div الصورة */
+.All-news-img {
+  height: 190px;
+  width: 100%;
+  /* aspect-ratio: 4 / 2; */
+  aspect-ratio: 5 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  overflow: hidden;
+  border: 1px;
+  border-radius: 15px;
+}
+
+/* 🔹 التابلت */
+@media (max-width: 892px) {
+  .cards-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 🟢 الكروت تتوسع وتنكمش */
+    gap: 20px;
+  }
+
+  .All-news {
+    width: 100%;
+    max-width: 320px; /* الحد الأقصى للكارت */
+  }
+
+  /* البوكس التالت في المنتصف */
+  .All-news:nth-child(3-4) {
+    grid-column: 2 / -2; /* ياخد صف كامل */
+  }
+   /* الجزء الخاص بالصورة يظل متناسق */
+   .All-news-img {
+    aspect-ratio: 4 / 2;
+  }
+}
+
+
+
+
+
+/*   All-news end */
 
