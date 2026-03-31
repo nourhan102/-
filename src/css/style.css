@@ -72,8 +72,40 @@ html, body {
 
 /* slider2 */
 
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* المسافة بين كل دايرة و الثانية */
+}
+
+.indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5); /* لون افتراضي */
+  border: none;
+}
+
+/* النقطة النشطة */
+.indicators button.active {
+  background-color: #fff;
+  transform: scale(1.2);
+}
 
 
+/* الموبايل */
+@media (max-width: 768px) {
+  .indicators {
+    flex-direction: row; /* تبقى جنب بعض */
+    flex-wrap: nowrap;   /* منع النزول تحت */
+    gap: 6px;           /* مسافة صغيرة بينهم */
+  }
+
+  .slider-container {
+    height: 50vh !important; /* تقليل الطول */
+  }
+}
 
 /* end slider 2 */
 .cover{
