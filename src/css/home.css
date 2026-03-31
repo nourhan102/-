@@ -574,6 +574,10 @@
     justify-items: center;
     padding: 15px;
   }
+  .margin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 
