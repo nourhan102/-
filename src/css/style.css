@@ -103,7 +103,7 @@ html, body {
   }
 
   .slider-container {
-    height: 50vh !important; /* تقليل الطول */
+    height: 70vh !important; /* تقليل الطول */
   }
 }
 
