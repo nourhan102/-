@@ -758,3 +758,50 @@ p.card__description {
 
 /* شكل بطاقة المحارب end */
 
+.tables-container {
+  display: flex;
+  flex-wrap: wrap; /* يخليهم تحت بعض على الموبايل */
+  gap: 50px;
+  justify-content: center; /* يوّسط الجدولين */
+}
+
+table caption {
+  caption-side: top; /* العنوان فوق الجدول */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #065f46;
+  margin-bottom: 10px; /* مسافة بين العنوان والجدول */
+  text-align: center;
+}
+
+table {
+  width: 45%; /* جنب بعض على الشاشات الكبيرة */
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+th {
+  background-color: #e0ffe0;
+  color: #065f46;
+}
+
+tr:nth-child(even) {
+  background-color: #f0fff0;
+}
+
+@media (max-width: 568px) {
+  table {
+    width: 100%; /* الجدول ياخد عرض الشاشة على الموبايل */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+
