@@ -758,32 +758,41 @@ p.card__description {
 
 /* شكل بطاقة المحارب end */
 
+
+
+/* container لكل الجدولين */
 .tables-container {
   display: flex;
-  flex-wrap: wrap; /* يخليهم تحت بعض على الموبايل */
-  gap: 50px;
-  justify-content: center; /* يوّسط الجدولين */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
+/* عنوان الجدول */
 table caption {
-  caption-side: top; /* العنوان فوق الجدول */
+  caption-side: top;
   font-size: 1.5rem;
   font-weight: bold;
   color: #065f46;
-  margin-bottom: 10px; /* مسافة بين العنوان والجدول */
+  margin-bottom: 10px;
   text-align: center;
 }
 
+/* كل جدول */
 table {
   width: 45%; /* جنب بعض على الشاشات الكبيرة */
   border-collapse: collapse;
   text-align: center;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
+/* خلايا الجدول */
 th, td {
   border: 1px solid green;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 th {
@@ -795,11 +804,21 @@ tr:nth-child(even) {
   background-color: #f0fff0;
 }
 
-@media (max-width: 568px) {
+/* شاشة الموبايل */
+@media (max-width: 768px) {
+  .tables-container {
+    flex-direction: column; /* الجدولين تحت بعض */
+    padding: 0 15px; /* مسافة من الجانبين */
+  }
+
   table {
-    width: 100%; /* الجدول ياخد عرض الشاشة على الموبايل */
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%; /* الجدول ياخد عرض كامل الـ container */
+    margin: 0 0 20px 0;
+  }
+
+  th, td {
+    padding: 5px; /* تقليل padding عشان الأعمدة الكبيرة تدخل */
+    font-size: 0.9rem; /* تصغير الخط عشان الجدول يلتزم بالعرض */
   }
 }
 
