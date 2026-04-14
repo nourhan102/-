@@ -230,52 +230,55 @@
 
     <!-- start news bar -->
 
-  <div class="news-bar">
+    <div class="news-bar">
     
-    <div class="ticker">
-      <div class="ticker-track" id="ticker-track">
-        <!-- الأخبار -->
+      <div class="ticker">
+        <div class="ticker-track" id="ticker-track">
+          <!-- الأخبار -->
+        </div>
       </div>
+    
+      <div class="icon">
+        🔔
+      </div>
+    
     </div>
+    
+    
+    <!-- Start JavaScript -->
 
-    <div class="icon">
-      🔔
-    </div>
-  
-  
-  </div>
-
-
-   <!-- Start  Java script  -->
-
-   <script>
-    const newsData = [
-      { text: "    تم عقد بروتوكول خصومات لحاملي بطاقة المحارب    ", link: "src/pages/descaunt-btaqa.html" },
-      { text: "   لقاء مع وزير الخارجية معالى الدكتور / بدر عبد العاطى   ", link: "src/pages/News/Wazeer-elkargya.html" },
-      { text: "   المسابقة الثقافية لعام 2026 متاحة للإجابة على الأسئلة   ", link: "index.html#musabka" }
-    ];
-  
-    const track = document.getElementById("ticker-track");
-  
-    function loadNews() {
-      track.innerHTML = "";
-  
-      newsData.forEach(news => {
-        const a = document.createElement("a");
-        a.href = news.link;
-        a.textContent = news.text;
-        a.target = "_blank";
-        track.appendChild(a);
-      });
-    }
-  
-    loadNews();
-  
-    setInterval(() => {
-      newsData.push(newsData.shift());
+    <!-- link: "index.html#musabka"  -->
+    
+    <script>
+      const newsData = [
+        { text: "  سياسي :- تسلم الرئيس العراقى نزار أميدي مهام منصبه رسمياً رئيساً لجمهورية العراق، وذلك خلال مراسم رئاسية أُقيمت اليوم الأحد في قصر بغداد . " },
+        { text: "  اللقاءات والزيارات  :- تم عقد لقاء بين العميد الركن  / نبيل عبد الله على محمد  . .  الملحق العسكرى لسفارة جمهورية السودان و  اللواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد العربى للمحاربين القدماء وضحايا  الحرب بمقر الملحقية العسكرية السودانية بجمهورية مصر العربية . " },
+        { text: " خدمات بطاقة المحارب العربى القديم  :-  قام الإتحاد العربى لللمحاربين القدماء وضحايا الحرب بإعداد إسترتيجية عربية جديد ( 2025 – 2029 ) تسعى  لتعظيم وتفعيل دور المحارب العربى القديم وتم  إصدار بطاقة المحارب العربى القديم والذى يسعى الإتحاد العربى من خلالها لتقديم مميزات وخدمات للمحارب العربى القديم  . " },
+        { text: "  المصابين والمتقاعدين  :- قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء بزيارة المصابين المقاتلين الأبطال بالمجمع الطبى العسكرى الطبى بالمعادى للإطمئنان على الحالة الصحية وتقديم التهنئة  .  " } ,
+        { text: "  البروتوكولات :- تم عقد بروتوكول تعاون بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء بنسبة خصم ( 5 % ) على الأجهزة الكهربائية والالكترونية والأثاث وأدوات المائدة لحاملى بطاقة المحارب العربى القديم ( لمدة عام) من يوم 26/02/2026 وحتى 25/02/2027)  .  " },
+        { text: "  رياضي :-  اقترب منتخب مصر الأول بقيادة حسام حسن من خوض مباراة ودية أمام نظيره العراقى بالقاهرة يوم 29 مايو المقبل، ضمن برنامج الإعداد لبطولة كأس العالم 2026  .  " }
+      ];
+      
+      const track = document.getElementById("ticker-track");
+      
+      function loadNews() {
+        track.innerHTML = "";
+      
+        newsData.forEach((news, index) => {
+          const a = document.createElement("a");
+          a.href = news.link;
+          a.textContent = news.text;
+          a.target = "_blank";
+      
+          // 👇 هنا الألوان
+          a.classList.add(`news-${index + 1}`);
+      
+          track.appendChild(a);
+        });
+      }
+      
       loadNews();
-    }, 40000);
-  </script>
+      </script>
     <!-- Java script End -->
 
    <!-- End news bar -->
@@ -291,6 +294,33 @@
 
 <div x-data="{  
   slides: [ 
+
+
+
+  {
+    imgSrc: 'imeges/ethad/Ethad2026-1.jpg',
+    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
+    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
+    link: '' ,                
+},
+  {
+    imgSrc: 'imeges/ethad/Ethad2026-2.jpg',
+    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
+    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
+    link: '' ,                
+},
+  {
+    imgSrc: 'imeges/ethad/Ethad2026-3.jpg',
+    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
+    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
+    link: '' ,                
+},
+  {
+    imgSrc: 'imeges/ethad/Ethad2026-4.jpg',
+    title: '  الاحتفال بالعيد ال 66  سنة 2026  ',
+    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
+    link: '' ,                
+},
   {
     imgSrc: 'imeges/ztarat/Entag-harby/Hayet-Entag-Harby2.jpg',
     title: '  لقاء مع الهيئة القومية للإنتاج الحربى    ',
