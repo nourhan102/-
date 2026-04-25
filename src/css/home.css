@@ -181,100 +181,121 @@
   /* بطاقة end */
 
   /* Start news-bar  */
+.cont-box {
+  margin-top: 50px;
+  background-color: #3f5839;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 55px;
+}
+.icon {
+  position: absolute;
+  left: 10px; /* بدل left */
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  z-index: 2;
+   /* ظل أحمر */
+  text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff0000;
+
+  /* الحركة */
+  animation: bellShake 0.8s infinite;
+  transform-origin: top center;
+}
+
+.box {
+  padding: 15px;
+  white-space: nowrap;
+  color: #fff;
+  display: inline-block;
+  -webkit-animation: move 100s linear infinite;
+  -moz-animation: move 100s linear infinite;
+  animation: move 100s linear infinite;
+  padding-left: 100%;
+  padding-right: 100px; /* مساحة للجرس */
+}
+.item {
+  margin-right: 35px;
+  font-size: 22px;
+}
+.item:hover {
+   color: #ff4d4d;
+   cursor: pointer;
+
+}
+span.one {
+  color: #ff4d4d;
+
+}
+
+span.two {
+  color: #417eb1;
+}
+
+span.there {
+  color: #2ecc71;
+}
+span.four {
+  color: #91683a;
+}
+span.five {
+  color: #a3a135;
+}
+span.six {
+  color: #399485;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%)
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* هز يمين وشمال */
+@keyframes bellShake {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(15deg); }
+  40%  { transform: rotate(-15deg); }
+  60%  { transform: rotate(10deg); }
+  80%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
 
 
 /* Start news-bar  */
 
 /* Start news-bar */
 
-.news-bar {
-  width: 100%;
-  height: 50px;
-  background: #3f5839;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
 
-/* الجرس */
-.icon {
-  font-size: 26px;
-  margin: 0 20px;
-  color: #e01313;
-  animation: shake 1s infinite;
-  transform-origin: top center;
-  text-shadow: 0 0 8px #e01313;
-}
 
-/* shake */
-@keyframes shake {
-  0% { transform: rotate(0); }
-  20% { transform: rotate(12deg); }
-  40% { transform: rotate(-12deg); }
-  60% { transform: rotate(8deg); }
-  80% { transform: rotate(-8deg); }
-  100% { transform: rotate(0); }
-}
 
-/* ticker */
-.ticker {
-  flex: 1;
-  overflow: hidden;
-}
 
-/* 👇 مهم جدًا */
-.ticker-track {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  white-space: nowrap;
-  animation: scrollLeft 110s linear infinite;
-}
 
-/* اللينكات */
-.ticker-track a {
-  margin-right: 50px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 0.3s;
-}
 
 /* ألوان الأخبار بدون تغيير الشكل */
-.ticker-track a.news-1 {
-  color: #ff4d4d;
 
-}
 
-.ticker-track a.news-2 {
-  color: #417eb1;
-}
 
-.ticker-track a.news-3 {
-  color: #2ecc71;
-}
-.ticker-track a.news-4 {
-  color: #91683a;
-}
-.ticker-track a.news-5 {
-  color: #a3a135;
-}
-.ticker-track a.news-6 {
-  color: #399485;
-}
-.ticker-track a:hover {
-  color: #ffff;
-}
-
-/* الحركة الصح بدون شقلبة */
-@keyframes scrollLeft {
-  from {
-    transform: translateX(-15%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
 
 
 /* news-bar end */
