@@ -1,5 +1,14 @@
   /*    start   contact us     */
-
+.Logo{
+  width: 80px;
+  display: flex;
+  justify-self: center;
+}
+.Logo2{
+  width: 150px;
+  display: flex;
+  justify-self: center;
+}
 
   .section1 {
     padding: 60px 0;
