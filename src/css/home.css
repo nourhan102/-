@@ -191,7 +191,8 @@
   /* بطاقة end */
 
   /* Start news-bar  */
-.cont-box {
+
+  .cont-box {
   margin-top: 50px;
   background-color: #3f5839;
   overflow: hidden;
@@ -200,101 +201,92 @@
   position: relative;
   height: 55px;
 }
+
+/* 🔔 الجرس */
 .icon {
   position: absolute;
-  left: 10px; /* بدل left */
+  left: 10px;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
   font-size: 30px;
+  color: #fff;
   z-index: 2;
-   /* ظل أحمر */
+
   text-shadow:
     0 0 5px #ff0000,
     0 0 10px #ff0000,
     0 0 20px #ff0000;
 
-  /* الحركة */
   animation: bellShake 0.8s infinite;
   transform-origin: top center;
 }
 
-.box {
-  padding: 15px;
-  white-space: nowrap;
-  color: #fff;
-  display: inline-block;
-  -webkit-animation: move 100s linear infinite;
-  -moz-animation: move 100s linear infinite;
-  animation: move 100s linear infinite;
-  padding-left: 100%;
-  padding-right: 100px; /* مساحة للجرس */
-}
+
+
+/* العناصر */
 .item {
-  margin-right: 35px;
+  margin-right: 40px;
   font-size: 22px;
+  color: #fff;
 }
+
+/* hover */
 .item:hover {
-   color: #ff4d4d;
-   cursor: pointer;
-
-}
-span.one {
   color: #ff4d4d;
-
+  cursor: pointer;
 }
 
-span.two {
-  color: #417eb1;
+/* الألوان */
+.one { color: #ff4d4d; }
+.two { color: #417eb1; }
+.there { color: #2ecc71; }
+.four { color: #91683a; }
+.five { color: #a3a135; }
+.six { color: #399485; }
+
+/* 🚀 الحركة (من الشمال لليمين) */
+.box {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-span.there {
-  color: #2ecc71;
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: move 120s linear infinite;
+  will-change: transform;
 }
-span.four {
-  color: #91683a;
-}
-span.five {
-  color: #a3a135;
-}
-span.six {
-  color: #399485;
+.item a {
+  color: inherit;
+  text-decoration: none;
 }
 
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%)
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
-  }
-}
 @keyframes move {
   0% {
-    transform: translateX(-15%);
+    transform: translateX(-0);
   }
   100% {
     transform: translateX(100%);
   }
 }
-/* هز يمين وشمال */
+
+/* 🔔 shake */
 @keyframes bellShake {
-  0%   { transform: rotate(0deg); }
-  20%  { transform: rotate(15deg); }
-  40%  { transform: rotate(-15deg); }
-  60%  { transform: rotate(10deg); }
-  80%  { transform: rotate(-10deg); }
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-15deg); }
+  60% { transform: rotate(10deg); }
+  80% { transform: rotate(-10deg); }
   100% { transform: rotate(0deg); }
 }
+@media (max-width: 768px) {
+  .track {
+    animation: move 130s linear infinite;
+  }
+}
 
+/* End news-bar  */
 
-/* Start news-bar  */
-
-/* Start news-bar */
 
 
 
