@@ -23,14 +23,27 @@
 
   gtag('config', 'G-4G6K0E8XV1');
 </script>
+
   </head>
   <body dir="rtl">
 
     <!-- start navbar -->
 
+      <!-- <div class="lang-switch">
+  <span>عربي</span>
+  <label class="switch">
+    <input type="checkbox" id="langToggle">
+    <span class="slider"></span>
+  </label>
+  <span>EN</span>
+</div> -->
+
+
     <nav
       class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]"
     >
+
+     
 
       <div
         class="container flex flex-wrap items-center  justify-center mx-auto text-slate-800"
@@ -38,6 +51,8 @@
       <a href="index.html" class="cursor-pointer  ">
         <img class="Logo" src="imeges/logo/Logo-new.png" alt="" />
       </a>
+
+   
 
       <!-- زر القائمة للموبايل -->
     <button
@@ -71,6 +86,7 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+    data-key="about"
     >عن الاتحاد
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -79,17 +95,17 @@
   <div  
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none py-1.5 opacity-90 bg-surface-alt" role="menu">
 
-  <a href="src/pages/ahdaf-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
+  <a href="src/pages/ahdaf-ethad.html" data-key="goals" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">تعريف و أهداف الأتحاد</a>
                 <!-- <a href="#" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">النظام الأساسي</a> -->
-                <a href="src/pages/methk-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
+                <a href="src/pages/methk-ethad.html" data-key="charter" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">ميثاق الشرف</a>
                 <!-- <a href="src/pages/shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
-                <a href="src/pages/rqasaq-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
-                <a href="src/pages/nouab-alraqes.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
-                <a href="src/pages/ameen-aam.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
-                <a href="src/pages/ameen-aam-mouseed.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">    الأمين العام  المساعد </a>
-                <a href="src/pages/ameen-alsondok.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أمين الصندوق</a>
+                <a href="src/pages/rqasaq-ethad.html" data-key="presidents" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">رؤساء الإتحاد</a>
+                <a href="src/pages/nouab-alraqes.html" data-key="vice_presidents" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">نواب الرئيس</a>
+                <a href="src/pages/ameen-aam.html" data-key="secretary" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الأمين العام</a>
+                <a href="src/pages/ameen-aam-mouseed.html" data-key="assistant_secretary" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">    الأمين العام  المساعد </a>
+                <a href="src/pages/ameen-alsondok.html" data-key="treasurer" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أمين الصندوق</a>
                 <!-- <a href="#" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a> -->
-                <a href="src/pages/tshelat-dewal.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">خدمات و تسهيلات الدول</a>
+                <a href="src/pages/tshelat-dewal.html" data-key="services" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">خدمات و تسهيلات الدول</a>
   </div>
     </div>
     
@@ -104,7 +120,8 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
-     >      بطاقة المحارب
+    data-key="card"
+    > بطاقة المحارب
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
   </svg> 
@@ -118,12 +135,12 @@
   <a href="src/pages/descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
   <a href="src/pages/btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات البطاقة  </a>
                  -->
-  <a href="src/pages/Ruls-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات عامة   </a>
-  <a href="src/pages/Beneficiaries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  المستفيدون من البطاقة    </a>
-  <a href="src/pages/Mham-Roqsaa-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهــام رؤساء ومديرى الجمعيات   </a>
-  <a href="src/pages/Mham-Mohareb-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهام المحارب العربى  </a>
-  <a href="src/pages/descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
-  <a href="src/pages/Inquiries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+  <a data-key="rules" href="src/pages/Ruls-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات عامة   </a>
+  <a data-key="beneficiaries" href="src/pages/Beneficiaries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  المستفيدون من البطاقة    </a>
+  <a data-key="managers_tasks" href="src/pages/Mham-Roqsaa-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهــام رؤساء ومديرى الجمعيات   </a>
+  <a data-key="warrior_tasks" href="src/pages/Mham-Mohareb-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهام المحارب العربى  </a>
+  <a data-key="discounts" href="src/pages/descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a data-key="inquiries" href="src/pages/Inquiries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
 
             
   </div>
@@ -137,6 +154,7 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+    data-key="activities"
     >أنشطة و اصدارات الإتحاد
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -145,9 +163,9 @@
   <div  
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90" role="menu">
 
-  <a href="src/pages/zyarat.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
-  <a href="src/pages/nesf-sanwya.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
-  <a href="src/pages/fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> المنظمات الدولية </a>
+  <a data-key="visits" href="src/pages/zyarat.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> زيارات </a>
+  <a data-key="semi_annual" href="src/pages/nesf-sanwya.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> نصف سنوية  </a>
+  <a data-key="international_orgs" href="src/pages/fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> المنظمات الدولية </a>
 
                 
   </div>
@@ -165,6 +183,7 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+    data-key="general"
     >الجمعيه العمومية
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -173,9 +192,9 @@
   <div  
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
 
-  <a href="src/pages/tkwen-ethad.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
-                <a href="src/pages/mettings.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   الدورة 29 للجمعية العمومية   </a>
-                <a href="src/pages/dwrat-egtmaat.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
+  <a data-key="union_call" href="src/pages/tkwen-ethad.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> دعوة تكوين الإتحاد </a>
+                <a data-key="assembly_29" href="src/pages/mettings.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">   الدورة 29 للجمعية العمومية   </a>
+                <a data-key="meetings_sessions" href="src/pages/dwrat-egtmaat.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الدورات و الأجتماعات </a>
                 <!-- <a href="src/pages/shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
 
 
@@ -195,6 +214,7 @@
 
       <a href="#"
     type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+    data-key="photos"
     >صور 
     <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -203,19 +223,19 @@
   <div  
   x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90" role="menu">
 
-  <a href="src/pages/imege-for-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الإتحاد </a>
-  <a href="src/pages/panorama-octobr.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
-  <a href="src/pages/imege-for-ensha-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  إنشاء الإتحاد     </a>
-  <a href="src/pages/imege-for-history.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور تاريخية </a>
-  <a href="src/pages/imege-for-mgtama-madany.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مشاركة في المجتمع المدني  </a>
-  <a href="src/pages/imege-for-yom-shahed.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم الشهيد </a>
+  <a data-key="union" href="src/pages/imege-for-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> الإتحاد </a>
+  <a data-key="october_panorama" href="src/pages/panorama-octobr.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
+  <a data-key="foundation" href="src/pages/imege-for-ensha-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  إنشاء الإتحاد     </a>
+  <a data-key="history_photos" href="src/pages/imege-for-history.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  صور تاريخية </a>
+  <a data-key="civil_society" href="src/pages/imege-for-mgtama-madany.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مشاركة في المجتمع المدني  </a>
+  <a data-key="martyrs_day" href="src/pages/imege-for-yom-shahed.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم الشهيد </a>
                 
   </div>
     </div>
     
     
   </li>
-  <li><a class="text-lime-800" href="src/pages/contact-us.html">تواصل معنا</a></li>
+  <li><a class="text-lime-800" href="src/pages/contact-us.html"   data-key="contact" >تواصل معنا</a></li>
 
 </ul>  
 
@@ -237,71 +257,92 @@
     <div class="track">
       
       <span class="item">
-        <span class="one">سياسي :-</span> 
-        أستضافة العاصمة القبرصية نيقوسيا الاجتماع التشاورى العربى الاوروبى لحفظ السلام والأستقرار فى الشرق الأوسط . 
+        <span  class="one"> تهنئة :-</span> 
+        <span >
+          دولة الإمارات الشقيقة بيوم الوحدة للقوات البحرية الموافق الثانى من شهر مايو من كل عام وذكرى توحيد القوات المسلحة الإمارتية الموافق السادس من شهر مايو من كل عام .
+        </span> 
         </span> 
 
       <span class="item">
-        <span class="two">اللقاءات والزيارات :-</span> 
-        <a href="src/pages/News/Alhayaa-arabya-tasne3.html" target="_blank">
-        تم عقد لقاء بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب لتوقيع بروتوكول تعاون لخدمة المحارب العربى القديم. 
-         </a> </span> 
+        <span  class="one"> تهنئة :-</span> 
+        <span >
+          الجمهورية اللبنانية الشقيقة بيوم الشهداء الموافق السادس من مايو من كل عام  .
+        </span> 
+        </span> 
 
       <span class="item">
-        <span class="there">خدمات البطاقة :-</span>
-         <a href="src/pages/Mham-Mohareb-Btaqa.html" target="_blank">
+        <span  class="two">اللقاءات والزيارات :-</span> 
+        <a  href="src/pages/News/Entag-harby.html" target="_blank">
+          تم عقد لقاء بين الهيئة القومية للإنتاج الحربى فى حضور معالى الوزير السيد الدكتور مهندس / صلاح سليمان جمبلاط . .وزير الدولة للإنتاج الحربى والإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة اللواء أ. ح . م / خالد مصطفى توفيق . . رئيس الإتحاد لعقد بروتوكول تعاون لخدمة المحارب العربى القديم .
+         </a>
+         </span> 
+
+      <span class="item">
+        <span  class="there">خدمات البطاقة :-</span>
+         <a  href="src/pages/Mham-Mohareb-Btaqa.html" target="_blank">
+          تخدم بطاقة المحارب العربى القديم أعضاء الجمعيات والمنظمات بالإتحاد والمحارب العربى القديم وأسرته ( الأب – الأم – الزوجة – والأولاد ) .
+          </a></span>
+
+      <span class="item">
+        <span  class="four">المصابين :-</span>
+        <span >
+          قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء بزيارة المصابين المقاتلين الأبطال العرب السودانيين واليمنيين  بمستشفى الوداى 6 أكتوبر  .
+        </span>
+        </span>
+
+      <span class="item">
+        <span  class="five">البروتوكولات :-</span>
+         <a  href="src/pages/mgalat-albtaqa/city-club.html" target="_blank"> 
+          تم عقد بروتوكول تعاون بين شركة سيتى كلوب للأندية  والإتحاد العربى للمحاربين القدماء بنسبة خصم ( 20 % ) على  ( 9 نادى ) على اسعار الحجز المعلنة  لحاملى بطاقة المحارب العربى القديم ( حتى 30/06/2027) .
+         </a></span>
+
+      <span class="item">
+        <span  class="six">رياضي :-</span> 
+        <span >
+          سلطنة عمان تشارك ب 11 منتخباً فى دورة الالعاب  الخليجية الرابعة بالدوحة التى تستضيفها دولة قطر خلال الفترة من 11 : 22 مايو 2026  .
+        </span>
+        </span>
+
+      <!-- تكرار مهم جدًا عشان ميبقاش فيه فراغ -->
+      <!-- <span class="item">
+        <span data-key="political_title" class="one">سياسي :-</span> 
+        <span data-key="political_text">
+        أستضافة العاصمة القبرصية نيقوسيا الاجتماع التشاورى العربى الاوروبى لحفظ السلام والأستقرار فى الشرق الأوسط . 
+        </span> 
+        </span> 
+
+      <span class="item">
+        <span data-key="meetings_title" class="two">اللقاءات والزيارات :-</span> 
+        <a data-key="meetings_text" href="src/pages/News/Alhayaa-arabya-tasne3.html" target="_blank">
+        تم عقد لقاء بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب لتوقيع بروتوكول تعاون لخدمة المحارب العربى القديم. 
+         </a>
+         </span> 
+
+      <span class="item">
+        <span data-key="card_services_title" class="there">خدمات البطاقة :-</span>
+         <a data-key="card_services_text" href="src/pages/Mham-Mohareb-Btaqa.html" target="_blank">
           يمكنك إصدار بطاقة المحارب العربى القديم عن طريق ملىء الإستمارة الموجوده على الموقع مع إحضار الأوراق المطلوبة وتجهيزها وأرسالها .
           </a></span>
 
       <span class="item">
-        <span class="four">المصابين :-</span>
+        <span data-key="injured_title" class="four">المصابين :-</span>
+        <span data-key="injured_text">
         قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء بزيارة المصابين المقاتلين الأبطال بمركز تأهيل العجوزة لمتابعه حالتهم الصحية  .
+        </span>
         </span>
 
       <span class="item">
-        <span class="five">البروتوكولات :-</span>
-         <a href="src/pages/News/Entag-harby.html" target="_blank"> 
+        <span data-key="protocols_title" class="five">البروتوكولات :-</span>
+         <a data-key="protocols_text" href="src/pages/News/Entag-harby.html" target="_blank"> 
          تم عقد بروتوكول تعاون بين الهيئة القومية للأنتاج الحربى والإتحاد العربى للمحاربين القدماء بنسبة خصم ( 5 % ) على الأجهزة الكهربائية والالكترونية والأثاث وأدوات المائدة لحاملى بطاقة المحارب العربى القديم ( لمدة عام ) من يوم 10/03/2026 وحتى 09/03/2027 . 
          </a></span>
 
       <span class="item">
-        <span class="six">رياضي :-</span> 
+        <span data-key="sports_title" class="six">رياضي :-</span> 
+        <span data-key="sports_text">
         حقق فريق الأهلى السعودى بطولة دورى أبطال أسيا للنخبة للمرة الثانية على التوالى .
         </span>
-
-      <!-- تكرار مهم جدًا عشان ميبقاش فيه فراغ -->
-      <span class="item">
-        <span class="one">سياسي :-</span> 
-        أستضافة العاصمة القبرصية نيقوسيا الاجتماع التشاورى العربى الاوروبى لحفظ السلام والأستقرار فى الشرق الأوسط  .
-        </span>
-
-       <span class="item">
-        <span class="two">اللقاءات والزيارات :-</span>
-         <a href="src/pages/News/Alhayaa-arabya-tasne3.html" target="_blank"> 
-         تم عقد لقاء بين الهيئة العربية للتصنيع والإتحاد العربى للمحاربين القدماء وضحايا الحرب لتوقيع بروتوكول تعاون لخدمة المحارب العربى القديم.
-         </a></span>
-
-      <span class="item">
-        <span class="there">خدمات البطاقة :-</span> 
-        <a href="src/pages/Mham-Mohareb-Btaqa.html" target="_blank">
-          يمكنك إصدار بطاقة المحارب العربى القديم عن طريق ملىء الإستمارة الموجوده على الموقع مع إحضار الأوراق المطلوبة وتجهيزها وأرسالها . 
-          </a></span>
-
-      <span class="item">
-        <span class="four">المصابين :-</span> 
-        قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء بزيارة المصابين المقاتلين الأبطال بمركز تأهيل العجوزة لمتابعه حالتهم الصحية  .
-        </span>
-
-      <span class="item">
-        <span class="five">البروتوكولات :-</span>
-         <a href="src/pages/News/Entag-harby.html" target="_blank">
-          تم عقد بروتوكول تعاون بين الهيئة القومية للأنتاج الحربى والإتحاد العربى للمحاربين القدماء بنسبة خصم ( 5 % ) على الأجهزة الكهربائية والالكترونية والأثاث وأدوات المائدة لحاملى بطاقة المحارب العربى القديم ( لمدة عام ) من يوم 10/03/2026 وحتى 09/03/2027  .
-           </a></span>
-
-      <span class="item">
-        <span class="six">رياضي :-</span>
-         حقق فريق الأهلى السعودى بطولة دورى أبطال أسيا للنخبة للمرة الثانية على التوالى .
-        </span>
+        </span> -->
 
     </div>
 
@@ -322,84 +363,16 @@
 
 <div x-data="{  
   slides: [ 
-
-
-
-  {
-    imgSrc: 'imeges/ztarat/Dar-ALSondos/Dar-1.jpg',
-    title: '  زيارة  دار السندس للأيتام المعاقين    ',
-    description: '        ',
-    link: 'src/pages/News/Dar-ALSondos.html' ,                
-},
-  {
-    imgSrc: 'imeges/ztarat/Dar-ALSondos/Dar-7.jpg',
-    title: '  زيارة  دار السندس للأيتام المعاقين    ',
-    description: '      ',
-    link: 'src/pages/News/Dar-ALSondos.html' ,                
-},
-  {
-    imgSrc: 'imeges/ztarat/Dar-ALSondos/Dar-8.jpg',
-    title: '  زيارة  دار السندس للأيتام المعاقين    ',
-    description: '      ',
-    link: 'src/pages/News/Dar-ALSondos.html' ,                
-},
- 
-  {
-    imgSrc: 'imeges/conrty/Sodan/Imege-2.jpg',
-    title: '  زيارة  الملحقية العسكرية لسفارة جمهورية السودان     ',
-    description: '    ',
-    link: 'src/pages/News/Sodan.html' ,                
-},
-  {
-    imgSrc: 'imeges/conrty/Sodan/Imege-3.jpg',
-    title: '  زيارة  الملحقية العسكرية لسفارة جمهورية السودان     ',
-    description: '    ',
-    link: 'src/pages/News/Sodan.html' ,                
-},
-  {
-    imgSrc: 'imeges/ztarat/Askary-Maddi/imege-1.jpg',
-    title: '  زيارة المصابين والمتقاعدين العسكريين  بمجمع الطبى للقوات المسلحة بالمعادى     ',
-    description: '    ',
-    link: 'src/pages/News/Askary-Maddi.html' ,                
-},
-  {
-    imgSrc: 'imeges/ztarat/Askary-Maddi/imege-8.jpg',
-    title: '  زيارة المصابين والمتقاعدين العسكريين  بمجمع الطبى للقوات المسلحة بالمعادى     ',
-    description: '    ',
-    link: 'src/pages/News/Askary-Maddi.html' ,                
-},
-  {
-    imgSrc: 'imeges/ztarat/Askary-Maddi/imege-6.jpg',
-    title: '  زيارة المصابين والمتقاعدين العسكريين  بمجمع الطبى للقوات المسلحة بالمعادى     ',
-    description: '    ',
-    link: 'src/pages/News/Askary-Maddi.html' ,                
-},
   
-  {
-    imgSrc: 'imeges/ethad/Ethad2026-1.jpg',
-    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
-    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
-    link: '' ,                
-},
-  {
-    imgSrc: 'imeges/ethad/Ethad2026-2.jpg',
-    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
-    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
-    link: '' ,                
-},
-  {
-    imgSrc: 'imeges/ethad/Ethad2026-3.jpg',
-    title: '   الاحتفال بالعيد ال 66  سنة 2026    ',
-    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
-    link: '' ,                
-},
-  {
-    imgSrc: 'imeges/ethad/Ethad2026-4.jpg',
-    title: '  الاحتفال بالعيد ال 66  سنة 2026  ',
-    description: '     لإنشاء الإتحاد العربى للمحاربين القدماء     ',
-    link: '' ,                
-}, 
         
+      {
+        imgSrc: 'imeges/conrty/Sodan/Sodan-1.jpg',
+        title: '   لقاء مع الملحق العسكرى لسفارة جمهورية السودان   ',
+        description: '  ',
+        link: '' ,           
+              
+    },             
+                 
       {
         imgSrc: 'imeges/home-slider/slider1.jpeg',
         title: 'الدور 29 ',
@@ -860,55 +833,50 @@
 
 
     <h1 class="text-green-800 mx-6 text-center    text-balance text-2xl  font-bold">  
-     زيارة إلى      <br>
+   لقاء مع الملحق العسكرى     <br>
 
-     دار السندس للأيتام المعاقين ( التجمع الخامس )  .
+   لسفارة جمهورية السودان  .
+
+    
          
        </h1><br>
 
        <p class="font-bold mx-6">
-          فى إطار تنفيذ الإستراتيجية العربية الجديدة للإتحاد العربى للمحاربين القدماء والتى تسعى إلى خدمة وزيارة وإعانة منظمات الدولة التى تعمل على خدمة الأطفال الأيتام المعاقين  .
+
+        فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب وسفارة جمهورية السودان و المؤسسة السودانية لقدامى المحاربين  .
     </p>
-       <p class="font-bold mx-6">
-          تم الإحتفال يوم 08/04/2026 مع الطفال بداخل دار الأيتام وذلك للدعم النفسى للإطفال وإدخال روح البهجة والسرور عليهم وبالرغم من ذلك كنا أول من احس بهذه السعاده ونحن بجانبهم  .
-    </p>
+     
 
 
     <section class="split-section">
       <!-- الجزء اليمين (النص) -->
-      <div class="text-side1">
-        <p class=" font-bold mx-6">
-         قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة  : <br>
-          <span class="text-green-800">1- لواء أ . ح . م / خالد مصطفى توفيق . .   </span>   رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
-          <span class="text-green-800">2-  لواء / مصطفى أحمد عميرة . .  </span>  الأمين العام للإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
-          <span class="text-green-800">3- لواء أ. ح . م/ مدحت عبد العزيز فاوى . . </span>  الأمين العام المساعد للإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
-          <span class="text-green-800">4- لواء / حازم حسن بيومى  . .  </span>  أمين صندوق الإتحاد العربى للمحاربين القدماء وضحايا الحرب  .  <br>
-          <span class="text-green-800">5- اللواءالركن / وليد عطا هشام أبو شعبان . . </span>  منسق عام للجمعيات الفلسطينية أعضاء الإتحاد رئيس مجلس إدارة جمعية المحاربين القدماء .  <br>
-          <span class="text-green-800">6- اللواءالركن / وليد عطا هشام أبو شعبان . . </span>  منسق عام للجمعيات الفلسطينية أعضاء الإتحاد رئيس مجلس إدارة جمعية المحاربين القدماء .  <br>
-          <span class="text-green-800">7- العميد/   </span> مصباح جمعة .  <br>
-          <span class="text-green-800">8- العقيد/    </span>  ماهر عيسى . <br>
-          <span class="text-green-800">9- المهندس / سمير الملاح ..   </span>  عضو الجمعية السورية <br>
-          <span class="text-green-800">10- الأستاذة /   </span> نهى سعد  .  &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-green-800">11- الأستاذة /   </span> مروة سعد .   <br>
-          <span class="text-green-800">12- الأستاذة /   </span> سارة سمير .   &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-green-800">13- الأستاذة /   </span> ياسمين    .  <br>
-          <span class="text-green-800">14- الأستاذة /   </span> مروة صالح  .  &nbsp;&nbsp; &nbsp;&nbsp;
-          <span class="text-green-800">15- الأستاذة /   </span> نورهان هشام  .   <br>
-        </p><br>
-      
-      
-        <p class="font-bold mx-6">
-          بزيارة إلى دار السندس للإيتام المعاقين بحضور الدكتورة / أمل عبد الرحمن صالح  . . رئيس مجلس أمناء مؤسسة السندس للأيتام المعاقين  
 
-      </p>
+       
+
+      <div class="text-side1">
+
+         <p class="font-bold mx-6">
+        قام  العميد الركن / نبيل عبد الله على محمد . . الملحق العسكرى لسفارة جمهورية السودان بجمهورية مصر العربية بزيارة إلى الإتحاد العربى للمحاربين القدماء وضحايا الحرب يوم الأثنين الموافق 05 / 05 / 2026  .
+    </p>
+        <p class="font-bold mx-6">
+          وكان فى استقبلهم الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة :-
+        <span class="text-green-800">  لواء أ . ح . م / خالد مصطفى توفيق . .   </span>   رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
+    </p> <br>
+        <p class=" font-bold mx-6">
+        بحضور : <br>
+          <span class="text-green-800">1-  لواء / مصطفى أحمد عميرة . .  </span>  الأمين العام للإتحاد العربى للمحاربين القدماء وضحايا الحرب    .  <br>
+          <span class="text-green-800">2- لواء أ. ح . م/ مدحت عبد العزيز فاوى . . </span>  الأمين العام المساعد للإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
+          <span class="text-green-800">3- لواء / حازم حسن بيومى  . .  </span>  أمين صندوق الإتحاد العربى للمحاربين القدماء وضحايا الحرب  .  <br>
+          <span class="text-green-800">4- العميد . م / مكى محمد أحمد . .  </span>   رئيس المؤسسة السودانية لقدامى المحاربين وجرحى العمليات  .  <br>
+          <span class="text-green-800">5- الرائد / حسن البشير . .  </span>   عضو المؤسسة السودانية لقدامى المحاربين وجرحى العمليات  .   <br>
+        </p><br>
       
     
       </div>
     
       <!-- الجزء الشمال (الصور) -->
       <div class="image-side1 mohareb mohareb1">
-        <img  src="imeges/ztarat/Dar-ALSondos/Dar-1.jpg"  class="w-full " >
-        <img  src="imeges/ztarat/Dar-ALSondos/Dar-2.jpg"  class="w-full " >
+        <img  src="imeges/conrty/Sodan/Sodan-1.jpg"  class="w-full " >
       </div>
     </section>
 
@@ -955,54 +923,27 @@
   </div>
 </div><br> -->
 
-
-
-
-<section class="split-section">
-
-  <!-- الجزء الشمال (الصور) -->
-  <div class="image-side1 mohareb mohareb1">
-    <img  src="imeges/ztarat/Dar-ALSondos/Dar-4.jpg"  class="w-full img2 " >
-  </div>
-
-   <!-- الجزء اليمين (النص) -->
-   <div class="text-side3">
-    <p class="font-bold mx-6">
-      وخلال الحفل وجهت الدكتورة / أمل عبد الرحمن صالح . . الشكر ورحبت بالحضور وأستعرضت رحلة البداية بتأسيس مؤسسة السندس وما وصلت له من خدمات وأنشطة وتقديم الرعاية الصحية وتطوير مهارتهم وفقاً لبرنامج رعاية متكاملة حتى يصبح قوة مضافة لمجتمعه , حيث أن مسيرة المؤسسة أمتدت لأكثر من 25 عاماً من العمل المجتمعى المتواصل وأن هذا النجاح تحقق بفضل التعاون والتفاعل مع مختلف فئات المجتمع إلى جانب القيادات والهيئات التنفيذية داخل مصر   .
-  </p><br>
-
-  <p class="font-bold mx-6">
-    حيث أن عدد الأطفال داخل المؤسسة حالياً يبلغ 265 طفلاً وطفلة موزعين على الفروع المختلفة إلى جانب الأطفال المقيمين التى ترعاهم المؤسسة سواء فى القاهرة أو المحافظات مؤكدة فخرها بجميع الأبناء وما يحققوه من تقدم  .
-كما قام للواء أ. ح . م/ خالد مصطفى توفيق . . رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب بتوجيه التحية وأشاد بدور الدكتورة / أمل واصفاً إياها بأنها نموذج مشرف فى العمل الأنسانى لما تتمع به من صفات نبيله وروح عطاءة إلى جانب فريق عمل متميز يمتلك قدراُ من الرحمة والصبر فى التعامل مع الأطفال
-
-  </p>
-  </div>
-</section>
-
 <section class="split-section">
 
     <!-- الجزء الشمال (الصور) -->
-    <div class="image-side1 mohareb mohareb1">
-      <img  src="imeges/ztarat/Dar-ALSondos/Dar-5.jpg"  class="w-full  " >
-      <img  src="imeges/ztarat/Dar-ALSondos/Dar-6.jpg"  class="w-full small-img" >
+    <div class="image-side3 mohareb mohareb1">
+      <img  src="imeges/conrty/Sodan/Sodan-2.jpg"  class="w-full  " >
+      <img  src="imeges/conrty/Sodan/Sodan-3.jpg"  class="w-full  " >
 
     </div>
   
      <!-- الجزء اليمين (النص) -->
      <div class="text-side3 text-center">
       <p class="font-bold mx-6  text-2xl">
-        وقد قدم الأطفال عدد من العروض على مسرح الدار حيث عكست مدى ما وصلوا إليه من مستوى متقدم فى الدمج المجتمعى .
+        لتبادل الأراء وعرض  الأعمال والنشطة الخاصة بالإتحاد العربى للمحاربين القدماء من خلال الإستراتيجية العربية الجديدة والخدمات المقدمة للمحارب العربى القديم من خلال بطاقة المحارب العربى عرض أوجه التعاون بين الإتحاد العربى والمؤسسة السودانية للمحاربين القدامى وجرحى العمليات 
     </p><br>
       <p class="font-bold mx-6">
-        وخلال الإحتفالية تم إستعراض فيلم توضيحى عن بعض النجاحات التى تميز أطفال السندس  <br>
-        تم تقديم أستعراضات مختلفة نالت إعجاب وإنبهار الحضور .
-
+       وفى نهاية اللقاء تم تبادل الهدايا <br>
+       قام اللواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد العربى للمحاربين  بهذه المناسبة بتقديم درع  الإتحاد                                للعميد الركن / نبيل عبد الله على محمد . . الملحق العسكرى لسفارة جمهورية السودان بجمهورية مصر العربية  .
     </p>
     
-      <p class="mx-6 font-bold text-green-800 underline">   واختتمت الأحتفالية بتبادل دروع التكريم  :  </p>
        <p class="font-bold mx-6">
-       حيث منح اللواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد الدكتورة/ أمل  وسام شرف الإتحاد تقديرا لجهودها الأنسانية البارزة . <br>
-       كما قدمت له درع المؤسسة تقديراٌ لدعمه المستمر لأطفال المؤسسة .
+    كما قام العميد الركن / نبيل عبد الله على محمد . . الملحق العسكرى بتقديم درع الملحقية العسكرية للواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد  .
     </p>
     
 
@@ -1031,106 +972,6 @@
 
 
 
-    <h1 class="text-green-800 mx-6 text-center text-balance text-2xl  font-bold">  
-     زيارة إلى   <br>
-     الملحقية العسكرية لسفارة جمهورية السودان .
-         
-       </h1><br>
-
-       <p class="font-bold mx-6"> 
-        فى إطار التواصل التشاور والتعارف مع أعضاء الإتحاد من الإدارات والمنظمات والجمعيات وتعميق الروابط بين الإتحاد العربى للمحاربين القدماء وضحايا الحرب وسفارة جمهورية السودان  يوم الاثنين الموافق السادس من إبريل  2026 .
-  </p>
-
-
-  <section class="split-section">
-    <!-- الجزء اليمين (النص) -->
-    <div class="text-side1 ">
-      
-    <p class=" font-bold mx-6">
-           تم القاء بحضور  :  <br>
-      <span class="text-green-800">1- العميد الركن / نبيل عبد الله على محمد . .   </span>   الملحق العسكرى لسفارة جمهورية السودان بجمهورية مصر العربية  .  <br>
-      <span class="text-green-800">2-  السيد اللواء أ . ح . م / خالد مصطفى توفيق ..  </span> رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
-      <span class="text-green-800">3- العقيد الركن / علاء الدين يوسف الشريف . . </span>   مساعد الملحق العسكرى السودانى   .  <br>
-    </p><br><br>
-  
-  
-    <p class="mx-6 font-bold text-green-800 underline">   وفى نهاية اللقاء تم تبادل الهدايا :  </p>
-       <p class="font-bold mx-6">
-        وقام اللواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد العربى للمحاربين  بهذه المناسبة بتقديم نوط الإتحاد للعميد الركن / نبيل عبد الله على محمد . . الملحق العسكرى لسفارة جمهورية السودان بجمهورية مصر العربية  .
-    </p>
-       <p class="font-bold mx-6">
-        كما قام العميد الركن / نبيل عبد الله على محمد . . الملحق العسكرى بتقديم درع الملحقية العسكرية للواء أ . ح . م / خالد مصطفى توفيق . . رئيس الإتحاد  .
-    </p>
-    
-    </div>
-  
-    <!-- الجزء الشمال (الصور) -->
-    <div class="image-side1 mohareb mohareb1">
-      <img  src="imeges/conrty/Sodan/Imege-1.jpg"  class="w-full " >
-    </div>
-  </section>
-
-
-
-    <h1 class="text-green-800 mx-6 text-center text-balance text-2xl  font-bold">  
-    زيارة المصابين والمتقاعدين العسكريين   <br>
-    بمجمع الطبى للقوات المسلحة بالمعادى  .
-         
-       </h1><br>
-
-       <p class="font-bold mx-6"> 
-        فى إطار تنفيذ الإستراتيجية العربية الجديدة للإتحاد العربى للمحاربين القدماء وضحايا الحرب والتى تسعى إلى خدمة المحارب العربى القديم   .
-      </p>
-       <p class="font-bold mx-6">
-        قامت الأمانة العامة للإتحاد العربى للمحاربين القدماء وضحايا الحرب يوم ال15 إبريل 2026  . 
-      </p>
-
-
-  <section class="split-section">
-
-     <!-- الجزء الشمال (الصور) -->
-    <div class="image-side1 mohareb mohareb1">
-      <img  src="imeges/ztarat/Askary-Maddi/imege-2.jpg"  class="w-full " >
-    </div>
-
-
-
-    <!-- الجزء اليمين (النص) -->
-    <div class="text-side1 ">
-      
-    <p class=" font-bold mx-6">
-          بقيادة  و حضور :  <br>
-      <span class="text-green-800">1- لواء أ. ح . م / خالد مصطفى توفيق . .  </span>   رئيس الإتحاد العربى للمحاربين القدماء وضحايا الحرب   .  <br>
-      <span class="text-green-800">2-   لواء . م / مصطفى أحمد عميرة . .    </span> الأمين العام للإتحاد العربى للمحاربين القدماء   .  <br>
-      <span class="text-green-800">3-  لواء أ. ح . م / مدحت عبد العزيز فاوى . .  </span>   الأمين العام المساعد للإتحاد العربى للمحاربين   .  <br>
-      <span class="text-green-800">3-  لواء . م / حازم حسن بيومى . .</span>  أمين صندوق الإتحاد العربى للمحاربين القدماء   .  <br>
-    </p>
-
-    <p class=" font-bold mx-6">
-         بزيارة إلى المجمع الطبى للقوات المسلحة بالمعادى . . حيث تم اللقاء مع :  <br>
-      <span class="text-green-800">1-  لواء / شريف  المدبولى . .  </span>   مدير المجمع الطبى للقوات المسلحة بالمعادى  .  <br>
-      <span class="text-green-800">2-   لواء طبيب / علاء ناجى . .     </span> مدير مستشفى الورام بالمعادى العسكرى  .  <br>
-    </p><br>
- 
-       <p class="font-bold mx-6">
-        قام الوفد بزيارة إلى عدد من السادة المتقاعدين والمصابين العسكريين وتقديم الهدايا النقدية والعينية .
-    </p>
-    
-    </div>
-  
-   
-  </section>
-
-  <div class=" mohareb container ">
-  <div class="mohareb4">
-    <img  src="imeges/ztarat/Askary-Maddi/imege-3.jpg"  class="w-full  " >
-    <img src="imeges/ztarat/Askary-Maddi/imege-4.jpg"  class="w-full " >
-    <img src="imeges/ztarat/Askary-Maddi/imege-5.jpg"  class="w-full " >
-    <img src="imeges/ztarat/Askary-Maddi/imege-6.jpg"  class="w-full " >
-    <img src="imeges/ztarat/Askary-Maddi/imege-7.jpg"  class="w-full " >
-    <img src="imeges/ztarat/Askary-Maddi/imege-8.jpg"  class="w-full " >
-  </div>
-</div><br>
 
   <!-- <p class=" font-bold mx-6">
     قام وفد من رئاسة الإتحاد العربى للمحاربين القدماء وضحايا الحرب بقيادة   : <br>
@@ -1753,7 +1594,7 @@ stroke-width="1.5" stroke="currentColor" class="h-4 w-4 text-white">
               <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <img class="Logo2"  src="imeges/logo/Logo-new.png" alt="">
               </svg>
-              <p class="mt-6 text-sm text-gray-500">
+              <p data-key="address" class="mt-6 text-sm text-gray-500">
                 كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
               </p>
               
@@ -1761,28 +1602,28 @@ stroke-width="1.5" stroke="currentColor" class="h-4 w-4 text-white">
   
           <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
               <div>
-                  <h2 class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
+                  <h2 data-key="footer_union" class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
                   <ul class="text-sm text-gray-500 space-y-2 list-none">
-                      <li><a href="src/pages/rqasaq-ethad.html">رؤساء الإتحاد</a></li>
-                      <li><a href="src/pages/nouab-alraqes.html">نواب الرئيس</a></li>
-                      <li><a href="src/pages/ameen-aam.html">الأمين العام</a></li>
-                      <li><a href="src/pages/ameen-aam-mouseed.html">الأمين العام المساعد</a></li>
-                      <li><a href="src/pages/ameen-alsondok.html">أمين الصندوق</a></li>
+                      <li><a data-key="presidents" href="src/pages/rqasaq-ethad.html">رؤساء الإتحاد</a></li>
+                      <li><a data-key="vice_presidents" href="src/pages/nouab-alraqes.html">نواب الرئيس</a></li>
+                      <li><a data-key="secretary" href="src/pages/ameen-aam.html">الأمين العام</a></li>
+                      <li><a data-key="assistant_secretary" href="src/pages/ameen-aam-mouseed.html">الأمين العام المساعد</a></li>
+                      <li><a data-key="treasurer" href="src/pages/ameen-alsondok.html">أمين الصندوق</a></li>
                   </ul>
               </div>
               <div>
-                  <h2 class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
+                  <h2 data-key="footer_activities" class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
                   <div class="text-sm text-gray-500 space-y-2 list-none ">
-                      <li><a href="src/pages/zyarat.html">زيارات</a></li>
-                      <li><a href="src/pages/nesf-sanwya.html">نصف سنوية</a></li>
-                      <li><a href="src/pages/fedralya-alamya.html"> المنظمات الدولية</a></li>
+                      <li><a data-key="visits" href="src/pages/zyarat.html">زيارات</a></li>
+                      <li><a data-key="semi_annual" href="src/pages/nesf-sanwya.html">نصف سنوية</a></li>
+                      <li><a data-key="international_orgs" href="src/pages/fedralya-alamya.html"> المنظمات الدولية</a></li>
 
                   </div>
               </div>
           </div>
   
       </div>
-      <p class="py-4 text-center text-xs md:text-sm text-gray-500">
+      <p data-key="copyright" class="py-4 text-center text-xs md:text-sm text-gray-500">
         جميع الحقوق محفوظة ©  الاتحاد العربي للمحاربين القدماء  
       </p>
   </footer>
@@ -1797,7 +1638,9 @@ stroke-width="1.5" stroke="currentColor" class="h-4 w-4 text-white">
     });
   </script>
  
-
-  
+  <script src="src/translation/translation-core.js"></script>
+  <script src="src/translation/Navbar-Footer.js"></script>
+  <script src="src/translation/Index-EN.js"></script>
+  <script src="src/translation/init.js"></script>
   </body>
 </html>

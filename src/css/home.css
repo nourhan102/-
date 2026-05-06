@@ -14,6 +14,58 @@
   display: flex;
   justify-self: center;
 }
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+ 
+  
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: #b4e6c7;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+
+
 .files{
     background-color: rgb(1, 99, 1);
 }
@@ -203,7 +255,7 @@
 }
 
 /* 🔔 الجرس */
-.icon {
+/* .icon {
   position: absolute;
   left: 10px;
   transform: translateY(-50%);
@@ -218,8 +270,24 @@
 
   animation: bellShake 0.8s infinite;
   transform-origin: top center;
+} */
+
+
+.icon {
+  position: absolute;
+  left: 10px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 0 0 10px red;
+  animation: bellShake 0.8s infinite;
 }
 
+/* عند الإنجليزي يتحول لليمين */
+body.en .icon {
+  left: auto;
+  right: 10px;
+}
 
 
 /* العناصر */
@@ -253,8 +321,22 @@
 .track {
   display: inline-flex;
   white-space: nowrap;
-  animation: move 120s linear infinite;
+  animation: move 75s linear infinite;
   will-change: transform;
+  transform: translateZ(0);
+}
+
+body.en .track {
+  animation: move-en 60s linear infinite;
+}
+
+@keyframes move-en {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .item a {
   color: inherit;
@@ -263,7 +345,7 @@
 
 @keyframes move {
   0% {
-    transform: translateX(-0);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(100%);
@@ -349,6 +431,14 @@
   gap: 20px;
   padding: 20px;
 }
+.image-side3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
 
 
 .image-side1 img {
@@ -417,6 +507,7 @@
 }
 
 
+
 .clients3 .clients-slider:not(:last-child) {
   margin-bottom: 5px;
   margin-top: 15px;
@@ -430,8 +521,9 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation: scroll 50s linear infinite;
-  flex-shrink: 0; /* مهم جدا */
+  flex-shrink: 0; 
 }
+
 
 .clients3 .clients-track.track-1 {
   animation-name: scroll-left;  
@@ -440,6 +532,8 @@
 .clients3 .clients-track.track-2 {
   animation-name: scroll-right;
 }
+
+
 
 .clients3 .clients-track:hover {
   animation-play-state: paused;
@@ -494,8 +588,8 @@
 }
 
 
-/*  start news */
 
+/*  start news */
 
 .cards-news {
   display: grid;
