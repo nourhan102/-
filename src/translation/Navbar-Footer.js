@@ -47,6 +47,7 @@ foundation: "إنشاء الإتحاد",
 history_photos: "صور تاريخية",
 civil_society: "مشاركة في المجتمع المدني",
 martyrs_day: "يوم الشهيد",
+orphans_day: "يوم اليتيم",
 
 // footer
 
@@ -106,6 +107,7 @@ foundation: "Establishment of the Federation",
 history_photos: "Historical Photos",
 civil_society: "Civil Society Participation",
 martyrs_day: "Martyrs' Day",
+orphans_day: "Orphan's Day",
 
 
 // footer
