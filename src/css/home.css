@@ -468,6 +468,7 @@ body.en .track {
   .text-side3,
   .image-side1,
   .image-side2 ,
+  .image-side3 ,
   .mohareb1 ,
   .mohareb2 ,
   .mohareb3 
@@ -476,13 +477,15 @@ body.en .track {
   }
 
   .image-side1 ,
-  .image-side2
+  .image-side2,
+  .image-side3
   {
     display: block; /* يشيل flex من الصور */
   }
 
   .image-side1 img,
-  .image-side2 img
+  .image-side2 img,
+  .image-side3 img
    {
     width: 100%;
     height: auto;
