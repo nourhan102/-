@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>الاتحاد العربي للمحاربين القدماء</title>
+    <link rel="stylesheet" href="../../css/output.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/mgalat-albtaqa.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="../../../imeges/logo/arab-vetrans-white.png" rel="icon" />
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@615&family=Readex+Pro:wght@160..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    -->
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4G6K0E8XV1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4G6K0E8XV1');
+</script>
+
+  </head>
+  <body dir="rtl">
+   
+
+
+
+   <!-- start navbar -->
+
+   <!-- <div class="lang-switch">
+  <span>عربي</span>
+  <label class="switch">
+    <input type="checkbox" id="langToggle">
+    <span class="slider"></span>
+  </label>
+  <span>EN</span>
+</div> -->
+
+<nav
+class="block w-full max-w-screen-xl px-4 py-2 mx-auto  my-5 bg-white bg-opacity-90 sticky top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]"
+>
+<div
+  class="container flex flex-wrap items-center justify-center mx-auto text-slate-800"
+>
+<a href="../../../index.html" class=" cursor-pointer ">
+  <img src="../../../imeges/logo/Logo-new.png" class="Logo" alt="" />
+</a>
+
+<!-- زر القائمة للموبايل -->
+<button
+class="menu-btn block lg:hidden text-lime-800 p-2 rounded hover:bg-lime-100"
+onclick="document.querySelector('.mobile-menu').classList.toggle('hidden')"
+>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+fill="none"
+viewBox="0 0 24 24"
+stroke-width="2"
+stroke="currentColor"
+class="w-6 h-6"
+>
+<path
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  d="M4 6h16M4 12h16M4 18h16"
+/>
+</svg>
+</button>
+  
+
+    <!-- قائمة الموبايل -->
+<ul class="mobile-menu  flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+
+>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+data-key="about"
+>عن الاتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
+
+<a href="../ahdaf-ethad.html" data-key="goals" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">تعريف و أهداف الأتحاد</a>
+          <!-- <a href="#" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">النظام الأساسي</a> -->
+          <a href="../methk-ethad.html" data-key="charter" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">ميثاق الشرف</a>
+          <!-- <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+          <a href="../rqasaq-ethad.html" data-key="presidents" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">رؤساء الإتحاد</a>
+          <a href="../nouab-alraqes.html" data-key="vice_presidents" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">نواب الرئيس</a>
+          <a href="../ameen-aam.html" data-key="secretary" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">الأمين العام</a>
+          <a href="../ameen-aam-mouseed.html" data-key="assistant_secretary" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">الأمين العام المساعد </a>
+          <a href="../ameen-alsondok.html" data-key="treasurer" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">أمين الصندوق</a>
+          <!-- <a href="#" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">أهم التشريعات الخاصه بالمحاربين القدماء</a> -->
+          <a href="../tshelat-dewal.html" data-key="services" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">خدمات و تسهيلات الدول</a>
+</div>
+</div>
+
+
+</li>
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+data-key="card"
+>    بطاقة المحارب
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
+
+<!-- <a href="../btaqet-almohareb.html#Awalan" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  عام </a>
+  <a href="../btaqet-almohareb.html#Thamnan" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">   مهام المحارب </a>
+  <a href="../btaqet-almohareb.html#Tas3an" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> أهم الاستفسارات  </a>
+  <a href="../descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  الخصومات </a>
+  <a href="../btaqet-almohareb.html#Akeran" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> تعليمات البطاقة  </a>
+               -->
+
+
+ <a data-key="rules" href="../Ruls-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> تعليمات عامة   </a>
+  <a data-key="beneficiaries" href="../Beneficiaries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  المستفيدون من البطاقة    </a>
+  <a data-key="managers_tasks" href="../Mham-Roqsaa-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهــام رؤساء ومديرى الجمعيات   </a>
+  <a data-key="warrior_tasks" href="../Mham-Mohareb-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  مهام المحارب العربى  </a>
+  <a data-key="discounts" href="../descaunt-btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  الخصومات </a>
+  <a data-key="inquiries" href="../Inquiries-Btaqa.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem"> أهم الاستفسارات  </a>
+
+
+
+
+</div>
+</div>
+
+
+</li>
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+data-key="activities"
+>أنشطة و اصدارات الإتحاد
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
+
+<a data-key="visits" href="../zyarat.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> زيارات </a>
+<a data-key="semi_annual" href="../nesf-sanwya.html" class="px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> نصف سنوية  </a>
+<a data-key="international_orgs" href="../fedralya-alamya.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> المنظمات الدولية </a>
+          
+</div>
+</div>
+
+
+</li>
+
+<li>
+  <div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+  
+  
+  <a href="#"
+  type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+  data-key="general"
+  >الجمعيه العمومية
+  <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+  </svg> 
+  </a>
+  <div  
+  x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
+  
+            <a data-key="union_call" href="../tkwen-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> دعوة تكوين الإتحاد </a>
+            <a data-key="assembly_29" href="../mettings.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> الدورة 29 للجمعية العمومية </a>
+            <a data-key="meetings_sessions" href="../dwrat-egtmaat.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> الدورات و الأجتماعات </a>          
+            <!-- <a href="../shakl-eltanzemy.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">الشكل التنظيمي للأمانة العامة</a> -->
+  
+          </div>
+  </div>
+  
+  
+  </li>
+
+
+<li>
+<div x-data="{ isOpen: false, openedWithKeyboard: false, leaveTimeout: null }" x-on:mouseleave.prevent="leaveTimeout = setTimeout(() => { isOpen = false }, 250)" x-on:mouseenter="leaveTimeout ? clearTimeout(leaveTimeout) : true" x-on:keydown.esc.prevent="isOpen = false, openedWithKeyboard = false" x-on:click.outside="isOpen = false, openedWithKeyboard = false" class="relative w-fit">
+
+
+<a href="#"
+type="button" x-on:mouseover="isOpen = true" x-on:keydown.space.prevent="openedWithKeyboard = true" x-on:keydown.enter.prevent="openedWithKeyboard = true" x-on:keydown.down.prevent="openedWithKeyboard = true" class="inline-flex items-center gap-2 whitespace-nowrap rounded-radius border hover:text-white hover:bg-lime-800 text-lime-800 border-outline-dark-strong bg-surface-alt px-4 py-2 text-sm font-medium tracking-wide transition hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2  " x-bind:class="isOpen || openedWithKeyboard ? ' ' : ''" x-bind:aria-expanded="isOpen || openedWithKeyboard" aria-haspopup="true"
+data-key="photos"
+>صور 
+<svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 rotate-0">
+<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+</svg> 
+</a>
+<div  
+x-cloak x-show="isOpen || openedWithKeyboard" x-transition x-trap="openedWithKeyboard" x-on:click.outside="isOpen = false, openedWithKeyboard = false" x-on:keydown.down.prevent="$focus.wrap().next()" x-on:keydown.up.prevent="$focus.wrap().previous()" class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-radius border-none bg-surface-alt py-1.5 opacity-90 " role="menu">
+
+<a data-key="union" href="../imege-for-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  الإتحاد  </a>
+<a data-key="october_panorama" href="../panorama-octobr.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  صور زيارة بانوراما حرب أكتوبر </a>
+<a data-key="foundation" href="../imege-for-ensha-ethad.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem"> إنشاء الإتحاد  </a>
+<a data-key="history_photos" href="../imege-for-history.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  صور تاريخية </a>
+<a data-key="civil_society" href="../imege-for-mgtama-madany.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  مشاركة في المجتمع المدني  </a>
+<a data-key="martyrs_day" href="../imege-for-yom-shahed.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem" role="menuitem">  يوم الشهيد </a>
+<a data-key="orphans_day"  href="../imege-for-yom-yateem.html" class=" px-4 py-2 text-sm text-lime-800 bg-surface-alt hover:bg-lime-800 hover:text-white  focus-visible:bg-lime-800 focus-visible:outline-hidden" role="menuitem">  يوم اليتيم </a>
+          
+</div>
+</div>
+
+
+</li>
+<li><a data-key="contact" href="../contact-us.html" class="text-lime-800">تواصل معنا</a></li>
+
+</ul>  
+
+
+
+
+</nav>
+
+
+<!-- end navbar -->
+
+    <!--  start section -->
+
+   <section id="clients" class="clients section">
+    <h1 class="text-green-800 mx-6 text-center  lg:w-[80%] text-balance text-2xl lg:text-3xl font-bold">  معامل الشمس للتحاليل الطبية  ( 64 فرع )   . </h1><br>
+    
+    <p class="font-bold mx-6 ">
+
+        أعتباراً من 03/05/2026 وحتى 02/05/2027  .
+
+    </p><br>
+    
+    <div class="flex items-center" >
+        <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  > كود التفعيل  :- </h2>
+        <p class="font-bold space text-xl"> 4798 </p>
+ 
+     </div><br>
+
+
+      <div class="flex items-center" >
+        <h2 class="text-green-800 font-bold mx-6 text-2xl underline"  > نسبة الخصم  :- </h2>
+        <p class="font-bold  text-xl space">   40%  . </p>
+ 
+     </div><br>
+
+
+     
+
+ 
+
+     <h2 class="text-green-800 font-bold mx-6 text-2xl underline "  >  التواصل :- </h2>
+         <p class="font-bold mx-6 space ">
+            <span class="text-green-800"> الخط الساخن : </span>  19445 <br>
+        </p><br>
+
+     <h2 class="text-green-800 font-bold mx-6 text-2xl underline" >الفروع   :- </h2>
+    <p class="font-bold mx-6 text-xl space">   القاهرة والجيزة  . </p>
+    <p class="font-bold mx-6 space ">
+            <span class="text-green-800">1-  روكسى : </span>  5 ش الأهرام بجوار قصر الإتحادية    .   <br>
+            <span class="text-green-800">2- الخليفة المأمون   : </span>  50 شارع الخليفة المأمون – مصر الجديدة   .  <br>
+            <span class="text-green-800">3- هليوبوليس   : </span>  76 ش الحجاز أمام مستشفى هليوبوليس .  <br>
+            <span class="text-green-800">4- مساكن شيراتون   : </span> 119 مساكن صقر قريش امتداد عبد الحميد بدوى  .  <br>
+            <span class="text-green-800">5-  جسر السويس    : </span> 2 ب ش جسر السويس عمارات الفاروقية  .  <br>
+            <span class="text-green-800">6-  عين شمس   : </span> 76 ش عين شمس – تقاطع أحمد عصمت  .  <br>
+            <span class="text-green-800">7- عباس العقاد   : </span> 104 ش عباس العقاد – تقاطع مصطفى النحاس  .  <br>
+            <span class="text-green-800">8- الاوتوستراد : </span> 2 عمارات أول مايو – ميدان الساعة – بجوار القسم  .  <br>
+            <span class="text-green-800">9- زهراء م. نصر : </span> 6 ش محمد مهدى من أحمد الزمر – أعلى أسواق العثيم .  <br>
+            <span class="text-green-800">10- العباسية  : </span>  61 ش العباسية – ميدان عبده باشا.  <br>
+            <span class="text-green-800">11- حدائق القبة  : </span>  120 ش مصر والسودان أعلى فودافون  .  <br>
+            <span class="text-green-800">12- شبرا  : </span>   262 شارع شبرا الخلفاوى .  <br>
+            <span class="text-green-800">13-  شبرا  الخيمة  : </span>  31 شارع 15 مايو – منزل كوبرى عرابى – أمام النساجون الشرقيون  .  <br>
+            <span class="text-green-800">14-  السيدة زينب : </span>  200 شاع بورسعيد برج اللؤلؤة  .  <br>
+            <span class="text-green-800">15-  المنيل : </span>  ميدان الباشا – ش سعيد ذو الفقار  .  <br>
+            <span class="text-green-800">16-  المعادى 1  : </span>  5 شارع 153 برج الحرية بجوار ميدان الحرية   .  <br>
+            <span class="text-green-800">17-  المعادى 2  : </span>   7/1 تقاطع شارع النصر اللاسلكى – أعلى مطعم مؤمن   .  <br>
+            <span class="text-green-800">18-  حلوان  : </span>    5 شارع مصطفى المراغنى – برج المكس – بجزار سينما ماجدة   .  <br>
+            <span class="text-green-800">19-  الدقى   : </span>    97 شارع التحرير – ميدان الدقى – أعلى   مطعم جاد   .  <br>
+            <span class="text-green-800">20-  المهندسين 1   : </span>   14 ش سوريا تقاطع ش الحجاز – بجوار البنك الأهلى  .  <br>
+            <span class="text-green-800">21-  المهندسين 2   : </span>   ميدان سفنكس 19 ش 26 يوليو برج سفنكس .  <br>
+            <span class="text-green-800">22-  المهندسين 3   : </span>   60 ش السودان – بجوار موقف بولاق الدكرور  .  <br>
+            <span class="text-green-800">23-  أمبابة   : </span>    1 ش القومية العربية ناصية ش محمد رشدى  .  <br>
+            <span class="text-green-800">24-  الجيزة : </span>   21 ش مراد بجوار الكنيسة   .  <br>
+            <span class="text-green-800">25-  فيصل 1  : </span>  449 برج الحلو – ناصية شارع الثورة بجوار كلية تربية رياضية   .  <br>
+            <span class="text-green-800">26-  فيصل 2  : </span> 111 ش فيصل ناصية شارع المستشفى – برج الخليج – الكوم الأخضر   .  <br>
+            <span class="text-green-800">27- الهرم 1  : </span> 410 ش الهرم – نصر الدين أعلى بنك بلوم مصر  .  <br>
+            <span class="text-green-800">28- الهرم 2  : </span>  158 ش الهرم ناصية العريش – أعلى المطعم الصينى  .  <br>
+            <span class="text-green-800">29- أكتوبر  : </span>  75 المحور المركزى الحى الثانى أمام البنك العربى  .  <br>
+            <span class="text-green-800">30- الشيخ زايد  : </span>   المركز التجارى لخدمات الحى الأول بجوار مستشفى زايد – أعلى بنك الأسكندرية  .  <br>
+            <span class="text-green-800">31- وسط البلد : </span>    14 ش شامبليون – بجوار بنك QNB – ميدان التحرير  .  <br>
+        </p><br>
+
+    <p class="font-bold mx-6 text-xl space">   الاسكندرية  . </p>
+    <p class="font-bold mx-6 space ">
+            <span class="text-green-800">1-  رشدى : </span>  17 أ ش سوريا بجوار بنك CIB  مترو ماركت    .   <br>
+            <span class="text-green-800">2-  سيدى جابر : </span>   10 ش المشير أحمد أسماعيل    .   <br>
+            <span class="text-green-800">3-  سموحة : </span>    17 ش فيكتور عمانويل أمام نادى سموحة    .   <br>
+            <span class="text-green-800">4-  فيكتوريا  : </span>    729 طريق الحرية    .   <br>
+            <span class="text-green-800">5-  محطة الرمل  : </span>    9 ميدان سعد زغلول بجوار سينما راديو – الترام    .   <br>
+            <span class="text-green-800">6-  محرم بك : </span>     86 ش محرم بك أمام مسجد الشيخ القديم    .   <br>
+            <span class="text-green-800">7-  المندرة : </span>     436 ش جمال عبد الناصر – برج الهدى – أعلى TED   .   <br>
+            <span class="text-green-800">8-  السيوف  : </span>     74 ش جميله أبو حريد عمارة نجمة شماعة السيوف   .   <br>
+            <span class="text-green-800">9-  العجمى   : </span>     طريق مطروح أمام سنترال الهانوفيل القديم   .   <br>
+        </p><br><br>
+
+
+    <p class="font-bold mx-6 text-xl space">   الدلتا والقناة  . </p>
+    <p class="font-bold mx-6 space ">
+            <span class="text-green-800">1-  دمنهور  : </span>   ميدان عرابى 9 شارع الشيخ سليم البشرى    .   <br>
+            <span class="text-green-800">2-  كفر الدوار  : </span>  13 شارع البحر – برج زمزم أمام كوبرى المشاه بجوار النيابة الأدارية    .   <br>
+            <span class="text-green-800">3- أيتاى البارود : </span>  شارع الجمهورية – برج الأحلام – أمام محكمة أيتاى البارود    .   <br>
+            <span class="text-green-800">4- رشيد : </span> 127 ش عبد السلام عارف – بجوار حلوانى دنيا   .   <br>
+            <span class="text-green-800">5- طنطا  : </span>  3 ميدان المحطة – أمام محطة القطار  .   <br>
+            <span class="text-green-800">6- قويسنا   : </span>   16 ش الصباحى تقاطع شارع الجيش – امام مستشفى الهدى  .   <br>
+            <span class="text-green-800">7- بنها    : </span>    إبراج التطبيقيين – الأهرام – أمام الأستاد – بجوار باب كلية تجارة  .   <br>
+            <span class="text-green-800">8- الزقازيق   : </span>    برج الصفوة شارع طلبة عويضة – القومية  .   <br>
+            <span class="text-green-800">9- منيا القمح   : </span>  شارع بورسعيد – منيا القمح  .   <br>
+            <span class="text-green-800">10- بلبيس   : </span>  3 ش بورسعيد ( الدور الثانى ) .   <br>
+            <span class="text-green-800">11- العاشر من رمضان   : </span>   عمارة 15 الأردنية – أمام موقف الأتوبيس – أعلى صيدلية مراد .   <br>
+            <span class="text-green-800">12- الإسماعيلية   : </span>    43 شارع السلطان حسين أمام بنك CIB .   <br>
+            <span class="text-green-800">13- السويس  : </span>  362 شارع الجيش – برج بلال – أعلى بى تك  .   <br>
+            <span class="text-green-800">14- ديرب نجم  : </span>   ش النصر – برج إبراهيم عبد العظيم – أعلى أتصالات   .   <br>
+            <span class="text-green-800">15- أبو كبير : </span>   26 ش مصطفى كامل بجوار السنترال    .   <br>
+            <span class="text-green-800">16- المحلة الكبرى : </span>  ش 23 يوليو – برج الليثى – بجوار قسم ثان المحلة     .   <br>
+        </p><br><br>
+
+
+    <p class="font-bold mx-6 text-xl space">   الوجه القبلى والصعيد  . </p>
+    <p class="font-bold mx-6 space ">
+            <span class="text-green-800">1-  الفيوم   : </span>   برج شعيب شارع جمال عبد الناصر بجوار حلوانى سبليه   .   <br>
+            <span class="text-green-800">2-  بنى سويف   : </span>   23 يوليو ( الرياضى ) امام بنك القاهرة  .   <br>
+            <span class="text-green-800">3- الواسطى  : </span>   ش جمال عبد الناصر ( الثانوية ) أعلى شركة الدرة للسياحة  .   <br>
+            <span class="text-green-800">4- المنيا   : </span>    ميدان المحطة بجوار محطة القطار أعلى شركة الحكمة للسياحة  .   <br>
+            <span class="text-green-800">5- أسيوط  : </span>    22 ش الجمهورية – برج الفردوس – أعلى بنك القاهرة  .   <br>
+            <span class="text-green-800">6- القوصية  : </span>     ش الجلاء – برج رياض الصالحين – امام البنك الأهلى المصرى  .   <br>
+            <span class="text-green-800">7- سوهاج   : </span>     برج الشفاء شارع الشهيد زاوية ابو الفضل   .   <br>
+            <span class="text-green-800">8- الغردقة    : </span>    215 ش النصر امام مكتب البريد الرئيسى الدهار – الغردقة   .   <br>
+            <span class="text-green-800">9- الأقصر     : </span>   2 ش سيدى عبد الرحمن من ش التليفزيون   .   <br>
+        </p><br>
+
+    
+
+    
+     
+
+     
+
+
+        <br><br>
+    <!--  end section -->
+
+
+     
+
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full bg-gray-200 ">
+      <div class="flex flex-col md:flex-row items-start justify-center gap-10 py-10 border-b border-gray-500/30">
+          
+          <div class="max-w-96">
+              <svg width="157" height="40" viewBox="0 0 157 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <img src="../../../imeges/logo/Logo-new.png" class="Logo2" alt="">
+              </svg>
+              <p data-key="address" class="mt-6 text-sm text-gray-500">
+                كورنيش النيل - ماسبيرو - القاهرة ، مصر1127
+              </p>
+              
+          </div>
+  
+          <div class="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
+              <div>
+                  <h2 data-key="footer_union" class="font-semibold text-gray-900 mb-5">الإتحاد</h2>
+                  <ul class="text-sm text-gray-500 space-y-2 list-none">
+                      <li><a data-key="presidents" href="../rqasaq-ethad.html">رؤساء الإتحاد</a></li>
+                      <li><a data-key="vice_presidents" href="../nouab-alraqes.html">نواب الرئيس</a></li>
+                      <li><a data-key="secretary" href="../ameen-aam.html">الأمين العام</a></li>
+                      <li><a data-key="assistant_secretary" href="../ameen-aam-mouseed.html">الأمين العام المساعد </a></li>
+                      <li><a data-key="treasurer" href="../ameen-alsondok.html">أمين الصندوق</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 data-key="footer_activities" class="font-semibold text-gray-900 mb-5">الأنشطة</h2>
+                  <div class="text-sm text-gray-500 space-y-2 list-none ">
+                      <li><a data-key="visits" href="../zyarat.html">زيارات</a></li>
+                      <li><a data-key="semi_annual" href="../nesf-sanwya.html">نصف سنوية</a></li>
+                      <li><a data-key="international_orgs" href="../fedralya-alamya.html"> المنظمات الدولية</a></li>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      <p data-key="copyright" class="py-4 text-center text-xs md:text-sm text-gray-500">
+        جميع الحقوق محفوظة ©  الاتحاد العربي للمحاربين القدماء  
+      </p>
+  </footer>
+
+
+  <script>
+    const menuBtn = document.querySelector("nav button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  </script>
+
+    <script src="../../translation/translation-core.js"></script>
+  <script src="../../translation/Navbar-Footer.js"></script>
+  <script src="../../translation/init.js"></script>
+
+    
+  </body>
+</html>
