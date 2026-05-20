@@ -751,6 +751,14 @@ p.card__description {
     width: 30%; /* كل واحدة تاخد تقريبًا نص العرض */
     margin: 0;
   }
+  .mohareb4{
+    display: block;
+  }
+
+  .mohareb4 img{
+        margin-bottom: 25px;
+  }
+
 
   .mohareb1 img,
   .mohareb2 img ,
