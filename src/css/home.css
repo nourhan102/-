@@ -24,6 +24,25 @@
   
 }
 
+.video-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.video-container video{
+    width: 50%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+@media (max-width:768px){
+    .video-container video{
+        width: 95%;
+    }
+}
+
 .switch {
   position: relative;
   width: 50px;
