@@ -26,148 +26,194 @@
 
 
 
-
-
-
-/* =========================================
-   القسم الأساسي
-========================================= */
-
-.services-section {
-    width: 100%;
-    max-width: 1600px;
-    margin: 20px auto;
-    padding: 45px 40px 60px;
-
-
-    border-radius: 14px;
-
- 
-
-    overflow: hidden;
-}
-
-
 /* =========================================
    العنوان
 ========================================= */
 
 .services-title {
     text-align: center;
-    margin-bottom: 70px;
 }
 
 .services-title h1 {
     font-size: clamp(30px, 3.2vw, 58px);
     font-weight: 800;
     line-height: 1.3;
-    margin-bottom: 30px;
 
 }
-
-
-/* الخط أعلى الأقسام */
-
 
 
 
 
 /* =========================================
-   الأقسام الرئيسية
+   SECTION
 ========================================= */
 
-.services-wrapper {
+.services-section {
+    width: calc(100% - 24px);
+    max-width: 1600px;
+
+    padding: 35px 35px ;
+
+    overflow: hidden;
+}
+
+
+
+
+/* =========================================
+   TOP CONNECTOR
+========================================= */
+
+.top-line {
+    position: relative;
+
+    width: 68%;
+
+    height: 48px;
+
+    margin: 12px auto 0;
+}
+
+.top-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 23px;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background: #7b8794;
+}
+
+.top-line::after {
+    content: "";
+
+    position: absolute;
+
+    top: 23px;
+    left: 50%;
+
+    width: 2px;
+    height: 25px;
+
+    background: #7b8794;
+}
+
+.line-dot {
+    position: absolute;
+
+    top: 20px;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+.left-dot {
+    left: 0;
+   background: #ef627b;
+}
+
+.right-dot {
+    right: 0;
+    background: #65b94d;
+    
+}
+
+.line-center {
+    position: absolute;
+
+    left: 50%;
+    top: -4px;
+
+    width: 18px;
+    height: 30px;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================================
+   MAIN TWO COLUMNS
+========================================= */
+
+.services-container {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 90px;
+    gap: 70px;
 
     align-items: start;
 }
 
 
-/* كل مجموعة */
-
-/* .service-group {
-    position: relative;
-} */
-
-
 /* =========================================
-   الكارت الرئيسي
+   MAIN SERVICE
 ========================================= */
 
 .main-service {
-    min-height: 120px;
-
     width: 100%;
 
+    min-height: 110px;
+
     display: flex;
+
     align-items: center;
 
-    padding: 18px 25px;
+    justify-content: center;
 
-    text-decoration: none;
+    gap: 25px;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
     border: 1px solid;
 
     box-shadow:
         0 5px 12px rgba(0, 0, 0, 0.08);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
 }
 
-/* .main-service:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.13);
-} */
-
-
-.main-service span:not(.main-arrow) {
-    font-size: clamp(22px, 2vw, 36px);
+.main-service h2 {
+    font-size: clamp(22px, 2.2vw, 34px);
 
     font-weight: 800;
 
-    color: #111;
-
-    flex: 1;
-
-    text-align: center;
+    color: #111827;
 }
 
 
 /* =========================================
-   الأيقونة الرئيسية
+   MAIN ICON
 ========================================= */
 
-.main-icon {
-    width: 80px;
-    height: 80px;
-
-    flex-shrink: 0;
-
-    background: white;
+.main-service-icon {
+    width: 70px;
+    height: 70px;
 
     border-radius: 50%;
 
+    background: #ffffff;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     box-shadow:
-        0 3px 10px rgba(0, 0, 0, 0.1);
+        0 3px 9px rgba(0, 0, 0, 0.1);
+
+    flex-shrink: 0;
 }
 
-.main-icon svg {
-    width: 48px;
-    height: 48px;
+.main-service-icon svg {
+    width: 43px;
+    height: 43px;
 
     fill: none;
 
@@ -178,134 +224,124 @@
 }
 
 
-/* سهم الكارت */
-
-.main-arrow {
-    font-size: 45px;
-
-    line-height: 1;
-
-    color: #202020;
-
-    transform: rotate(180deg);
-}
-
-
-/* =========================================
-   الخدمات الاجتماعية
-========================================= */
+/* SOCIAL */
 
 .social-main {
     background: linear-gradient(
         90deg,
-        #e4f5d8,
-        #f2faed
+        #e3f4d8,
+        #f1faec
     );
 
-    border-color: #94c77c;
+    border-color: #8bc776;
 }
 
-.social-main .main-icon svg {
-    stroke: #4d9b36;
+.social-main .main-service-icon svg {
+    stroke: #4d9d38;
 }
 
 
-/* =========================================
-   الخدمات الطبية
-========================================= */
+/* MEDICAL */
 
 .medical-main {
     background: linear-gradient(
         90deg,
-        #ffe5e8,
-        #fff1f2
+        #ffe3e7,
+        #fff1f3
     );
 
-    border-color: #ed969f;
+    border-color: #ef9ba8;
 }
 
-.medical-main .main-icon svg {
-    stroke: #ef6474;
+.medical-main .main-service-icon svg {
+    stroke: #ef5c73;
 }
 
 
 /* =========================================
-   خطوط الربط
+   CONNECTOR
 ========================================= */
 
-.children-grid {
+.connector {
     position: relative;
 
-    margin-top: 70px;
+    height: 42px;
 }
 
 
-/* خط رأسي أسفل الكارت الرئيسي */
 
-.service-group::after {
-    content: "";
+/*   الحج و العمرة   */
 
-    position: absolute;
+.hajj-icon {
+    background: #eaf7e4;
+    border: 1px solid #d8ebd0;
+}
 
-    top: 120px;
+.hajj-icon svg {
+    width: 45px;
+    height: 45px;
 
-    left: 50%;
+    fill: none;
 
-    width: 2px;
-    height: 35px;
+    stroke: #31902d;
 
-    transform: translateX(-50%);
+    stroke-width: 2.5;
 
-    border-left: 2px dashed;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 
-/* لون خط الاجتماعية */
 
-.social-group::after {
-    border-color: #86bd70;
+/* Social connector */
+
+.social-connector::before,
+.social-connector::after {
+    border-color: #6eb45a;
+}
+
+.social-connector span {
+    left: 10%;
+
+    background: #6eb45a;
 }
 
 
-/* لون خط الطبية */
+/* Medical connector */
 
-.medical-group::after {
-    border-color: #ec8a96;
+.medical-connector::before,
+.medical-connector::after {
+    border-color: #ed7487;
 }
 
+.medical-connector span {
+    left: 10%;
 
-/* =========================================
-   شبكة المربعات
-========================================= */
-
-.social-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 40px 35px;
-}
-
-
-.medical-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(5, 1fr);
-
-    gap: 15px;
+    background: #ed7487;
 }
 
 
 /* =========================================
-   الكروت الصغيرة
+   CARDS GRID
 ========================================= */
 
-.child-card {
+.cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.service-card , .Other-card {
     min-height: 205px;
 
-    padding: 22px 12px 15px;
+    padding: 20px 10px 13px;
 
     display: flex;
 
@@ -321,52 +357,58 @@
 
     background: #ffffff;
 
-    border-radius: 18px;
+    border: 1px solid #e1e4e8;
 
-    border: 1px solid #e4e4e4;
+    border-radius: 16px;
 
     box-shadow:
-        0 5px 10px rgba(0, 0, 0, 0.08);
+        0 5px 11px rgba(0, 0, 0, 0.08);
 
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-.child-card:hover {
-    transform: translateY(-7px);
+.service-card:hover {
+    transform: translateY(-5px);
 
     box-shadow:
-        0 12px 22px rgba(0, 0, 0, 0.13);
+        0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.service-card:active {
+    transform: scale(0.97);
 }
 
 
 /* =========================================
-   دائرة الأيقونة
+   CARD ICON
 ========================================= */
 
-.child-icon {
-    width: 82px;
-    height: 82px;
-
-    flex-shrink: 0;
+.card-icon {
+    width: 75px;
+    height: 75px;
 
     border-radius: 50%;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+
+    flex-shrink: 0;
 }
 
-.child-icon svg {
-    width: 48px;
-    height: 48px;
+.card-icon svg {
+    width: 45px;
+    height: 45px;
 
     fill: none;
 
-    stroke-width: 3;
+    stroke-width: 2.8;
 
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -374,226 +416,249 @@
 
 
 /* =========================================
-   الاجتماعية - الأيقونات
+   SOCIAL ICONS
 ========================================= */
 
-.social-card .child-icon {
-    background: #edf7e8;
+.social-card .card-icon {
+    background: #eaf7e4;
 
-    border: 1px solid #d7eacb;
+    border: 1px solid #d8ebd0;
 }
 
-.social-card .child-icon svg {
-    stroke: #4c9437;
+.social-card .card-icon svg {
+    stroke: #31902d;
 }
 
 
 /* =========================================
-   الطبية - ألوان الأيقونات
+   MEDICAL ICONS
 ========================================= */
 
-.hospital .child-icon {
-    background: #e8f0fc;
+.medical-card .card-icon {
+    background: #fff0f2;
+
+    border: 1px solid #f9dfe4;
 }
 
-.hospital .child-icon svg {
-    stroke: #3471c5;
+.hospital-icon svg {
+    stroke: #2865b8;
 }
 
-
-.clinics .child-icon {
-    background: #ffe8ed;
+.eye-icon {
+    background: #e7f6f5 !important;
 }
 
-.clinics .child-icon svg {
-    stroke: #d92c59;
+.eye-icon svg {
+    stroke: #078e88;
 }
 
-
-.radiology .child-icon {
-    background: #e4f5f4;
+.clinic-icon svg {
+    stroke: #d74761;
 }
 
-.radiology .child-icon svg {
-    stroke: #148c87;
+.xray-icon {
+    background: #e8f0fc !important;
 }
 
-
-.labs .child-icon {
-    background: #faf2dd;
+.xray-icon svg {
+    stroke: #2865b8;
 }
 
-.labs .child-icon svg {
-    stroke: #b08b19;
+.lab-icon {
+    background: #faf2df !important;
 }
 
-
-.pharmacy .child-icon {
-    background: #f1e9f8;
+.lab-icon svg {
+    stroke: #aa8616;
 }
 
-.pharmacy .child-icon svg {
-    stroke: #6c3d9b;
+.pharmacy-icon {
+    background: #f0e7f8 !important;
+}
+
+.pharmacy-icon svg {
+    stroke: #75439a;
+}
+
+.dental-icon {
+    background: #ffe9ee !important;
+}
+
+.dental-icon svg {
+    stroke: #bd2947;
+}
+
+.physiotherapy-icon {
+    background: #ffe8ed !important;
+}
+
+.physiotherapy-icon svg {
+    stroke: #bd2947;
 }
 
 
 /* =========================================
-   النص داخل الكروت
+   OTHER ICON
 ========================================= */
 
-.child-card h3 {
-    color: #111;
+.other-icon {
+    background: #eaf7e4;
+}
 
-    font-size: clamp(16px, 1.2vw, 24px);
+.other-icon span {
+    color: #278b2d;
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    margin-left: 5px;
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.service-card h3 {
+    color: #111827;
+
+    font-size: clamp(14px, 1.15vw, 20px);
 
     font-weight: 700;
 
-    line-height: 1.5;
+    line-height: 1.45;
 
-    min-height: 35px;
+    min-height: 40px;
 
     display: flex;
-    align-items: center;
+
+    flex-direction: column;
+
     justify-content: center;
 }
 
+.service-card h3 small {
+    font-size: 0.75em;
+
+    margin-top: 2px;
+
+    font-weight: 600;
+}
+
 
 /* =========================================
-   الأسهم
+   CARD ARROW
 ========================================= */
 
-.down-arrow {
-    font-size: 30px;
-
-    line-height: 1;
-
+.card-arrow {
     margin-top: auto;
 
-    padding-top: 8px;
+    padding-top: 5px;
+
+    font-size: 29px;
+
+    line-height: 1;
 }
 
 
-/* ألوان الأسهم الاجتماعية */
+/* social arrows */
 
-.social-card .down-arrow {
-    color: #4d9438;
+.social-card .card-arrow {
+    color: #2e922d;
 }
 
 
-/* ألوان الأسهم الطبية */
+/* medical arrows */
 
-.hospital .down-arrow {
-    color: #3471c5;
-}
-
-.clinics .down-arrow {
-    color: #ef5275;
-}
-
-.radiology .down-arrow {
-    color: #159b93;
-}
-
-.labs .down-arrow {
-    color: #c29a18;
-}
-
-.pharmacy .down-arrow {
-    color: #7546a0;
+.medical-card .card-arrow {
+    color: #ef5470;
 }
 
 
 /* =========================================
-   Tablet
+   TABLET
 ========================================= */
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
 
     .services-section {
-        padding: 35px 25px 50px;
+        padding: 30px 25px 40px;
     }
 
-    .services-wrapper {
-        gap: 40px;
+    .services-container {
+        gap: 30px;
     }
 
-    .main-service {
-        min-height: 100px;
-        padding: 15px;
+    .cards-grid {
+        gap: 14px;
     }
 
-    .main-icon {
+    .service-card {
+        min-height: 190px;
+    }
+
+    .card-icon {
         width: 65px;
         height: 65px;
     }
 
-    .main-icon svg {
-        width: 40px;
-        height: 40px;
+    .card-icon svg {
+        width: 39px;
+        height: 39px;
     }
+}
 
-    .social-grid {
-        gap: 25px 20px;
-    }
 
-    .medical-grid {
-        grid-template-columns:
-            repeat(3, 1fr);
+/* =========================================
+   TABLET SMALL
+========================================= */
 
+@media (max-width: 850px) {
+
+    .services-container {
         gap: 20px;
     }
 
-    .medical-card:nth-child(4) {
-        grid-column: 1;
+    .main-service {
+        min-height: 95px;
+    }
+
+    .main-service-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main-service-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .service-card {
+        min-height: 180px;
     }
 
 }
 
 
 /* =========================================
-   Tablet صغير
+   MOBILE
 ========================================= */
 
-@media (max-width: 900px) {
-
-    .services-title {
-        margin-bottom: 55px;
-    }
-
-    .services-wrapper {
-        gap: 25px;
-    }
-
-    .social-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .medical-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .child-card {
-        min-height: 190px;
-    }
-
-}
-
-
-/* =========================================
-   Mobile
-========================================= */
-
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 
     .services-section {
         width: 100%;
 
         margin: 0;
 
-        padding:
-            30px 15px 40px;
+        padding: 25px 14px 35px;
 
         border-radius: 0;
 
@@ -601,152 +666,171 @@
     }
 
 
-    .services-title {
-        margin-bottom: 40px;
+    /* العنوان يظل في سطر واحد */
+
+    .services-header {
+        margin-bottom: 30px;
     }
 
-    .services-title h1 {
-        font-size: 28px;
-    }
+    .services-header h1 {
+        font-size: clamp(14px, 4.4vw, 25px);
 
-
-    /* إلغاء تقسيم الشاشة */
-
-    .services-wrapper {
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 60px;
+        white-space: nowrap;
     }
 
 
-    .service-group {
-        width: 100%;
-    }
-
-
-    /* الكارت الرئيسي */
-
-    .main-service {
-        min-height: 90px;
-
-        padding: 12px;
-
-        border-radius: 15px;
-    }
-
-    .main-service span:not(.main-arrow) {
-        font-size: 20px;
-    }
-
-    .main-icon {
-        width: 58px;
-        height: 58px;
-    }
-
-    .main-icon svg {
-        width: 35px;
-        height: 35px;
-    }
-
-    .main-arrow {
-        font-size: 35px;
-    }
-
-
-    /* إخفاء خطوط الربط في الموبايل */
-
-    .service-group::after {
-        display: none;
-    }
-
-    .title-connector {
+    .top-line {
         width: 85%;
     }
 
 
-    /* المربعات */
+    /* القسمين تحت بعض */
 
-    .children-grid {
-        margin-top: 25px;
+    .services-container {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 50px;
     }
 
 
-    .social-grid,
-    .medical-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        gap: 15px;
+    .service-section {
+        width: 100%;
     }
 
 
-    .child-card {
-        min-height: 175px;
+    /* العناوين الرئيسية */
 
-        padding: 18px 8px 12px;
+    .main-service {
+        min-height: 85px;
 
-        border-radius: 15px;
+        gap: 12px;
+
+        border-radius: 14px;
+    }
+
+    .main-service h2 {
+        font-size: 22px;
+    }
+
+    .main-service-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .main-service-icon svg {
+        width: 33px;
+        height: 33px;
     }
 
 
-    .child-icon {
-        width: 65px;
-        height: 65px;
-        margin-bottom: 10px;
+    /* إخفاء خطوط الربط الكبيرة */
+
+    .connector {
+        height: 25px;
+    }
+
+    .connector::before {
+        height: 10px;
+    }
+
+    .connector::after {
+        top: 9px;
+
+        left: 5%;
+        right: 5%;
+    }
+
+    .connector span {
+        top: 5px;
     }
 
 
-    .child-icon svg {
-        width: 38px;
-        height: 38px;
+    /* الكروت */
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
     }
 
 
-    .child-card h3 {
-        font-size: 16px;
+    .service-card {
+        min-height: 170px;
+
+        padding: 16px 7px 10px;
+
+        border-radius: 13px;
     }
 
 
-    .down-arrow {
+    .card-icon {
+        width: 62px;
+        height: 62px;
+
+        margin-bottom: 9px;
+    }
+
+
+    .card-icon svg {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    .service-card h3 {
+        font-size: 15px;
+
+        min-height: 36px;
+    }
+
+
+    .card-arrow {
         font-size: 25px;
     }
-
 }
 
 
 /* =========================================
-   موبايل صغير جدًا
+   MOBILE VERY SMALL
 ========================================= */
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
 
-    .services-title h1 {
-        font-size: 24px;
+    .services-header h1 {
+        font-size: 13px;
     }
 
-    .main-service span:not(.main-arrow) {
-        font-size: 17px;
+    .main-service h2 {
+        font-size: 19px;
     }
 
-    .main-icon {
-        width: 52px;
-        height: 52px;
+    .main-service-icon {
+        width: 48px;
+        height: 48px;
     }
 
-    .child-card {
-        min-height: 160px;
+    .main-service-icon svg {
+        width: 29px;
+        height: 29px;
     }
 
-    .child-icon {
-        width: 58px;
-        height: 58px;
+    .service-card {
+        min-height: 155px;
     }
 
-    .child-card h3 {
-        font-size: 14px;
+    .card-icon {
+        width: 55px;
+        height: 55px;
     }
 
+    .card-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .service-card h3 {
+        font-size: 13px;
+    }
 }
