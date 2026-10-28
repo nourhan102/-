@@ -340,7 +340,7 @@ body.en .icon {
 .track {
   display: inline-flex;
   white-space: nowrap;
-  animation: move 75s linear infinite;
+  animation: move 110s linear infinite;
   will-change: transform;
   transform: translateZ(0);
 }
@@ -382,7 +382,7 @@ body.en .track {
 }
 @media (max-width: 768px) {
   .track {
-    animation: move 130s linear infinite;
+    animation: move 150s linear infinite;
   }
 }
 
@@ -542,7 +542,7 @@ body.en .track {
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation: scroll 50s linear infinite;
+  animation: scroll 120s linear infinite;
   flex-shrink: 0; 
 }
 
